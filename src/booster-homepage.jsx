@@ -684,8 +684,8 @@ function StatsBar({ lang }) {
 
 function ContactSection({ lang }) {
   const info = lang === "zh"
-    ? [{icon:"📍",l:"公司地址",v:"上海市浦东新区锦绣东路2777弄19号楼10层"},{icon:"📞",l:"联系电话",v:"139-1641-3233"},{icon:"📧",l:"电子邮箱",v:"service@tflabservice.com"},{icon:"👤",l:"联系人",v:"赵文渊"},{icon:"🕐",l:"工作时间",v:"周一至周五 9:00-18:00"}]
-    : [{icon:"📍",l:"Address",v:"19F-10, 2777 Jinxiu East Rd, Pudong, Shanghai"},{icon:"📞",l:"Phone",v:"139-1641-3233"},{icon:"📧",l:"Email",v:"service@tflabservice.com"},{icon:"👤",l:"Contact",v:"Zhao Wenyuan"},{icon:"🕐",l:"Hours",v:"Mon-Fri 9:00-18:00 CST"}];
+    ? [{icon:"📍",l:"公司地址",v:"上海市浦东新区锦绣东路2777弄19号楼10层"},{icon:"📞",l:"联系电话",v:"139-1641-3233"},{icon:"📧",l:"电子邮箱",v:"service@tflabservice.com"},{icon:"👤",l:"联系人",v:"上海博仕达生物工程有限公司"},{icon:"🕐",l:"工作时间",v:"周一至周五 9:00-18:00"}]
+    : [{icon:"📍",l:"Address",v:"19F-10, 2777 Jinxiu East Rd, Pudong, Shanghai"},{icon:"📞",l:"Phone",v:"139-1641-3233"},{icon:"📧",l:"Email",v:"service@tflabservice.com"},{icon:"👤",l:"Contact",v:"Shanghai Booster Bioengineering Co., Ltd."},{icon:"🕐",l:"Hours",v:"Mon-Fri 9:00-18:00 CST"}];
   return (
     <section style={{ background: T.redSoft, padding: "64px 0" }}>
       <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 32px" }}>
@@ -746,7 +746,7 @@ function Footer({ lang }) {
               <div style={{ width: 30, height: 30, borderRadius: 8, background: `linear-gradient(135deg, ${T.red}, #FF6B81)`, display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", fontSize: 14, fontWeight: 700 }}>B</div>
               <span style={{ fontSize: 15, fontWeight: 700, color: "#fff" }}>{lang === "zh" ? "博仕达 BOOSTER" : "BOOSTER"}</span>
             </div>
-            <p style={{ fontSize: 13, lineHeight: 1.7, maxWidth: 320 }}>{lang === "zh" ? "上海博仕达生物科技发展有限公司（BOOSTER）— 全力为生命科技类企业提供专业化整体服务的一站式平台。" : "BOOSTER — A one-stop professional service platform for life science enterprises."}</p>
+            <p style={{ fontSize: 13, lineHeight: 1.7, maxWidth: 320 }}>{lang === "zh" ? "上海博仕达生物工程有限公司（BOOSTER）— 全力为生命科技类企业提供专业化整体服务的一站式平台。" : "BOOSTER — A one-stop professional service platform for life science enterprises."}</p>
           </div>
           <div style={{ display: "flex", gap: 48 }}>
             {(lang === "zh" ? [["产品",["实验耗材","质控分析工具酶","超滤离心管","质控试剂盒"]],["服务",["工程服务","供应链服务","企业管家","产业园运营"]],["公司",["联系我们","新闻动态","合作伙伴","招贤纳士"]]] : [["Products",["Lab Consumables","QC Enzymes","Ultrafiltration","QC Kits"]],["Services",["Engineering","Supply Chain","Enterprise","Park Ops"]],["Company",["Contact","News","Partners","Careers"]]]).map(([t, links], i) => (
@@ -758,7 +758,7 @@ function Footer({ lang }) {
           </div>
         </div>
         <div style={{ borderTop: "1px solid rgba(255,255,255,0.08)", paddingTop: 16, display: "flex", justifyContent: "space-between", fontSize: 12, opacity: 0.5 }}>
-          <span>{lang === "zh" ? "© 2026 上海博仕达生物科技发展有限公司（BOOSTER）" : "© 2026 BOOSTER Bio-Technology Co., Ltd."}</span>
+          <span>{lang === "zh" ? "© 2026 上海博仕达生物工程有限公司（BOOSTER）" : "© 2026 BOOSTER Bio-Technology Co., Ltd."}</span>
           <span>{lang === "zh" ? "仅供研究使用" : "For Research Use Only"}</span>
         </div>
       </div>
