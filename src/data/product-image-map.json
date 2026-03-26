@@ -7,8 +7,8 @@
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-20UL-001": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "移液处理_10uL加长普通吸头_102.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "0.1-20 ul，辐照灭菌，带滤芯，带刻度，透明，盒装，灭菌，PP，加长粗款（46mm）",
     "targetCategories": "移液处理"
@@ -17,8 +17,8 @@
     "image": "lejet_适配LTS_20uL_62.png"
   },
   "BSD-HC-TIP-20UL-003": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "移液处理_10uL普通吸头_98.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "1-20 ul，辐照灭菌，带滤芯，带刻度，黄色，灭菌，PP，盒装（51mm）",
     "targetCategories": "移液处理"
@@ -31,8 +31,8 @@
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-100UL-001": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "移液处理_10uL普通吸头_98.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "1-100 ul，辐照灭菌，带滤芯，带刻度，透明，灭菌，PP，盒装（51mm）",
     "targetCategories": "移液处理"
@@ -46,15 +46,15 @@
     "matchScore": 15
   },
   "BSD-HC-TIP-150UL-001": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "1-150 ul，辐照灭菌，带滤芯，带刻度，透明，灭菌，PP，盒装（60mm）",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-300UL-001": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "1-300 ul，辐照灭菌，带滤芯，带刻度，透明，灭菌，PP，盒装（60mm）",
     "targetCategories": "移液处理"
@@ -82,22 +82,22 @@
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-20UL-004": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "移液处理_10uL加长普通吸头_102.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "0.1-20ul，带刻度，透明，带滤芯，PP，加长袋装吸头（46mm）",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-20UL-005": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "移液处理_10uL加长普通吸头_102.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "0.1-20ul，带刻度，透明，带滤芯，PP，加长袋装吸头 （46mm）",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-20UL-006": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "移液处理_10uL普通吸头_98.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "1-20ul，黄色，带滤芯，PP，袋装吸头（51mm）",
     "targetCategories": "移液处理"
@@ -110,8 +110,8 @@
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-100UL-002": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "移液处理_10uL普通吸头_98.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "1-100ul，带刻度，透明，带滤芯，PP，袋装吸头（51mm）",
     "targetCategories": "移液处理"
@@ -150,15 +150,15 @@
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-20UL-007": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "移液处理_10uL加长普通吸头_102.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "0.1-20 ul，辐照灭菌，带刻度，透明，灭菌，PP，盒装，加长粗款（46mm）",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-20UL-008": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "移液处理_10uL加长普通吸头_102.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "0.1-20 ul，辐照灭菌，带刻度，透明，灭菌，PP，盒装，加长细款（46mm）",
     "targetCategories": "移液处理"
@@ -172,7 +172,8 @@
     "matchScore": 15
   },
   "BSD-HC-TIP-300UL-003": {
-    "image": "lejet_适配LTS_300uL_3.png"
+    "image": "BSD-HC-TIP-300UL-010.png",
+    "matchType": "category-fixed"
   },
   "BSD-HC-TIP-1000UL-007": {
     "image": "普通吸头_1000uL普通吸头_117.jpg",
@@ -204,15 +205,15 @@
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-20UL-009": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "移液处理_10uL加长普通吸头_102.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "0.1-20 ul，带刻度，透明，PP，袋装，加长粗款（46mm）",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-20UL-010": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "移液处理_10uL加长普通吸头_102.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "0.1-20 ul，带刻度，透明，PP，袋装，加长细款（46mm）",
     "targetCategories": "移液处理"
@@ -222,7 +223,8 @@
     "matchType": "category-fixed"
   },
   "BSD-HC-TIP-300UL-004": {
-    "image": "lejet_适配LTS_300uL_4.png"
+    "image": "BSD-HC-TIP-300UL-010.png",
+    "matchType": "category-fixed"
   },
   "BSD-HC-TIP-1000UL-009": {
     "image": "普通吸头_1000uL普通吸头_117.jpg",
@@ -253,8 +255,8 @@
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-20UL-011": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "移液处理_10uL加长普通吸头_102.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "0.1-20 ul，带刻度，透明，PP，叠装，灭菌，加长细款（46mm）",
     "targetCategories": "移液处理"
@@ -264,22 +266,23 @@
     "matchType": "category-fixed"
   },
   "BSD-HC-TIP-300UL-005": {
-    "image": "lejet_适配LTS_300uL_5.png"
+    "image": "BSD-HC-TIP-300UL-010.png",
+    "matchType": "category-fixed"
   },
   "BSD-HC-TIP-1200UL-003": {
     "image": "普通吸头_200uL普通吸头_115.jpg",
     "matchType": "category-fixed"
   },
   "BSD-HC-TIP-20UL-023": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "移液处理_10uL普通吸头_98.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "20ul Rainin LTS 系列吸头，PP，盒装，灭菌",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-20UL-025": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "移液处理_10uL普通吸头_98.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "20ul Rainin LTS 系列吸头，PP，盒装，带滤芯，灭菌",
     "targetCategories": "移液处理"
@@ -299,15 +302,15 @@
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-300UL-011": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "300ul Rainin LTS 系列吸头，PP，盒装，灭菌",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-300UL-013": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "300ul Rainin LTS 系列吸头，PP，盒装，带滤芯，灭菌",
     "targetCategories": "移液处理"
@@ -357,15 +360,15 @@
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-300UL-015": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "300ul Rainin LTS 系列吸头，PP，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-300UL-017": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "300ul Rainin LTS 系列吸头，带滤芯，PP，袋装",
     "targetCategories": "移液处理"
@@ -399,8 +402,8 @@
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-20UL-027": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "移液处理_10uL普通吸头_98.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "20ul Rainin LTS 系列吸头，PP，叠装，灭菌",
     "targetCategories": "移液处理"
@@ -413,8 +416,8 @@
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-300UL-019": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "300ul Rainin LTS 系列吸头，PP，叠装，灭菌",
     "targetCategories": "移液处理"
@@ -448,22 +451,22 @@
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-20UL-012": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "移液处理_10uL加长普通吸头_102.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "0.1-20ul，低吸附，带刻度，透明，带滤芯，PP，盒装头，灭菌，加长（Axygen粗款)(46m",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-20UL-013": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "移液处理_10uL普通吸头_98.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "0.1-20ul，低吸附，带刻度,，透明，带滤芯，PP，盒装，灭菌，细长款(46mm)",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-20UL-014": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "移液处理_10uL普通吸头_98.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "1-20ul，低吸附，带刻度，透明，带滤芯，PP，盒装，灭菌（51mm）",
     "targetCategories": "移液处理"
@@ -476,8 +479,8 @@
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-100UL-003": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "移液处理_10uL普通吸头_98.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "1-100ul，低吸附，带刻度，透明，带滤芯，PP，盒装，灭菌（51mm）",
     "targetCategories": "移液处理"
@@ -487,18 +490,19 @@
     "matchType": "category-fixed"
   },
   "BSD-HC-TIP-150UL-002": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "1-150 ul，低吸附，带滤芯，带刻度，透明，PP，盒装，灭菌，（60mm）",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-300UL-006": {
-    "image": "lejet_适配LTS_300uL_6.png"
+    "image": "BSD-HC-TIP-300UL-010.png",
+    "matchType": "category-fixed"
   },
   "BSD-HC-TIP-1000UL-011": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通吸头_117.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "100-1000ul，低吸附，透明，带滤芯，PP，盒装，灭菌（78mm）",
     "targetCategories": "移液处理"
@@ -511,8 +515,8 @@
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-1000UL-013": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通吸头_117.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "100-1,000 ul，低吸附，带刻度，透明，带滤芯，PP，盒装，灭菌，中长款（88mm）",
     "targetCategories": "移液处理"
@@ -525,22 +529,22 @@
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-20UL-015": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "移液处理_10uL加长普通吸头_102.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "0.1-20ul，带刻度，透明，带滤芯，低吸附，加长，PP，袋装(Axygen 款)(46mm)",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-20UL-016": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "移液处理_10uL普通吸头_98.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "0.1-20ul，带刻度，透明，带滤芯，低吸附，细长款，PP，袋装（46mm）",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-20UL-017": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "移液处理_10uL普通吸头_98.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "1-20ul，带刻度，透明，带滤芯，低吸附，PP，袋装（51mm）",
     "targetCategories": "移液处理"
@@ -553,8 +557,8 @@
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-100UL-004": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "移液处理_10uL普通吸头_98.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "1-100ul，带刻度，透明，带滤芯，低吸附，PP，袋装（51mm）",
     "targetCategories": "移液处理"
@@ -567,15 +571,15 @@
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-300UL-007": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通加长吸头_116.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "1-300ul，带刻度，透明，加长款，带滤芯，低吸附，PP，袋装（60mm）",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-1000UL-014": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通吸头_117.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "100-1,000 ul，带滤芯，透明，低吸附，PP，袋装（78mm）",
     "targetCategories": "移液处理"
@@ -588,8 +592,8 @@
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-1000UL-016": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通吸头_117.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "100-1,000ul，带刻度，透明，带滤芯，低吸附，PP，袋装，中长款(88mm）",
     "targetCategories": "移液处理"
@@ -602,15 +606,15 @@
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-20UL-018": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "移液处理_10uL加长普通吸头_102.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "0.1-20 ul，带刻度，低吸附，透明，灭菌，PP，盒装，加长粗款（46mm）",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-20UL-019": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "移液处理_10uL加长普通吸头_102.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "0.1-20 ul，带刻度，低吸附，透明，灭菌，PP，盒装，加长细款（46mm）",
     "targetCategories": "移液处理"
@@ -623,15 +627,15 @@
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-300UL-008": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "1-300 ul，带刻度，低吸附，透明，灭菌，PP，盒装（60mm）",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-1000UL-017": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通吸头_117.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "100-1,000 ul，低吸附，透明，灭菌，PP，盒装（78mm）",
     "targetCategories": "移液处理"
@@ -641,8 +645,8 @@
     "matchType": "category-fixed"
   },
   "BSD-HC-TIP-1000UL-018": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通吸头_117.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "100-1,000 ul，带刻度，低吸附，透明，灭菌，PP，盒装，中长款（88mm）",
     "targetCategories": "移液处理"
@@ -655,15 +659,15 @@
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-20UL-020": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "移液处理_10uL加长普通吸头_102.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "0.1-20 ul，带刻度，低吸附，透明，PP，袋装，加长粗款（46mm）",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-20UL-021": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "移液处理_10uL加长普通吸头_102.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "0.1-20 ul，带刻度，低吸附，透明，PP，袋装，加长细款（46mm）",
     "targetCategories": "移液处理"
@@ -676,15 +680,15 @@
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-300UL-009": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "1-300 ul，带刻度，低吸附，透明，PP，袋装（60mm）",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-1000UL-019": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通吸头_117.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "100-1,000 ul，低吸附，透明，PP，袋装（78mm）",
     "targetCategories": "移液处理"
@@ -694,8 +698,8 @@
     "matchType": "category-fixed"
   },
   "BSD-HC-TIP-1000UL-020": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通吸头_117.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "100-1,000 ul，带刻度，低吸附，透明，PP，袋装，中长款（88mm）",
     "targetCategories": "移液处理"
@@ -733,15 +737,15 @@
     "matchType": "category-fixed"
   },
   "BSD-HC-TIP-20UL-024": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "移液处理_10uL普通吸头_98.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "20ul Rainin LTS 系列吸头，PP，盒装，灭菌，低吸附",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-20UL-026": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "移液处理_10uL普通吸头_98.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "20ul Rainin LTS 系列吸头，PP，盒装，带滤芯，灭菌，低吸附",
     "targetCategories": "移液处理"
@@ -761,43 +765,43 @@
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-300UL-012": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "300ul Rainin LTS 系列吸头，PP，盒装，灭菌，低吸附",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-300UL-014": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "300ul Rainin LTS 系列吸头，PP，盒装，带滤芯，灭菌，低吸附",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-1000UL-022": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通吸头_117.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "1000ul Rainin LTS 系列吸头，PP，盒装，灭菌，低吸附",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-1000UL-024": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通吸头_117.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "1000ul Rainin LTS 系列吸头，PP，盒装，带滤芯，灭菌，低吸附",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-1200UL-008": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通吸头_117.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "1200ul Rainin LTS 系列吸头，PP，盒装，灭菌，低吸附",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-1200UL-010": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通吸头_117.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "1200ul Rainin LTS 系列吸头，PP，盒装，带滤芯，灭菌，低吸附",
     "targetCategories": "移液处理"
@@ -817,43 +821,43 @@
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-300UL-016": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "300ul Rainin LTS 系列吸头，PP，袋装，低吸附",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-300UL-018": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "300ul Rainin LTS 系列吸头，带滤芯，PP，袋装，低吸附",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-1000UL-026": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通吸头_117.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "1000ul Rainin LTS 系列吸头，PP，袋装，低吸附",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-1000UL-028": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通吸头_117.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "1000ul Rainin LTS 系列吸头，带滤芯，PP，袋装，低吸附",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-1200UL-012": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通吸头_117.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "1200ul Rainin LTS 系列吸头，PP，袋装，低吸附",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-1200UL-014": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通吸头_117.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "1200ul Rainin LTS 系列吸头，带滤芯，PP，袋装，低吸附",
     "targetCategories": "移液处理"
@@ -887,113 +891,113 @@
     "targetCategories": "移液处理"
   },
   "BSD-HC-OTH-5ML-001": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通吸头_117.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "适配 5ml Eppendorf 移液枪，透明，PP，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-OTH-5ML-002": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通吸头_117.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "适配 5ml Eppendorf 移液枪，透明，带滤芯，灭菌，PP，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-OTH-5ML-003": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通吸头_117.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "适配 5ml Eppendorf 移液枪，透明，PP，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-OTH-5ML-004": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通吸头_117.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "适配 5ml Eppendorf 移液枪，透明，带滤芯，PP，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-OTH-10ML-001": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通加长吸头_118.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "适配 10ml Eppendorf 移液枪，透明，灭菌，PP，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-OTH-10ML-002": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通加长吸头_118.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "适配 10ml Eppendorf 移液枪，透明，带滤芯，灭菌，PP，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-OTH-10ML-003": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通加长吸头_118.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "适配 10ml Eppendorf 移液枪，透明，PP，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-OTH-10ML-004": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通加长吸头_118.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "适配 10ml Eppendorf 移液枪，透明，带滤芯，PP，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-OTH-5ML-005": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通吸头_117.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "适配 5ml Thermo 移液枪，透明，灭菌，PP，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-OTH-5ML-006": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通吸头_117.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "适配 5ml Thermo 移液枪，透明，带滤芯，灭菌，PP，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-OTH-5ML-007": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通吸头_117.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "适配 5ml Thermo 移液枪，透明，PP，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-OTH-5ML-008": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通吸头_117.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "适配 5ml Thermo 移液枪，透明，带滤芯，PP，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-OTH-10ML-005": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通加长吸头_118.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "适配 10ml Thermo 移液枪，透明，灭菌，PP，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-OTH-10ML-006": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通加长吸头_118.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "适配 10ml Thermo 移液枪，透明，带滤芯，灭菌，PP，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-OTH-10ML-007": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通加长吸头_118.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "适配 10ml Thermo 移液枪，透明，PP，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-OTH-10ML-008": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通加长吸头_118.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "适配 10ml Thermo 移液枪，透明，带滤芯，PP，袋装",
     "targetCategories": "移液处理"
@@ -1104,22 +1108,22 @@
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-250UL-001": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "250ul自动化吸头，透明，灭菌，PP，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-250UL-003": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "250ul自动化吸头，透明，灭菌，带滤芯，PP，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-1025UL-001": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通吸头_117.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "1025 ul贝克曼自动化吸头，带滤芯，透明，灭菌，PP，盒装",
     "targetCategories": "移液处理"
@@ -1146,15 +1150,15 @@
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-300UL-021": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "300ul自动化吸头，透明，灭菌，PP，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-300UL-023": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "300ul自动化吸头，透明，灭菌，带滤芯，PP，盒装",
     "targetCategories": "移液处理"
@@ -1216,603 +1220,603 @@
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-30UL-001": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "移液处理_10uL普通吸头_98.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "安捷伦30ul自动化吸头，透明，符合SBS标准，盒装，灭菌",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-30UL-002": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "移液处理_10uL普通吸头_98.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "安捷伦30ul自动化吸头，透明，带滤芯，符合SBS标准，盒装，灭菌",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-001": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-002": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，滤芯，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-003": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-004": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-009": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-010": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-011": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，滤芯，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-012": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-013": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-018": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，黄色，滤芯，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-019": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，黄色，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-022": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，滤芯，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-023": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-026": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，黄色，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-027": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，黄色，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-028": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，黄色，滤芯，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-029": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，黄色，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-030": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，黄色，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-035": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，滤芯，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-036": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-039": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，滤芯，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-040": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-043": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，滤芯，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-044": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-047": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-048": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，滤芯，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-049": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-050": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-055": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-056": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，滤芯，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-057": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-058": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-063": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，滤芯，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-064": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-067": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，滤芯，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-068": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-071": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，滤芯，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-072": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-075": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-076": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，滤芯，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-077": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-078": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-083": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-084": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，滤芯，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-085": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-086": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-087": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-088": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-095": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，蓝色，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-096": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，蓝色，滤芯，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-097": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，蓝色，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-098": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，蓝色，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-099": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，蓝色，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-100": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，蓝色，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-101": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "无滤芯，散装，蓝色，不灭菌",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-102": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "滤芯，散装，蓝色，不灭菌",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-103": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "无滤芯，盒装，蓝色，灭菌",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-104": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "滤芯，盒装，蓝色，灭菌",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-105": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-106": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，滤芯，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-107": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-108": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-113": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，蓝色，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-114": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，蓝色，滤芯，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-115": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，蓝色，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-116": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，蓝色，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-117": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-118": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-119": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-120": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-121": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-122": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-123": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-124": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-127": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，灭菌，吸塑盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-128": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，滤芯，灭菌，吸塑盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-131": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-132": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-135": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，灭菌，吸塑盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-136": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，滤芯，灭菌，吸塑盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-139": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-140": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-143": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，灭菌，吸塑盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-144": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "吸头",
     "description": "常规，透明，滤芯，灭菌，吸塑盒装",
     "targetCategories": "移液处理"
@@ -1930,15 +1934,15 @@
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-1000UL-032": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通吸头_117.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "1000ul自动化吸头，透明，灭菌，低吸附，PP，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-1000UL-034": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通吸头_117.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "1000ul自动化吸头，透明，灭菌，带滤芯，低吸附，PP，盒装",
     "targetCategories": "移液处理"
@@ -2000,15 +2004,15 @@
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-250UL-002": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "250ul自动化吸头，透明，灭菌，低吸附，PP，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-250UL-004": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "250ul自动化吸头，透明，灭菌，带滤芯，低吸附，PP，盒装",
     "targetCategories": "移液处理"
@@ -2028,29 +2032,29 @@
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-300UL-022": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "300ul自动化吸头，透明，灭菌，低吸附，PP，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-300UL-024": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "300ul自动化吸头，透明，灭菌，带滤芯，低吸附，PP，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-1000UL-041": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通吸头_117.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "1000ul自动化吸头，透明，灭菌，低吸附，PP，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-1000UL-043": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_1000uL普通吸头_117.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "1000ul自动化吸头，透明，灭菌，带滤芯，低吸附，PP，盒装",
     "targetCategories": "移液处理"
@@ -2105,435 +2109,435 @@
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-005": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-006": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-007": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-008": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-014": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-015": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-016": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-017": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-020": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-021": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-024": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-025": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-031": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-032": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-033": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-034": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-037": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-038": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-041": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-042": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-045": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-046": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-051": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-052": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-053": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-054": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-059": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-060": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-061": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-062": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-065": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-066": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-069": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-070": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-073": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-074": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-079": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-080": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-081": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-082": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-089": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-090": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-091": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-092": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-093": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-094": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-109": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-110": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，未灭菌，袋装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-111": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-112": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-125": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-126": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-129": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，灭菌，吸塑盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-130": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，灭菌，吸塑盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-133": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-134": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-137": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，灭菌，吸塑盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-138": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，灭菌，吸塑盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-141": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-142": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，灭菌，盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-145": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，灭菌，吸塑盒装",
     "targetCategories": "移液处理"
   },
   "BSD-HC-TIP-GEN-146": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "category",
+    "image": "普通吸头_200uL普通吸头_115.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附吸头",
     "description": "低吸附，透明，滤芯，灭菌，吸塑盒装",
     "targetCategories": "移液处理"
@@ -2980,99 +2984,99 @@
     "targetCategories": "PCR管,分子生物类"
   },
   "BSD-HC-PCR-GEN-018": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "PCR管_PCR_盖子_32.jpg",
+    "matchType": "category-fixed",
     "category": "PCR 8联管盖",
     "description": "带缺口，PCR 12联管盖",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-PCR-GEN-019": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "PCR管_PCR_盖子_32.jpg",
+    "matchType": "category-fixed",
     "category": "PCR 8联管盖",
     "description": "带缺口，PCR 8联管盖",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-PCR-GEN-020": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "PCR管_PCR_盖子_32.jpg",
+    "matchType": "category-fixed",
     "category": "PCR 8联管盖",
     "description": "端口带斜角，PCR 8联管盖",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-PCR-0P2ML-019": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "PCR管_PCR_盖子_32.jpg",
+    "matchType": "category-fixed",
     "category": "PCR 8联管盖",
     "description": "0.2mL，透明连盖八连管",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-PCR-0P2ML-020": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "分子生物类_透明平盖单管_18.jpg",
+    "matchType": "category-fixed",
     "category": "PCR单管",
     "description": "0.2ml，透明，平盖单管，未灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-PCR-0P2ML-021": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "分子生物类_透明平盖单管_18.jpg",
+    "matchType": "category-fixed",
     "category": "PCR单管",
     "description": "0.2ml，透明，平盖单管,灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-PCR-0P2ML-022": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "分子生物类_透明平盖单管_18.jpg",
+    "matchType": "category-fixed",
     "category": "PCR单管",
     "description": "0.2ml，黄色，平盖单管，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-PCR-0P2ML-023": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "分子生物类_透明平盖单管_18.jpg",
+    "matchType": "category-fixed",
     "category": "PCR单管",
     "description": "0.2ml，蓝色，平盖单管，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-PCR-0P2ML-024": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "分子生物类_透明平盖单管_18.jpg",
+    "matchType": "category-fixed",
     "category": "PCR单管",
     "description": "0.2ml，绿色，平盖单管，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-PCR-0P2ML-025": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "分子生物类_透明平盖单管_18.jpg",
+    "matchType": "category-fixed",
     "category": "PCR单管",
     "description": "0.2ml，红色，平盖单管，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-PCR-0P1ML-022": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "PCR板_0.1mL全裙边96孔双色PCR板_46.jpg",
+    "matchType": "category-fixed",
     "category": "PCR双色板",
     "description": "0.1ml，透明框，透明管，全裙边，96孔PCR板",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-PCR-0P1ML-023": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "PCR板_0.1mL全裙边96孔双色PCR板_46.jpg",
+    "matchType": "category-fixed",
     "category": "PCR双色板",
     "description": "0.1ml，透明框，白色管，全裙边，96孔PCR板",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-PCR-0P1ML-024": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "PCR板_0.1mL全裙边96孔双色PCR板_46.jpg",
+    "matchType": "category-fixed",
     "category": "PCR双色板",
     "description": "0.1ml，白色框，透明管，全裙边，96孔PCR板",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-PCR-0P1ML-025": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "PCR板_0.1mL全裙边96孔双色PCR板_46.jpg",
+    "matchType": "category-fixed",
     "category": "PCR双色板",
     "description": "0.1ml，白色框，白色管，全裙边，96孔PCR板",
     "targetCategories": "通用,unknown,图片展示"
@@ -3330,43 +3334,43 @@
     "targetCategories": "免疫类,酶标板,可拆酶标板"
   },
   "BSD-HC-DWP-GEN-005": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "深孔板_磁棒套_146.jpg",
+    "matchType": "category-fixed",
     "category": "PCR磁棒套",
     "description": "V底，无卡扣，8孔磁棒套",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-DWP-GEN-006": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "深孔板_磁棒套_146.jpg",
+    "matchType": "category-fixed",
     "category": "PCR磁棒套",
     "description": "U底，8孔磁棒套",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-DWP-GEN-007": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "深孔板_磁棒套_146.jpg",
+    "matchType": "category-fixed",
     "category": "PCR磁棒套",
     "description": "U底，有卡扣，96孔磁棒套",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-DWP-GEN-008": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "深孔板_磁棒套_146.jpg",
+    "matchType": "category-fixed",
     "category": "PCR磁棒套",
     "description": "U底，无卡扣，96孔磁棒套",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-DWP-GEN-009": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "深孔板_磁棒套_146.jpg",
+    "matchType": "category-fixed",
     "category": "PCR磁棒套",
     "description": "V底，有卡扣，96孔磁棒套",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-DWP-GEN-010": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "深孔板_磁棒套_146.jpg",
+    "matchType": "category-fixed",
     "category": "PCR磁棒套",
     "description": "V底，无卡扣，96孔磁棒套",
     "targetCategories": "通用,unknown,图片展示"
@@ -3610,218 +3614,218 @@
     "targetCategories": "细胞培养类"
   },
   "BSD-HC-OTH-GEN-025": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞培养板_264.jpg",
+    "matchType": "category-fixed",
     "category": "培养板",
     "description": "6孔，PS，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-026": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞培养板_264.jpg",
+    "matchType": "category-fixed",
     "category": "培养板",
     "description": "6孔，PS，TC处理，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-027": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞培养板_264.jpg",
+    "matchType": "category-fixed",
     "category": "培养板",
     "description": "12孔，PS，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-028": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞培养板_264.jpg",
+    "matchType": "category-fixed",
     "category": "培养板",
     "description": "12孔，PS，TC处理，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-029": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞培养板_264.jpg",
+    "matchType": "category-fixed",
     "category": "培养板",
     "description": "24孔，PS，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-030": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞培养板_264.jpg",
+    "matchType": "category-fixed",
     "category": "培养板",
     "description": "24孔，PS，TC处理，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-031": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞培养板_264.jpg",
+    "matchType": "category-fixed",
     "category": "培养板",
     "description": "48孔，PS，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-032": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞培养板_264.jpg",
+    "matchType": "category-fixed",
     "category": "培养板",
     "description": "48孔，PS，TC处理，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-033": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞培养板_264.jpg",
+    "matchType": "category-fixed",
     "category": "培养板",
     "description": "96孔，PS，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-034": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞培养板_264.jpg",
+    "matchType": "category-fixed",
     "category": "培养板",
     "description": "96孔，PS，TC处理，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-035": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞工厂_259.jpg",
+    "matchType": "category-fixed",
     "category": "细胞工厂",
     "description": "1层，335 x 205 x 36 mm，632cm2，TC处理，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-036": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞工厂_259.jpg",
+    "matchType": "category-fixed",
     "category": "细胞工厂",
     "description": "2层，335 x 205 x 53 mm，1264cm2，TC处理，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-037": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞工厂_259.jpg",
+    "matchType": "category-fixed",
     "category": "细胞工厂",
     "description": "4层，335 x 205 x 87 mm，2526cm2，TC处理，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-038": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞工厂_259.jpg",
+    "matchType": "category-fixed",
     "category": "细胞工厂",
     "description": "10层，335 x 205 x 189 mm，6316cm2，TC处理，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-039": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞工厂_259.jpg",
+    "matchType": "category-fixed",
     "category": "细胞工厂",
     "description": "40层，335 x 205 x 698 mm，25265cm2，TC处理，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-125ML-003": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_三角摇瓶_268.jpg",
+    "matchType": "category-fixed",
     "category": "细胞摇瓶",
     "description": "125ml，PC，平底，密封盖，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-059": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_三角摇瓶_268.jpg",
+    "matchType": "category-fixed",
     "category": "细胞摇瓶",
     "description": "250mI，PC，平底，密封盖，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-500ML-003": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_三角摇瓶_268.jpg",
+    "matchType": "category-fixed",
     "category": "细胞摇瓶",
     "description": "500ml，PC，平底，密封盖，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-1000ML-003": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_三角摇瓶_268.jpg",
+    "matchType": "category-fixed",
     "category": "细胞摇瓶",
     "description": "1000ml，PC，平底，密封盖，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-060": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_三角摇瓶_268.jpg",
+    "matchType": "category-fixed",
     "category": "细胞摇瓶",
     "description": "125m，PC，平底，透气盖，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-250ML-002": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_三角摇瓶_268.jpg",
+    "matchType": "category-fixed",
     "category": "细胞摇瓶",
     "description": "250ml，PC，平底，透气盖，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-500ML-004": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_三角摇瓶_268.jpg",
+    "matchType": "category-fixed",
     "category": "细胞摇瓶",
     "description": "500ml，PC，平底，透气盖，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-1000ML-004": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_三角摇瓶_268.jpg",
+    "matchType": "category-fixed",
     "category": "细胞摇瓶",
     "description": "1000ml，PC，平底，透气盖，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-061": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_三角摇瓶_268.jpg",
+    "matchType": "category-fixed",
     "category": "细胞摇瓶",
     "description": "125m，PETG，平底，密封盖，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-250ML-003": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_三角摇瓶_268.jpg",
+    "matchType": "category-fixed",
     "category": "细胞摇瓶",
     "description": "250ml，PETG，平底，密封盖，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-500ML-005": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_三角摇瓶_268.jpg",
+    "matchType": "category-fixed",
     "category": "细胞摇瓶",
     "description": "500ml，PETG，平底，密封盖，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-1000ML-005": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_三角摇瓶_268.jpg",
+    "matchType": "category-fixed",
     "category": "细胞摇瓶",
     "description": "1000ml，PETG，平底，密封盖，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-125ML-004": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_三角摇瓶_268.jpg",
+    "matchType": "category-fixed",
     "category": "细胞摇瓶",
     "description": "125ml，PETG，平底，透气盖，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-250ML-004": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_三角摇瓶_268.jpg",
+    "matchType": "category-fixed",
     "category": "细胞摇瓶",
     "description": "250ml，PETG，平底，透气盖，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-500ML-006": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_三角摇瓶_268.jpg",
+    "matchType": "category-fixed",
     "category": "细胞摇瓶",
     "description": "500ml，PETG，平底，透气盖，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-1000ML-006": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_三角摇瓶_268.jpg",
+    "matchType": "category-fixed",
     "category": "细胞摇瓶",
     "description": "1000ml，PETG，平底，透气盖，灭菌",
     "targetCategories": "通用,unknown,图片展示"
@@ -3848,57 +3852,57 @@
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-125ML-005": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_带挡板三角摇瓶_269.jpg",
+    "matchType": "category-fixed",
     "category": "细胞摇瓶",
     "description": "125ml，PC，挡板，密封盖，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-250ML-005": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_带挡板三角摇瓶_269.jpg",
+    "matchType": "category-fixed",
     "category": "细胞摇瓶",
     "description": "250ml，PC，挡板，密封盖，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-500ML-007": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_带挡板三角摇瓶_269.jpg",
+    "matchType": "category-fixed",
     "category": "细胞摇瓶",
     "description": "500ml，PC，挡板，密封盖，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-1000ML-007": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_带挡板三角摇瓶_269.jpg",
+    "matchType": "category-fixed",
     "category": "细胞摇瓶",
     "description": "1000ml，PC，挡板，密封盖，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-125ML-006": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_带挡板三角摇瓶_269.jpg",
+    "matchType": "category-fixed",
     "category": "细胞摇瓶",
     "description": "125ml，PC，挡板，透气盖，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-250ML-006": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_带挡板三角摇瓶_269.jpg",
+    "matchType": "category-fixed",
     "category": "细胞摇瓶",
     "description": "250ml，PC，挡板，透气盖，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-500ML-008": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_带挡板三角摇瓶_269.jpg",
+    "matchType": "category-fixed",
     "category": "细胞摇瓶",
     "description": "500ml，PC，挡板，透气盖，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-1000ML-008": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_带挡板三角摇瓶_269.jpg",
+    "matchType": "category-fixed",
     "category": "细胞摇瓶",
     "description": "1000ml，PC，挡板，透气盖，灭菌",
     "targetCategories": "通用,unknown,图片展示"
@@ -3911,78 +3915,78 @@
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-3000ML-002": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_带挡板三角摇瓶_269.jpg",
+    "matchType": "category-fixed",
     "category": "细胞摇瓶",
     "description": "锥形摇瓶，3000ml，透气盖，PC，挡板，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-ST-GEN-001": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞培养皿_266.jpg",
+    "matchType": "category-fixed",
     "category": "细胞推板",
     "description": "L形细胞推板，PS，总长149mm，底宽40mm，灭菌，独立包装",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-ST-GEN-002": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞培养皿_266.jpg",
+    "matchType": "category-fixed",
     "category": "细胞推板",
     "description": "三角细胞推板，总长215mm，刃宽30mm, PP，独立包装，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-ST-GEN-003": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞培养皿_266.jpg",
+    "matchType": "category-fixed",
     "category": "细胞推板",
     "description": "三角细胞推板，总长240mm，刃宽60mm，PP，独立包装，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-ST-GEN-004": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞培养皿_266.jpg",
+    "matchType": "category-fixed",
     "category": "细胞推板",
     "description": "T形细胞推板，总长140mm，刃宽35mm，PP，独立包装，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-ST-GEN-005": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "细胞过滤器",
     "description": "40μm细胞过滤器，独立包装，一次性使用，满足过滤分离不同细胞的要求，独立包装，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-ST-GEN-006": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "细胞过滤器",
     "description": "70μm细胞过滤器，独立包装，一次性使用，满足过滤分离不同细胞的要求，独立包装，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-ST-GEN-007": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "细胞过滤器",
     "description": "100μm细胞过滤器，独立包装，一次性使用，满足过滤分离不同细胞的要求，独立包装，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-ST-GEN-008": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞培养皿_266.jpg",
+    "matchType": "category-fixed",
     "category": "细胞刮刀",
     "description": "细胞刮，柄长18cm，刮片长1.8cm，一次性使用，聚乙烯，独立包装，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-ST-GEN-009": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞培养皿_266.jpg",
+    "matchType": "category-fixed",
     "category": "细胞刮刀",
     "description": "细胞刮，柄长25cm，刮片长1.8cm，一次性使用，聚乙烯，独立包装，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-CLT-GEN-011": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞培养皿_266.jpg",
+    "matchType": "category-fixed",
     "category": "细胞刮刀",
     "description": "细胞铲，柄长18cm，铲片长2.0cm，一次性使用，聚乙烯，独立包装，灭菌",
     "targetCategories": "通用,unknown,图片展示"
@@ -4107,8 +4111,8 @@
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSDT00003520": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "分子生物类_PCR封板膜_4.jpg",
+    "matchType": "category-fixed",
     "category": "生物试剂",
     "description": "胰蛋白酶-EDTA (0.25%)，含酚红",
     "targetCategories": "通用,unknown,图片展示"
@@ -4121,498 +4125,498 @@
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-CT-50ML-001": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_50mL锥底离心管_231.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "50mL 锥形离心管，PP，15000g，架装，深蓝色盖子，灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-50ML-002": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_50mL锥底离心管_231.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "50mL 锥形离心管，PP，15000g，袋装，深蓝色盖子，灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-50ML-003": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_50mL可立离心管_233.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "50mL 自立式离心管，PP，3500g，架装，深蓝色盖子，灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-50ML-004": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_50mL可立离心管_233.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "50mL 自立式离心管，PP，3500g，袋装，深蓝色盖子，灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-15ML-001": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_15mL锥底离心管_230.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "15mL 锥形离心管，PP，15000g，架装，深蓝色盖子，灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-15ML-002": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_15mL锥底离心管_230.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "15mL 锥形离心管，PP，15000g，袋装，深蓝色盖子，灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-50ML-005": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_50mL锥底离心管_231.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "50mL 锥形离心管，PP，15000g，架装，浅蓝色盖子，灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-50ML-006": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_50mL锥底离心管_231.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "50mL 锥形离心管，PP，15000g，袋装，浅蓝色盖子，灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-50ML-007": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_50mL可立离心管_233.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "50mL 自立式离心管，PP，3500g，架装，浅蓝色盖子，灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-50ML-008": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_50mL可立离心管_233.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "50mL 自立式离心管，PP，3500g，袋装，浅蓝色盖子，灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-15ML-003": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_15mL锥底离心管_230.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "15mL 锥形离心管，PP，15000g，架装，浅蓝色盖子，灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-15ML-004": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_15mL锥底离心管_230.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "15mL 锥形离心管，PP，15000g，袋装，浅蓝色盖子，灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-5P0ML-001": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_5mL圆底离心管_228.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "5.0ml 微量离心管，PP，透明，25000g",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-2P0ML-001": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "样品保存_2mL锥底微量离心管_199.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "2.0ml 微量离心管，PP，透明，25000g",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-1P5ML-001": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_5mL圆底离心管_228.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "1.5 ml 微量离心管，PP，透明，25000g",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-1P5ML-002": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_5mL圆底离心管_228.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "1.5 ml 微量离心管，PP，透明，25000g，灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-0P5ML-001": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_5mL圆底离心管_228.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "0.5 ml 微量离心管，PP，透明，25000g",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-0P5ML-002": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_5mL圆底离心管_228.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "0.5 ml 微量离心管，PP，棕色，25000g",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-1P5ML-004": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_5mL圆底离心管_228.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "1.5ml 尖底带锁扣连盖离心管，PP，透明，25000g",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-0P5ML-003": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_5mL圆底离心管_228.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "0.5ml 尖底带锁扣连盖离心管，PP，透明，25000g",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-GEN-001": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "category",
+    "image": "样品保存_1.5mL锥底微量离心管_196.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "透明，锥形底，RCF14000xg，袋装，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-GEN-003": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "category",
+    "image": "样品保存_1.5mL锥底微量离心管_196.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "棕色，锥形底，RCF14000xg，袋装，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-GEN-004": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "category",
+    "image": "样品保存_1.5mL锥底微量离心管_196.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "透明，锥形底，RCF14000xg，袋装，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-GEN-006": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "category",
+    "image": "样品保存_1.5mL锥底微量离心管_196.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "棕色，锥形底，RCF14000xg，袋装，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-GEN-007": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "category",
+    "image": "样品保存_1.5mL锥底微量离心管_196.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "透明，锥形底，RCF14000xg，袋装，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-GEN-009": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "category",
+    "image": "样品保存_1.5mL锥底微量离心管_196.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "棕色，锥形底，RCF14000xg，袋装，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-GEN-010": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "category",
+    "image": "样品保存_1.5mL锥底微量离心管_196.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "透明，圆形底，RCF14000xg，袋装，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-GEN-012": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "category",
+    "image": "样品保存_1.5mL锥底微量离心管_196.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "棕色，圆形底，RCF14000xg，袋装，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-GEN-013": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "category",
+    "image": "样品保存_1.5mL锥底微量离心管_196.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "透明，锥形底，RCF14000xg，袋装，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-GEN-015": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "category",
+    "image": "样品保存_1.5mL锥底微量离心管_196.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "棕色，锥形底，RCF14000xg，袋装，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-GEN-016": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "category",
+    "image": "样品保存_1.5mL锥底微量离心管_196.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "透明，圆形底，RCF14000xg，袋装，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-GEN-018": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "category",
+    "image": "样品保存_1.5mL锥底微量离心管_196.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "棕色，圆形底，RCF14000xg，袋装，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-GEN-019": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "category",
+    "image": "样品保存_1.5mL锥底微量离心管_196.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "磨砂款无印刷，未灭菌，袋装，锥底",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-GEN-020": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "category",
+    "image": "样品保存_1.5mL锥底微量离心管_196.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "磨砂款无印刷，灭菌，袋装，锥底",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-GEN-021": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "category",
+    "image": "样品保存_1.5mL锥底微量离心管_196.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "磨砂款无印刷，未灭菌，架装，锥底",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-GEN-022": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "category",
+    "image": "样品保存_1.5mL锥底微量离心管_196.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "磨砂款无印刷，灭菌，架装，锥底",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-GEN-023": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "category",
+    "image": "样品保存_1.5mL锥底微量离心管_196.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "磨砂款无印刷，未灭菌，袋装，锥底",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-GEN-024": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "category",
+    "image": "样品保存_1.5mL锥底微量离心管_196.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "磨砂款无印刷，灭菌，袋装，锥底",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-GEN-025": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "category",
+    "image": "样品保存_1.5mL锥底微量离心管_196.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "磨砂款无印刷，未灭菌，架装，锥底",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-GEN-026": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "category",
+    "image": "样品保存_1.5mL锥底微量离心管_196.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "磨砂款无印刷，灭菌，架装，锥底",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-GEN-027": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "category",
+    "image": "样品保存_1.5mL锥底微量离心管_196.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "平盖，锥底，丝印，RCF12000xg，袋装，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-GEN-028": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "category",
+    "image": "样品保存_1.5mL锥底微量离心管_196.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "平盖，锥底，丝印，RCF12000xg，袋装，灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-GEN-029": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "category",
+    "image": "样品保存_1.5mL锥底微量离心管_196.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "平盖，锥底，丝印，RCF12000xg，架装，灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-GEN-030": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "category",
+    "image": "样品保存_1.5mL锥底微量离心管_196.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "平盖，锥底，丝印，RCF12000xg，袋装，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-GEN-031": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "category",
+    "image": "样品保存_1.5mL锥底微量离心管_196.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "平盖，锥底，丝印，RCF12000xg，袋装，灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-GEN-032": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "category",
+    "image": "样品保存_1.5mL锥底微量离心管_196.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "平盖，锥底，丝印，RCF12000xg，架装，灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-GEN-033": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "category",
+    "image": "样品保存_1.5mL锥底微量离心管_196.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "平盖，可立底，丝印，RCF6000xg，袋装，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-GEN-034": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "category",
+    "image": "样品保存_1.5mL锥底微量离心管_196.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "平盖，可立底，丝印，RCF6000xg，袋装，灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-0P6ML-001": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "样品保存_0.6mL锥底微量离心管_193.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "平盖刻度微量离心管，0.6 ml，本色，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-0P6ML-002": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "样品保存_0.6mL锥底微量离心管_193.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "平盖刻度微量离心管，0.6 ml，棕色，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-0P6ML-003": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "样品保存_0.6mL锥底微量离心管_193.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "平盖刻度微量离心管，0.6 ml，蓝色，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-0P6ML-004": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "样品保存_0.6mL锥底微量离心管_193.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "平盖刻度微量离心管，0.6 ml，绿色，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-0P6ML-005": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "样品保存_0.6mL锥底微量离心管_193.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "平盖刻度微量离心管，0.6 ml，红色，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-0P6ML-006": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "样品保存_0.6mL锥底微量离心管_193.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "平盖刻度微量离心管，0.6 ml，黄色，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-0P6ML-007": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "样品保存_0.6mL锥底微量离心管_193.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "平盖刻度微量离心管，0.6 ml，本色，灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-1P5ML-005": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_5mL圆底离心管_228.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "平盖刻度微量离心管，1.5 ml，本色，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-1P5ML-006": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_5mL圆底离心管_228.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "平盖刻度微量离心管，1.5 ml，棕色，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-1P5ML-007": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_5mL圆底离心管_228.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "平盖刻度微量离心管，1.5 ml，蓝色，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-1P5ML-008": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_5mL圆底离心管_228.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "平盖刻度微量离心管，1.5 ml，绿色，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-1P5ML-009": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_5mL圆底离心管_228.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "平盖刻度微量离心管，1.5 ml，红色，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-1P5ML-010": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_5mL圆底离心管_228.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "平盖刻度微量离心管，1.5 ml，黄色，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-1P5ML-011": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_5mL圆底离心管_228.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "平盖刻度微量离心管，1.5 ml，本色，灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-2P0ML-003": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "样品保存_2mL锥底微量离心管_199.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "平盖刻度微量离心管，2.0 ml，本色，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-2P0ML-004": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "样品保存_2mL锥底微量离心管_199.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "平盖刻度微量离心管，2.0 ml，棕色，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-2P0ML-005": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "样品保存_2mL锥底微量离心管_199.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "平盖刻度微量离心管，2.0 ml，蓝色，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-2P0ML-006": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "样品保存_2mL锥底微量离心管_199.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "平盖刻度微量离心管，2.0 ml，绿色，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-2P0ML-007": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "样品保存_2mL锥底微量离心管_199.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "平盖刻度微量离心管，2.0 ml，红色，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-2P0ML-008": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "样品保存_2mL锥底微量离心管_199.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "平盖刻度微量离心管，2.0 ml，黄色，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-2P0ML-009": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "样品保存_2mL锥底微量离心管_199.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "平盖刻度微量离心管，2.0 ml，本色，灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-5ML-001": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_5mL圆底离心管_228.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "平盖锥底离心管，平盖，5 ml，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-5ML-002": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_5mL圆底离心管_228.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "平盖锥底离心管，平盖，5 ml，灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
@@ -4632,113 +4636,113 @@
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-15ML-006": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_15mL锥底离心管_230.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "螺旋盖刻度离心管，圆锥底，15 ml，本色盖 ，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-15ML-007": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_15mL锥底离心管_230.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "螺旋盖刻度离心管，圆锥底，15 ml，本色盖 ，灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-15ML-008": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_15mL锥底离心管_230.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "螺旋盖刻度离心管，圆锥底，15 ml，蓝色盖 ，灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-15ML-009": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_15mL锥底离心管_230.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "螺旋盖刻度离心管，圆锥底，15 ml，红色盖 ，灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-15ML-010": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_15mL锥底离心管_230.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "螺旋盖刻度离心管，圆锥底，15 ml，黄色盖 ，灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-50ML-010": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_50mL锥底离心管_231.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "螺旋盖刻度离心管，圆锥底，50 ml，黄色盖 ，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-50ML-011": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_50mL锥底离心管_231.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "螺旋盖刻度离心管，圆锥底，50 ml，绿色盖 ，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-50ML-012": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_50mL锥底离心管_231.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "螺旋盖刻度离心管，圆锥底，50 ml，黄色盖 ，灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-50ML-013": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_50mL锥底离心管_231.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "螺旋盖刻度离心管，圆锥底，50 ml，绿色盖 ，灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-50ML-014": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_50mL可立离心管_233.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "螺旋盖刻度离心管，可立底，50 ml，黄色盖 ，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-50ML-015": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_50mL可立离心管_233.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "螺旋盖刻度离心管，可立底，50 ml，绿色盖 ，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-50ML-016": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_50mL可立离心管_233.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "螺旋盖刻度离心管，可立底，50 ml，黄色盖 ，灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-50ML-017": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_50mL可立离心管_233.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "螺旋盖刻度离心管，可立底，50 ml，绿色盖 ，灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-50ML-018": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_50mL圆底离心管_232.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "螺旋盖厚壁离心管，圆底，50 ml，本色盖 ，未灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-50ML-019": {
-    "image": "微量离心管_10mL圆底离心管_229.jpg",
-    "matchType": "keyword",
+    "image": "微量离心管_50mL圆底离心管_232.jpg",
+    "matchType": "category-fixed",
     "category": "离心管",
     "description": "螺旋盖厚壁离心管，圆底，50 ml，本色盖 ，灭菌",
     "targetCategories": "微量离心管,离心管,分子生物类"
   },
   "BSD-HC-CT-2P0ML-002": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_2mL锥底微量离心管_199.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附离心管",
     "description": "2.0ml 微量离心管，低吸附，PP，透明，25000g",
     "targetCategories": "通用,unknown,图片展示"
@@ -4751,71 +4755,71 @@
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-CT-GEN-002": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_1.5mL锥底微量离心管_196.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附离心管",
     "description": "透明低吸附，锥形底，RCF14000xg，袋装，未灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-CT-GEN-005": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_1.5mL锥底微量离心管_196.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附离心管",
     "description": "透明低吸附，锥形底，RCF14000xg，袋装，未灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-CT-GEN-008": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_1.5mL锥底微量离心管_196.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附离心管",
     "description": "透明低吸附，锥形底，RCF14000xg，袋装，未灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-CT-GEN-011": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_1.5mL锥底微量离心管_196.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附离心管",
     "description": "透明低吸附，圆形底，RCF14000xg，袋装，未灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-CT-GEN-014": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_1.5mL锥底微量离心管_196.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附离心管",
     "description": "透明低吸附，锥形底，RCF14000xg，袋装，未灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-CT-GEN-017": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_1.5mL锥底微量离心管_196.jpg",
+    "matchType": "category-fixed",
     "category": "低吸附离心管",
     "description": "透明低吸附，圆形底，RCF14000xg，袋装，未灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-CT-500ML-001": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "微量离心管_50mL圆底离心管_232.jpg",
+    "matchType": "category-fixed",
     "category": "离心瓶",
     "description": "500ml锥形离心瓶，蓝色盖，PP,  6,000 xg，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-CT-250ML-001": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "微量离心管_50mL圆底离心管_232.jpg",
+    "matchType": "category-fixed",
     "category": "离心瓶",
     "description": "250ml锥形离心瓶，蓝色盖，PP，6,000 xg，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-CT-225ML-001": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "微量离心管_50mL圆底离心管_232.jpg",
+    "matchType": "category-fixed",
     "category": "离心瓶",
     "description": "225ml锥形离心瓶，蓝色盖，PP，6,000 xg，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-CT-175ML-001": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "微量离心管_50mL圆底离心管_232.jpg",
+    "matchType": "category-fixed",
     "category": "离心瓶",
     "description": "175ml锥形离心瓶，蓝色盖，PP，6,000 xg，灭菌",
     "targetCategories": "通用,unknown,图片展示"
@@ -4837,8 +4841,8 @@
     "matchScore": 15
   },
   "BSD-HC-DWP-0P9ML-001": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "深孔板_2.2mL方孔V底深孔板_145.jpg",
+    "matchType": "category-fixed",
     "category": "深孔板",
     "description": "0.9mL深孔板，96孔方孔板，PP，V型底",
     "targetCategories": "通用,unknown,图片展示"
@@ -4852,36 +4856,36 @@
     "matchScore": 15
   },
   "BSD-HC-DWP-GEN-001": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "深孔板_磁棒套_146.jpg",
+    "matchType": "category-fixed",
     "category": "深孔板",
     "description": "PP，96磁棒套，配96孔深孔板",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-DWP-GEN-002": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "深孔板_2.2mL方孔V底深孔板_145.jpg",
+    "matchType": "category-fixed",
     "category": "深孔板",
     "description": "8 联排管，配深孔板使用，PP，V型底",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-DWP-GEN-003": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "深孔板_2.2mL方孔V底深孔板_145.jpg",
+    "matchType": "category-fixed",
     "category": "深孔板",
     "description": "8 联排管，配深孔板使用，V型底，PP，带卡扣",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-DWP-GEN-004": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "深孔板_2.2mL方孔U底深孔板_144.jpg",
+    "matchType": "category-fixed",
     "category": "深孔板",
     "description": "8 联排管，配深孔板使用，U型底，PP，带卡扣",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-DWP-1P0ML-001": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "深孔板_2.2mL方孔U底深孔板_144.jpg",
+    "matchType": "category-fixed",
     "category": "深孔板",
     "description": "1.0ml, 圆孔，U底，96孔深孔板，独立孔",
     "targetCategories": "通用,unknown,图片展示"
@@ -4903,8 +4907,8 @@
     "matchScore": 15
   },
   "BSD-HC-DWP-2P2ML-004": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "深孔板_2.2mL方孔U底深孔板_144.jpg",
+    "matchType": "category-fixed",
     "category": "深孔板",
     "description": "2.2ml，方孔，U底，96孔深孔板",
     "targetCategories": "通用,unknown,图片展示"
@@ -4918,974 +4922,974 @@
     "matchScore": 15
   },
   "BSD-HC-DWP-1P3ML-004": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "深孔板_2.2mL方孔V底深孔板_145.jpg",
+    "matchType": "category-fixed",
     "category": "深孔板",
     "description": "1.3ml，圆孔，V底，96孔深孔板",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-DWP-1P6ML-001": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "深孔板_2.2mL方孔U底深孔板_144.jpg",
+    "matchType": "category-fixed",
     "category": "深孔板",
     "description": "1.6ml，圆孔，U底，96孔深孔板",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-DWP-1P6ML-002": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "深孔板_2.2mL方孔V底深孔板_145.jpg",
+    "matchType": "category-fixed",
     "category": "深孔板",
     "description": "1.6ml，圆孔，V底，96孔深孔板",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-DWP-1P6ML-003": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "深孔板_2.2mL方孔U底深孔板_144.jpg",
+    "matchType": "category-fixed",
     "category": "深孔板",
     "description": "1.6ml, 方孔l, U底，96孔板",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-DWP-0P36ML-001": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "深孔板_2.2mL方孔V底深孔板_145.jpg",
+    "matchType": "category-fixed",
     "category": "深孔板",
     "description": "0.36ml, 圆孔，V底，96孔板",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-DWP-0P45ML-001": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "深孔板_2.2mL方孔V底深孔板_145.jpg",
+    "matchType": "category-fixed",
     "category": "深孔板",
     "description": "0.45ml, 圆孔，V底，96孔板",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-DWP-1P0ML-005": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "深孔板_2.2mL方孔U底深孔板_144.jpg",
+    "matchType": "category-fixed",
     "category": "深孔板",
     "description": "1.0ml，方孔，U底，96孔深孔板",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-DWP-0P5ML-006": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "深孔板_1.3mL圆孔U底深孔板_143.jpg",
+    "matchType": "category-fixed",
     "category": "深孔板",
     "description": "0.5ml，方孔，锥底，96孔深孔板",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-074": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.22μm，13mm，MCE",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-075": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.45μm，13mm，MCE",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-076": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.22μm, 13mm，Nylon",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-077": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.45μm, 13mm，Nylon",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-078": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.22μm, 13mm，PES",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-079": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.45μm, 13mm，PES",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-080": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.7μm, 13mm，GF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-081": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "1μm, 13mm, GF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-082": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.22μm, 13mm，疏水 PTFE",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-083": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.45μm, 13mm，疏水 PTFE",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-084": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.22μm, 13mm，疏水 PVDF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-085": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.45μm, 13mm，疏水 PVDF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-086": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.22μm, 13mm，亲水 PTFE",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-087": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.45μm, 13mm，亲水 PTFE",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-088": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.22μm, 13mm，亲水 PVDF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-089": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.45μm, 13mm，亲水 PVDF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-090": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.22μm，25mm，MCE",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-091": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.45μm，25mm，MCE",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-092": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.22μm, 25mm，Nylon",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-093": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.45μm, 25mm，Nylon",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-094": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.22μm, 25mm，PES",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-095": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.45μm, 25mm，PES",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-096": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.7μm, 25mm，GF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-097": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "1μm, 25mm, GF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-098": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.22μm, 25mm，疏水 PTFE",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-099": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.45μm, 25mm，疏水 PTFE",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-100": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.22μm, 25mm，疏水 PVDF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-101": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.45μm, 25mm，疏水 PVDF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-102": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.22μm, 25mm，亲水 PTFE",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-103": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.45μm, 25mm，亲水 PTFE",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-104": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.22μm, 25mm，亲水  PVDF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-105": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.45μm, 25mm，亲水 PVDF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-106": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.1(μm)，13mm，PES",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-107": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.22(μm)，13(mm)，PES",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-108": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.45(μm)，13(mm)，PES",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-109": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.22(μm)，13(mm)，CA",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-110": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.45(μm)，13(mm)，CA",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-111": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.22(μm)，13(mm)，Nylon",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-112": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.45(μm)，13(mm)，Nylon",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-113": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.22(μm)，13(mm)，亲水 PVDF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-114": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.45(μm)，13(mm)，亲水 PVDF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-115": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.22(μm)，13(mm)，疏水 PVDF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-116": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.45(μm)，13(mm)，疏水 PVDF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-117": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.22(μm)，13(mm)，亲水 PTFE",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-118": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.45(μm)，13(mm)，亲水 PTFE",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-119": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.22(μm)，13(mm)，疏水 PTFE",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-120": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.45(μm)，13(mm)，疏水 PTFE",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-121": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.1(μm)，25mm，PES",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-122": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.22(μm)，25(mm)，PES",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-123": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.45(μm)，25(mm)，PES",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-124": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.22(μm)，25(mm)，CA",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-125": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.45(μm)，25(mm)，CA",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-126": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.22(μm)，25(mm)，Nylon",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-127": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.45(μm)，25(mm)，Nylon",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-128": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.22(μm)，25(mm)，亲水 PVDF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-129": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.45(μm)，25(mm)，亲水 PVDF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-130": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.22(μm)，25(mm)，疏水 PVDF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-131": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.45(μm)，25(mm)，疏水 PVDF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-132": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.22(μm)，25(mm)，亲水 PTFE",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-133": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.45(μm)，25(mm)，亲水 PTFE",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-134": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.22(μm)，25(mm)，疏水 PTFE",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-135": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.45(μm)，25(mm)，疏水 PTFE",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-136": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.1(μm)，33mm，PES",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-137": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.22(μm)，33(mm)，PES",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-138": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.45(μm)，33(mm)，PES",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-139": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.22(μm)，33(mm)，CA",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-140": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.45(μm)，33(mm)，CA",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-141": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.22(μm)，33(mm)，Nylon",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-142": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.45(μm)，33(mm)，Nylon",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-143": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.22(μm)，33(mm)，亲水 PVDF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-144": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.45(μm)，33(mm)，亲水 PVDF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-145": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.22(μm)，33(mm)，疏水PVDF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-146": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.45(μm)，33(mm)，疏水 PVDF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-147": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.22(μm)，33(mm)，亲水 PTFE",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-148": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.45(μm)，33(mm)，亲水 PTFE",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-149": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.22(μm)，33(mm)，疏水 PTFE",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-150": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "针式过滤器",
     "description": "0.45(μm)，33(mm)，疏水 PTFE",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-250ML-007": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "250mL/250mL, 0.1μm，PES",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-250ML-008": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "250mL/250mL，0.22μm，PES",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-250ML-009": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "250mL/250mL，0.45μm，PES",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-250ML-010": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "250mL/250mL，0.22μm，PVDF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-250ML-011": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "250mL/250mL，0.45μm，PVDF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-250ML-012": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "250mL/250mL, 0.22μm，CA",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-250ML-013": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "250mL/250mL, 0.45μm，CA",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-250ML-014": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "250mL/250mL, 0.22μm，Nylon",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-250ML-015": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "250mL/250mL, 0.22μm，Nylon",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-500ML-009": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "500mL/500mL, 0.1μm，PES",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-500ML-010": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "500mL/500mL, 0.22μm，PES",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-500ML-011": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "500mL/500mL, 0.45μm，PES",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-500ML-012": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "500mL/500mL, 0.22μm，PVDF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-500ML-013": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "500mL/500mL, 0.45μm，PVDF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-500ML-014": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "500mL/500mL, 0.22μm，CA",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-500ML-015": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "500mL/500mL, 0.45μm，CA",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-500ML-016": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "500mL/500mL, 0.22μm，Nylon",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-500ML-017": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "500mL/500mL, 0.22μm，Nylon",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-1000ML-009": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "1000mL/1000mL, 0.1μm，PES",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-1000ML-010": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "1000mL/1000mL, 0.22μm，PES",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-1000ML-011": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "1000mL/1000mL, 0.45μm，PES",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-1000ML-012": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "1000mL/1000mL, 0.22μm，Hydrophilicity PVDF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-1000ML-013": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "1000mL/1000mL, 0.45μm，Hydrophilicity PVDF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-1000ML-014": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "1000mL/1000mL, 0.22μm，CA",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-1000ML-015": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "1000mL/1000mLmL, 0.45μm，CA",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-1000ML-016": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "1000mL/1000mLmL, 0.22μm，Nylon",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-1000ML-017": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "1000mL/1000mLmL, 0.45μm，Nylon",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-250ML-016": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "250mL, 0.1μm PES",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-250ML-017": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "250mL, 0.22μm PES",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-250ML-018": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "250mL, 0.45μm PES",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-250ML-019": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "250mL , 0.22μm PVDF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-250ML-020": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "250mL, 0.45μm PVDF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-250ML-021": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "250mL, 0.22μm CA",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-250ML-022": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "250mL, 0.45μm CA",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-250ML-023": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "250mL , 0.22μm Nylon",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-250ML-024": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "250mL, 0.45μm Nylon",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-500ML-018": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "500mL , 0.1μm PES",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-500ML-019": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "500mL, 0.22μm PES",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-500ML-020": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "500mL, 0.45μm PES",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-500ML-021": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "500mL, 0.22μm PVDF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-500ML-022": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "500mL, 0.45μm PVDF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-500ML-023": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "500mL , 0.22μm CA",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-500ML-024": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "500mL, 0.45μm CA",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-500ML-025": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "500mL, 0.22μm Nylon",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-500ML-026": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "500mL, 0.45μm Nylon",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-1000ML-018": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "1000mL, 0.1μm PES",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-1000ML-019": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "1000mL, 0.22μm PES",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-1000ML-020": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "1000mL, 0.45μm PES",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-1000ML-021": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "1000mL, 0.22μm PVDF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-1000ML-022": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "1000mL , 0.45μm PVDF",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-1000ML-023": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "1000mL, 0.22μm CA",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-1000ML-024": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "1000mL, 0.45μm CA",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-1000ML-025": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "1000mL, 0.22μm Nylon",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-1000ML-026": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "default-过滤器.svg",
+    "matchType": "category-fixed",
     "category": "真空过滤系统",
     "description": "1000mL, 0.45μm Nylon",
     "targetCategories": "通用,unknown,图片展示"
@@ -5898,22 +5902,22 @@
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-65ML-001": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_8mL广口试剂瓶_192.jpg",
+    "matchType": "category-fixed",
     "category": "试剂槽",
     "description": "65ml  试剂槽 ,独立包装，双格，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-190ML-001": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_8mL广口试剂瓶_192.jpg",
+    "matchType": "category-fixed",
     "category": "试剂槽",
     "description": "190ml 平底储液槽，中裙边",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-8ML-001": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_8mL广口试剂瓶_192.jpg",
+    "matchType": "category-fixed",
     "category": "试剂槽",
     "description": "8ml 12道储液槽，多通道，低裙边",
     "targetCategories": "通用,unknown,图片展示"
@@ -5968,57 +5972,57 @@
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-PIP-5ML-004": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "移液处理_短款移液管_99.jpg",
+    "matchType": "category-fixed",
     "category": "移液管",
     "description": "5mL ，短款蓝色塑料移液管，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-PIP-10ML-006": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "移液处理_短款移液管_99.jpg",
+    "matchType": "category-fixed",
     "category": "移液管",
     "description": "10mL ，短款橘色塑料移液管，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-PIP-25ML-004": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "移液处理_短款移液管_99.jpg",
+    "matchType": "category-fixed",
     "category": "移液管",
     "description": "25mL ，短款红色塑料移液管，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-PIP-50ML-004": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "移液处理_短款移液管_99.jpg",
+    "matchType": "category-fixed",
     "category": "移液管",
     "description": "50mL ，短款紫色塑料移液管，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-PIP-1ML-004": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "血清移液管_宽⼝移液管_159.jpg",
+    "matchType": "category-fixed",
     "category": "移液管",
     "description": "1mL ，宽口黄色塑料移液管，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-PIP-2ML-004": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "血清移液管_宽⼝移液管_159.jpg",
+    "matchType": "category-fixed",
     "category": "移液管",
     "description": "2mL ，宽口绿色塑料移液管，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-PIP-5ML-005": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "血清移液管_宽⼝移液管_159.jpg",
+    "matchType": "category-fixed",
     "category": "移液管",
     "description": "5mL ，宽口蓝色塑料移液管，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-PIP-10ML-007": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "血清移液管_宽⼝移液管_159.jpg",
+    "matchType": "category-fixed",
     "category": "移液管",
     "description": "10mL ，宽口橘色塑料移液管，灭菌",
     "targetCategories": "通用,unknown,图片展示"
@@ -6397,22 +6401,22 @@
     "matchScore": 15
   },
   "BSD-HC-RB-8ML-004": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_8mL广口试剂瓶_192.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "8ml，窄口瓶，PP/HDPE，琥珀色",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-15ML-004": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_15mL广口试剂瓶_195.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "15ml，窄口瓶，PP/HDPE，琥珀色",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-30ML-004": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_30mL广口试剂瓶_198.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "30ml，窄口瓶，PP/HDPE，琥珀色",
     "targetCategories": "通用,unknown,图片展示"
@@ -6454,169 +6458,169 @@
     "matchScore": 15
   },
   "BSD-HC-RB-8ML-005": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_8mL广口试剂瓶_192.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "8mL，广口试剂瓶，PP，透明，不灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-8ML-006": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_8mL广口试剂瓶_192.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "8mL，广口试剂瓶，PP，棕色，不灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-8ML-007": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_8mL广口试剂瓶_192.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "8mL，广口试剂瓶，PP，透明，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-8ML-008": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_8mL广口试剂瓶_192.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "8mL，广口试剂瓶，PP，棕色，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-8ML-009": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_8mL广口试剂瓶_192.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "8mL，广口试剂瓶，PE，本色，不灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-8ML-010": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_8mL广口试剂瓶_192.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "8mL，广口试剂瓶，PE，棕色，不灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-8ML-011": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_8mL广口试剂瓶_192.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "8mL，广口试剂瓶，PE，本色，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-8ML-012": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_8mL广口试剂瓶_192.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "8mL，广口试剂瓶，PE，棕色，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-15ML-005": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_15mL广口试剂瓶_195.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "15mL，广口试剂瓶，PP，透明，不灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-15ML-006": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_15mL广口试剂瓶_195.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "15mL，广口试剂瓶，PP，棕色，不灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-15ML-007": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_15mL广口试剂瓶_195.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "15mL，广口试剂瓶，PP，透明，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-15ML-008": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_15mL广口试剂瓶_195.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "15mL，广口试剂瓶，PP，棕色，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-15ML-009": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_15mL广口试剂瓶_195.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "15mL，广口试剂瓶，PE，本色，不灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-15ML-010": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_15mL广口试剂瓶_195.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "15mL，广口试剂瓶，PE，棕色，不灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-15ML-011": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_15mL广口试剂瓶_195.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "15mL，广口试剂瓶，PE，本色，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-15ML-012": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_15mL广口试剂瓶_195.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "15mL，广口试剂瓶，PE，棕色，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-30ML-005": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_30mL广口试剂瓶_198.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "30mL，广口试剂瓶，PP，透明，不灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-30ML-006": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_30mL广口试剂瓶_198.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "30mL，广口试剂瓶，PP，棕色，不灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-30ML-007": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_30mL广口试剂瓶_198.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "30mL，广口试剂瓶，PP，透明，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-30ML-008": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_30mL广口试剂瓶_198.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "30mL，广口试剂瓶，PP，棕色，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-30ML-009": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_30mL广口试剂瓶_198.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "30mL，广口试剂瓶，PE，本色，不灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-30ML-010": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_30mL广口试剂瓶_198.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "30mL，广口试剂瓶，PE，棕色，不灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-30ML-011": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_30mL广口试剂瓶_198.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "30mL，广口试剂瓶，PE，本色，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-30ML-012": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_30mL广口试剂瓶_198.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "30mL，广口试剂瓶，PE，棕色，灭菌",
     "targetCategories": "通用,unknown,图片展示"
@@ -6926,92 +6930,92 @@
     "matchScore": 15
   },
   "BSD-HC-RB-4ML-004": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "试剂瓶_4mL窄口试剂瓶_252.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "4mL，窄口试剂瓶，PP，棕色，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-4ML-005": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "试剂瓶_4mL窄口试剂瓶_252.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "4mL，窄口试剂瓶，PE，本色，不灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-4ML-006": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "试剂瓶_4mL窄口试剂瓶_252.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "4mL，窄口试剂瓶，PE，棕色，不灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-4ML-007": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "试剂瓶_4mL窄口试剂瓶_252.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "4mL，窄口试剂瓶，PE，本色，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-4ML-008": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "试剂瓶_4mL窄口试剂瓶_252.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "4mL，窄口试剂瓶，PE，棕色，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-30ML-013": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_30mL广口试剂瓶_198.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "30mL，窄口试剂瓶，PP，透明，不灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-30ML-014": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_30mL广口试剂瓶_198.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "30mL，窄口试剂瓶，PP，棕色，不灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-30ML-015": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_30mL广口试剂瓶_198.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "30mL，窄口试剂瓶，PP，透明，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-30ML-016": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_30mL广口试剂瓶_198.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "30mL，窄口试剂瓶，PP，棕色，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-30ML-017": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_30mL广口试剂瓶_198.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "30mL，窄口试剂瓶，PE，本色，不灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-30ML-018": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_30mL广口试剂瓶_198.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "30mL，窄口试剂瓶，PE，棕色，不灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-30ML-019": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_30mL广口试剂瓶_198.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "30mL，窄口试剂瓶，PE，本色，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-RB-30ML-020": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_30mL广口试剂瓶_198.jpg",
+    "matchType": "category-fixed",
     "category": "试剂瓶",
     "description": "30mL，窄口试剂瓶，PE，棕色，灭菌",
     "targetCategories": "通用,unknown,图片展示"
@@ -7528,64 +7532,64 @@
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-ST-5P0ML-001": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_2.0mL保存管_200.jpg",
+    "matchType": "category-fixed",
     "category": "冻存管",
     "description": "5.0ml冻存管，外旋，透明，耐受 -196℃ ~121℃，PP，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-065": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "保存管_0.51.52.0mL保存管盖子_214.jpg",
+    "matchType": "category-fixed",
     "category": "冻存管",
     "description": "白色管盖内插垫，嵌入方便识别",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-066": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "保存管_0.51.52.0mL保存管盖子_214.jpg",
+    "matchType": "category-fixed",
     "category": "冻存管",
     "description": "白色管盖内插垫，嵌入方便识别",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-067": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "保存管_0.51.52.0mL保存管盖子_214.jpg",
+    "matchType": "category-fixed",
     "category": "冻存管",
     "description": "白色管盖内插垫，嵌入方便识别",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-068": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "保存管_0.51.52.0mL保存管盖子_214.jpg",
+    "matchType": "category-fixed",
     "category": "冻存管",
     "description": "白色管盖内插垫，嵌入方便识别",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-069": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "保存管_0.51.52.0mL保存管盖子_214.jpg",
+    "matchType": "category-fixed",
     "category": "冻存管",
     "description": "白色管盖内插垫，嵌入方便识别",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-2ML-001": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_1.5mL保存管_197.jpg",
+    "matchType": "category-fixed",
     "category": "冻存管",
     "description": "2ml CryoPure管，内旋，自立底，耐受 -196℃ ~121℃，PP，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-2ML-002": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_1.5mL保存管_197.jpg",
+    "matchType": "category-fixed",
     "category": "冻存管",
     "description": "2ml CryoPure管，外旋，自立底，耐受 -196℃ ~121℃，PP，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-1P5ML-001": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_2.0mL保存管_200.jpg",
+    "matchType": "category-fixed",
     "category": "冻存管",
     "description": "1.5ml CryoPure管，外旋，自立底，耐受 -196℃ ~121℃，PP，灭菌",
     "targetCategories": "通用,unknown,图片展示"
@@ -7605,15 +7609,15 @@
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-ST-2ML-001": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "保存管_0.51.52.0mL保存管盖子_214.jpg",
+    "matchType": "category-fixed",
     "category": "冻存管",
     "description": "2ml冻存管,，外旋，带书写区，红色平盖，自立底,  耐受 -196℃ ~121℃，平盖，PP，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-ST-1ML-001": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "保存管_0.51.52.0mL保存管盖子_214.jpg",
+    "matchType": "category-fixed",
     "category": "冻存管",
     "description": "1ml冻存管，外旋，带书写区，自立底, 耐受 -196℃ ~121℃，平盖，PP，灭菌",
     "targetCategories": "通用,unknown,图片展示"
@@ -7626,8 +7630,8 @@
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-ST-1ML-002": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_1.5mL保存管_197.jpg",
+    "matchType": "category-fixed",
     "category": "冻存管",
     "description": "1ml冻存管, 外旋,  带书写区, 自立底, 带底码, 耐受 -196℃ ~121℃，PP，灭菌",
     "targetCategories": "通用,unknown,图片展示"
@@ -7640,29 +7644,29 @@
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-ST-2ML-002": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_1.5mL保存管_197.jpg",
+    "matchType": "category-fixed",
     "category": "冻存管",
     "description": "2ml冻存管, 内旋,  带书写区, 自立底, 带底码, 耐受 -196℃ ~121℃，PP，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-ST-2ML-003": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_1.5mL保存管_197.jpg",
+    "matchType": "category-fixed",
     "category": "冻存管",
     "description": "2ml冻存管, 外旋,  带书写区, 自立底, 带底码, 耐受 -196℃ ~121℃，PP，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-ST-5ML-001": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_2.0mL保存管_200.jpg",
+    "matchType": "category-fixed",
     "category": "冻存管",
     "description": "5ml冻存管, 外旋,  带书写区, 自立底, 带底码, 耐受 -196℃ ~121℃，PP，灭菌",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-2ML-003": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_1.5mL保存管_197.jpg",
+    "matchType": "category-fixed",
     "category": "冻存管",
     "description": "2ml SBS管+SBS板架，无酶，无菌，底码二维码、管身条形码+数字明码，三码合一，PC盒装，耐受",
     "targetCategories": "通用,unknown,图片展示"
@@ -8186,29 +8190,29 @@
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-070": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_1.5mL保存管_197.jpg",
+    "matchType": "category-fixed",
     "category": "冻存盒",
     "description": "PC材质冻存盒，2in，81格，133*133*53mm，耐受 -196℃ ~121℃",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-071": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_1.5mL保存管_197.jpg",
+    "matchType": "category-fixed",
     "category": "冻存盒",
     "description": "PC材质冻存盒，2in，100格，133*133*53mm，耐受 -196℃ ~121℃",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-072": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_1.5mL保存管_197.jpg",
+    "matchType": "category-fixed",
     "category": "冻存盒",
     "description": "PP材质冻存盒，2in，81格，133*133*53mm，耐受-90℃ -121℃",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-HC-OTH-GEN-073": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "样品保存_1.5mL保存管_197.jpg",
+    "matchType": "category-fixed",
     "category": "冻存盒",
     "description": "纸质冻存盒，2in，81格，133*133*53mm，耐受 -196℃ ~121℃",
     "targetCategories": "通用,unknown,图片展示"
@@ -27674,239 +27678,239 @@
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003530": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞培养皿_266.jpg",
+    "matchType": "category-fixed",
     "category": "试剂盒",
     "description": "快速质粒小提试剂盒",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003531": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞培养皿_266.jpg",
+    "matchType": "category-fixed",
     "category": "试剂盒",
     "description": "极速质粒小提试剂盒",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003532": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞培养皿_266.jpg",
+    "matchType": "category-fixed",
     "category": "试剂盒",
     "description": "质粒小中提试剂盒",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003533": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞培养皿_266.jpg",
+    "matchType": "category-fixed",
     "category": "试剂盒",
     "description": "无内毒素质粒小提试剂盒",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003534": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞培养皿_266.jpg",
+    "matchType": "category-fixed",
     "category": "试剂盒",
     "description": "无内毒素质粒中提试剂盒",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003536": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞培养皿_266.jpg",
+    "matchType": "category-fixed",
     "category": "试剂盒",
     "description": "DNA纯化试剂盒",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003537": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞培养皿_266.jpg",
+    "matchType": "category-fixed",
     "category": "试剂盒",
     "description": "通用DNA提取试剂盒",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003538": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞培养皿_266.jpg",
+    "matchType": "category-fixed",
     "category": "试剂盒",
     "description": "植物DNA提取试剂盒",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003539": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞培养皿_266.jpg",
+    "matchType": "category-fixed",
     "category": "试剂盒",
     "description": "BOOSTER Zol Reagent-TrizoL Reagent替代品",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003540": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞培养皿_266.jpg",
+    "matchType": "category-fixed",
     "category": "试剂盒",
     "description": "RNA快速提取试剂盒-单柱法",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003541": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞培养皿_266.jpg",
+    "matchType": "category-fixed",
     "category": "试剂盒",
     "description": "高纯RNA提取试剂盒-TrizoL前处理结合柱法",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003542": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞培养皿_266.jpg",
+    "matchType": "category-fixed",
     "category": "试剂盒",
     "description": "安全型RNA提取试剂盒-双柱，无酚氯仿/巯基乙醇",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003543": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞培养皿_266.jpg",
+    "matchType": "category-fixed",
     "category": "试剂盒",
     "description": "通用植物RNA试剂盒-常规和多糖多酚类植物",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003544": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "分子生物类_PCR封板膜_4.jpg",
+    "matchType": "category-fixed",
     "category": "试剂盒",
     "description": "2 × Taq Super Mix (Dye plus) ",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003545": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "分子生物类_PCR封板膜_4.jpg",
+    "matchType": "category-fixed",
     "category": "试剂盒",
     "description": "2 × Taq Super Mix (Dye plus) ",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003546": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "分子生物类_PCR封板膜_4.jpg",
+    "matchType": "category-fixed",
     "category": "试剂盒",
     "description": "2 × Taq Super Mix (Dye plus) ",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003547": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "分子生物类_PCR封板膜_4.jpg",
+    "matchType": "category-fixed",
     "category": "试剂盒",
     "description": "2 × Taq Super Mix for PAGE ",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003548": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "分子生物类_PCR封板膜_4.jpg",
+    "matchType": "category-fixed",
     "category": "试剂盒",
     "description": "2 × Taq Super Mix for PAGE ",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003549": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "分子生物类_PCR封板膜_4.jpg",
+    "matchType": "category-fixed",
     "category": "试剂盒",
     "description": "2 × Taq Super Mix for PAGE ",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003550": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "分子生物类_PCR封板膜_4.jpg",
+    "matchType": "category-fixed",
     "category": "试剂盒",
     "description": "2× HY Taq plus Super Mix (Dye plus II) ",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003551": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "分子生物类_PCR封板膜_4.jpg",
+    "matchType": "category-fixed",
     "category": "试剂盒",
     "description": "2× HY Taq plus Super Mix (Dye plus II) ",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003552": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "分子生物类_PCR封板膜_4.jpg",
+    "matchType": "category-fixed",
     "category": "试剂盒",
     "description": "2× HY Taq plus Super Mix (Dye plus II) ",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003553": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "分子生物类_PCR封板膜_4.jpg",
+    "matchType": "category-fixed",
     "category": "试剂盒",
     "description": "2 × Rapid Taq Super Mix ",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003554": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "分子生物类_PCR封板膜_4.jpg",
+    "matchType": "category-fixed",
     "category": "试剂盒",
     "description": "2 × Rapid Taq Super Mix ",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003555": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "分子生物类_PCR封板膜_4.jpg",
+    "matchType": "category-fixed",
     "category": "试剂盒",
     "description": "2 × Long Taq Super Mix (Dye plus) ",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003556": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "分子生物类_PCR封板膜_4.jpg",
+    "matchType": "category-fixed",
     "category": "试剂盒",
     "description": "2 × Long Taq Super Mix (Dye plus) ",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003557": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "分子生物类_PCR封板膜_4.jpg",
+    "matchType": "category-fixed",
     "category": "试剂盒",
     "description": "HotStart Taq SuperMix(antibody modification)",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003558": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "分子生物类_PCR封板膜_4.jpg",
+    "matchType": "category-fixed",
     "category": "试剂盒",
     "description": "HotStart Taq SuperMix(antibody modification)",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003559": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "分子生物类_PCR封板膜_4.jpg",
+    "matchType": "category-fixed",
     "category": "试剂盒",
     "description": "MultipLex PCR Kit ",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003560": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "分子生物类_PCR封板膜_4.jpg",
+    "matchType": "category-fixed",
     "category": "试剂盒",
     "description": "MultipLex PCR Kit ",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003561": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "分子生物类_PCR封板膜_4.jpg",
+    "matchType": "category-fixed",
     "category": "试剂盒",
     "description": "MultipLex PCR Kit",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003563": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞培养皿_266.jpg",
+    "matchType": "category-fixed",
     "category": "试剂盒",
     "description": "RNase-free ddH2O ",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003564": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞培养皿_266.jpg",
+    "matchType": "category-fixed",
     "category": "试剂盒",
     "description": "鼠尾（动物）组织直接扩增试剂盒 ",
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003565": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
+    "image": "细胞培养类_细胞培养皿_266.jpg",
+    "matchType": "category-fixed",
     "category": "试剂盒",
     "description": "植物直接扩增试剂盒 ",
     "targetCategories": "通用,unknown,图片展示"
