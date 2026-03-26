@@ -1,0 +1,159 @@
+﻿[
+  {
+    "name": "实验耗材",
+    "children": [
+      {
+        "name": "PCR",
+        "products": [
+          {
+            "brand": "Booster",
+            "brandSku": "BSD-HC-PCR-0P1ML-001",
+            "description": "高温封板膜，透明",
+            "specification": "100片/包",
+            "originalCategory": "PCR",
+            "alternative": "ABI"
+          },
+          {
+            "brand": "Booster",
+            "brandSku": "BSD-HC-PCR-0P1ML-002",
+            "description": "高温封板膜，白色",
+            "specification": "100片/包",
+            "originalCategory": "PCR",
+            "alternative": "细胞培养"
+          }
+          // 这里可继续补充其它 PCR 类产品
+        ]
+      },
+      {
+        "name": "通用",
+        "products": [
+          {
+            "brand": "Booster",
+            "brandSku": "BSDCF01",
+            "description": "高温封板膜，透明",
+            "specification": "100片/包",
+            "originalCategory": "通用",
+            "alternative": "ABI"
+          },
+          {
+            "brand": "Booster",
+            "brandSku": "BSDCB01",
+            "description": "高温封板膜，白色",
+            "specification": "100片/包",
+            "originalCategory": "通用",
+            "alternative": "细胞培养"
+          }
+        ]
+      },
+      {
+        "name": "细胞培养",
+        "products": [
+          {
+            "brand": "Booster",
+            "brandSku": "BC-CELL-001",
+            "description": "细胞培养皿 35mm",
+            "specification": "20个/包",
+            "originalCategory": "细胞培养",
+            "alternative": "Corning"
+          }
+        ]
+      },
+      {
+        "name": "前处理",
+        "products": [
+          {
+            "brand": "Booster",
+            "brandSku": "BP-PREP-001",
+            "description": "离心管 15ml",
+            "specification": "50支/包",
+            "originalCategory": "前处理",
+            "alternative": "Eppendorf"
+          }
+        ]
+      },
+      {
+        "name": "样品存储",
+        "products": [
+          {
+            "brand": "Booster",
+            "brandSku": "BS-STORE-001",
+            "description": "冻存管 2ml",
+            "specification": "100支/包",
+            "originalCategory": "样品存储",
+            "alternative": "Thermo"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "生物试剂",
+    "children": [
+      {
+        "name": "蛋白",
+        "products": [
+          {
+            "brand": "Booster",
+            "brandSku": "BP-PROTEIN-001",
+            "description": "蛋白Marker 10-180kDa",
+            "specification": "500μl/瓶",
+            "originalCategory": "蛋白",
+            "alternative": "Thermo"
+          }
+        ]
+      },
+      {
+        "name": "试剂盒",
+        "products": [
+          {
+            "brand": "Booster",
+            "brandSku": "BK-KIT-001",
+            "description": "ELISA检测试剂盒",
+            "specification": "96孔/盒",
+            "originalCategory": "试剂盒",
+            "alternative": "R&D Systems"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "化学试剂与小分子",
+    "products": [
+      {
+        "brand": "Booster",
+        "brandSku": "BC-CHEM-001",
+        "description": "DMSO 二甲基亚砜",
+        "specification": "100ml/瓶",
+        "originalCategory": "化学试剂与小分子",
+        "alternative": "Sigma"
+      }
+    ]
+  },
+  {
+    "name": "质控分析工具酶",
+    "products": [
+      {
+        "brand": "Booster",
+        "brandSku": "BE-ENZYME-001",
+        "description": "DNA聚合酶",
+        "specification": "500U/管",
+        "originalCategory": "质控分析工具酶",
+        "alternative": "NEB"
+      }
+    ]
+  },
+  {
+    "name": "质控试剂盒",
+    "products": [
+      {
+        "brand": "Booster",
+        "brandSku": "BQ-KIT-001",
+        "description": "qPCR试剂盒",
+        "specification": "200反应/盒",
+        "originalCategory": "质控试剂盒",
+        "alternative": "Takara"
+      }
+    ]
+  }
+]
