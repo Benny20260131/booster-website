@@ -682,6 +682,46 @@ function StatsBar({ lang }) {
   );
 }
 
+function ContactForm({ lang }) {
+  const [form, setForm] = React.useState({ name: "", email: "", company: "", message: "" });
+  const [status, setStatus] = React.useState("idle");
+  const inputStyle = { width: "100%", padding: "10px 14px", borderRadius: 10, border: `1px solid ${T.border}`, fontSize: 14, fontFamily: T.font, outline: "none", boxSizing: "border-box", background: "#fff", color: T.textPrimary };
+  const handleSubmit = async () => {
+    if (!form.name || !form.message) { alert(lang === "zh" ? "请填写姓名和留言内容" : "Please fill in name and message"); return; }
+    setStatus("sending");
+    try {
+      const res = await fetch("/api/contact", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(form) });
+      const data = await res.json();
+      if (res.ok && data.success) { setStatus("success"); setForm({ name: "", email: "", company: "", message: "" }); }
+      else { setStatus("error"); }
+    } catch { setStatus("error"); }
+    setTimeout(() => setStatus("idle"), 5000);
+  };
+  return (
+    <GlassCard hover={false} style={{ padding: "28px" }}>
+      {[
+        { lb: lang === "zh" ? "姓名" : "Name", key: "name" },
+        { lb: lang === "zh" ? "邮箱" : "Email", key: "email" },
+        { lb: lang === "zh" ? "单位名称" : "Organization", key: "company" },
+      ].map(({ lb, key }) => (
+        <div key={key} style={{ marginBottom: 14 }}>
+          <div style={{ fontSize: 13, fontWeight: 600, color: T.textSecondary, marginBottom: 6 }}>{lb}</div>
+          <input value={form[key]} onChange={e => setForm(f => ({ ...f, [key]: e.target.value }))} style={inputStyle} />
+        </div>
+      ))}
+      <div style={{ marginBottom: 14 }}>
+        <div style={{ fontSize: 13, fontWeight: 600, color: T.textSecondary, marginBottom: 6 }}>{lang === "zh" ? "留言内容" : "Message"}</div>
+        <textarea rows={4} value={form.message} onChange={e => setForm(f => ({ ...f, message: e.target.value }))} style={{ ...inputStyle, resize: "vertical" }} />
+      </div>
+      {status === "success" && <div style={{ background: "#E8F5E9", color: "#2E7D32", borderRadius: 8, padding: "10px 14px", marginBottom: 12, fontSize: 14 }}>✅ {lang === "zh" ? "留言已发送，我们会尽快联系您！" : "Message sent!"}</div>}
+      {status === "error" && <div style={{ background: "#FFEBEE", color: "#C62828", borderRadius: 8, padding: "10px 14px", marginBottom: 12, fontSize: 14 }}>❌ {lang === "zh" ? "发送失败，请发邮件至 service@tflabservice.com" : "Send failed."}</div>}
+      <button onClick={handleSubmit} disabled={status === "sending"} style={{ background: status === "sending" ? "#ccc" : T.red, color: "#fff", border: "none", borderRadius: 10, padding: "12px 28px", fontSize: 14, fontWeight: 700, cursor: status === "sending" ? "not-allowed" : "pointer", fontFamily: T.font, width: "100%" }}>
+        {status === "sending" ? (lang === "zh" ? "发送中..." : "Sending...") : (lang === "zh" ? "提交留言" : "Submit")}
+      </button>
+    </GlassCard>
+  );
+}
+
 function ContactSection({ lang }) {
   const info = lang === "zh"
     ? [{icon:"📍",l:"公司地址",v:"上海市浦东新区锦绣东路2777弄19号楼10层"},{icon:"📞",l:"联系电话",v:"139-1641-3233"},{icon:"📧",l:"电子邮箱",v:"service@tflabservice.com"},{icon:"👤",l:"联系人",v:"上海博仕达生物工程有限公司"},{icon:"🕐",l:"工作时间",v:"周一至周五 9:00-18:00"}]
@@ -702,19 +742,7 @@ function ContactSection({ lang }) {
               </GlassCard>
             ))}
           </div>
-          <GlassCard hover={false} style={{ padding: "28px" }}>
-            {[lang==="zh"?"姓名":"Name",lang==="zh"?"邮箱":"Email",lang==="zh"?"单位名称":"Organization"].map((lb,i) => (
-              <div key={i} style={{ marginBottom: 14 }}>
-                <div style={{ fontSize: 13, fontWeight: 600, color: T.textSecondary, marginBottom: 6 }}>{lb}</div>
-                <input style={{ width: "100%", padding: "10px 14px", borderRadius: 10, border: `1px solid ${T.border}`, fontSize: 14, fontFamily: T.font, outline: "none", boxSizing: "border-box", background: "#fff", color: T.red }} />
-              </div>
-            ))}
-            <div style={{ marginBottom: 14 }}>
-              <div style={{ fontSize: 13, fontWeight: 600, color: T.textSecondary, marginBottom: 6 }}>{lang === "zh" ? "留言内容" : "Message"}</div>
-              <textarea rows={4} style={{ width: "100%", padding: "10px 14px", borderRadius: 10, border: `1px solid ${T.border}`, fontSize: 14, fontFamily: T.font, outline: "none", resize: "vertical", boxSizing: "border-box", background: "#fff", color: T.red }} />
-            </div>
-            <button style={{ background: T.red, color: "#fff", border: "none", borderRadius: 10, padding: "12px 28px", fontSize: 14, fontWeight: 700, cursor: "pointer", fontFamily: T.font, width: "100%" }}>{lang === "zh" ? "提交留言" : "Submit"}</button>
-          </GlassCard>
+          <ContactForm lang={lang} />
         </div>
       </div>
     </section>
