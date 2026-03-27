@@ -27777,67 +27777,58 @@
     "skuMatch": "BSD-SW-003547"
   },
   "BSD-SW-003548": {
-    "image": "分子生物类_PCR封板膜_4.jpg",
-    "matchType": "category-fixed",
-    "category": "试剂盒",
-    "description": "2 × Taq Super Mix for PAGE ",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003548.png",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003548"
   },
   "BSD-SW-003549": {
-    "image": "分子生物类_PCR封板膜_4.jpg",
-    "matchType": "category-fixed",
-    "category": "试剂盒",
-    "description": "2 × Taq Super Mix for PAGE ",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003549.png",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003549"
   },
   "BSD-SW-003550": {
-    "image": "分子生物类_PCR封板膜_4.jpg",
-    "matchType": "category-fixed",
-    "category": "试剂盒",
-    "description": "2× HY Taq plus Super Mix (Dye plus II) ",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003550.png",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003550"
   },
   "BSD-SW-003551": {
-    "image": "分子生物类_PCR封板膜_4.jpg",
-    "matchType": "category-fixed",
-    "category": "试剂盒",
-    "description": "2× HY Taq plus Super Mix (Dye plus II) ",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003551.png",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003551"
   },
   "BSD-SW-003552": {
-    "image": "分子生物类_PCR封板膜_4.jpg",
-    "matchType": "category-fixed",
-    "category": "试剂盒",
-    "description": "2× HY Taq plus Super Mix (Dye plus II) ",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003552.png",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003552"
   },
   "BSD-SW-003553": {
-    "image": "分子生物类_PCR封板膜_4.jpg",
-    "matchType": "category-fixed",
-    "category": "试剂盒",
-    "description": "2 × Rapid Taq Super Mix ",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003553.png",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003553"
   },
   "BSD-SW-003554": {
-    "image": "分子生物类_PCR封板膜_4.jpg",
-    "matchType": "category-fixed",
-    "category": "试剂盒",
-    "description": "2 × Rapid Taq Super Mix ",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003554.png",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003554"
   },
   "BSD-SW-003555": {
-    "image": "分子生物类_PCR封板膜_4.jpg",
-    "matchType": "category-fixed",
-    "category": "试剂盒",
-    "description": "2 × Long Taq Super Mix (Dye plus) ",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003555.png",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003555"
   },
   "BSD-SW-003556": {
-    "image": "分子生物类_PCR封板膜_4.jpg",
-    "matchType": "category-fixed",
-    "category": "试剂盒",
-    "description": "2 × Long Taq Super Mix (Dye plus) ",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003556.png",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003556"
   },
   "BSD-SW-003557": {
     "image": "早期研发/BSD-SW-003557.jpg",
@@ -27846,11 +27837,10 @@
     "skuMatch": "BSD-SW-003557"
   },
   "BSD-SW-003558": {
-    "image": "分子生物类_PCR封板膜_4.jpg",
-    "matchType": "category-fixed",
-    "category": "试剂盒",
-    "description": "HotStart Taq SuperMix(antibody modification)",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003558.png",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003558"
   },
   "BSD-SW-003559": {
     "image": "早期研发/BSD-SW-003559.jpg",
@@ -27865,11 +27855,10 @@
     "skuMatch": "BSD-SW-003560"
   },
   "BSD-SW-003561": {
-    "image": "分子生物类_PCR封板膜_4.jpg",
-    "matchType": "category-fixed",
-    "category": "试剂盒",
-    "description": "MultipLex PCR Kit",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003561.png",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003561"
   },
   "BSD-SW-003563": {
     "image": "早期研发/BSD-SW-003563.jpg",
@@ -27878,18 +27867,16 @@
     "skuMatch": "BSD-SW-003563"
   },
   "BSD-SW-003564": {
-    "image": "细胞培养类_细胞培养皿_266.jpg",
-    "matchType": "category-fixed",
-    "category": "试剂盒",
-    "description": "鼠尾（动物）组织直接扩增试剂盒 ",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003564.png",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003564"
   },
   "BSD-SW-003565": {
-    "image": "细胞培养类_细胞培养皿_266.jpg",
-    "matchType": "category-fixed",
-    "category": "试剂盒",
-    "description": "植物直接扩增试剂盒 ",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003565.png",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003565"
   },
   "BSD-HX-000002": {
     "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
