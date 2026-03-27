@@ -22,6 +22,121 @@ const CAT_META = {
   "化学试剂与小分子": { icon: "⚗️", color: "#FFF8E1" },
 };
 
+// ─── 中英文分类对照表 ───────────────────────────────────────
+const CAT_EN = {
+  "实验耗材": "Lab Consumables",
+  "质控分析工具酶": "QC Enzymes",
+  "超滤离心管": "Ultrafiltration Tubes",
+  "质控试剂盒": "QC Kits",
+  "早期研发": "Early R&D",
+  "化学试剂与小分子": "Chemical Reagents",
+};
+const SUB_EN = {
+  "吸头": "Pipette Tips", "低吸附吸头": "Low-Bind Tips",
+  "离心管": "Centrifuge Tubes", "低吸附离心管": "Low-Bind Tubes",
+  "冻存管": "Cryo Tubes", "冻存盒": "Cryo Boxes",
+  "PCR管": "PCR Tubes", "PCR单管": "PCR Single Tube",
+  "PCR板": "PCR Plates", "PCR双色板": "PCR Dual-Color Plate",
+  "PCR封板膜": "PCR Sealing Film", "PCR 8联管盖": "PCR Strip Caps",
+  "PCR磁棒套": "Magnetic Rod Sleeve",
+  "培养板": "Culture Plates", "培养瓶": "Culture Flasks", "培养皿": "Culture Dishes",
+  "细胞工厂": "Cell Factory", "细胞摇瓶": "Cell Shake Flask",
+  "细胞推板": "Cell Roller Bottle", "细胞刮刀": "Cell Scraper",
+  "细胞过滤器": "Cell Strainer",
+  "深孔板": "Deep Well Plates", "酶标板": "ELISA Plates",
+  "试剂瓶": "Reagent Bottles", "试剂槽": "Reagent Reservoirs",
+  "移液管": "Serological Pipettes", "离心瓶": "Centrifuge Bottles",
+  "真空过滤系统": "Vacuum Filtration", "针式过滤器": "Syringe Filters",
+  "工具酶": "Enzyme Tools", "试剂盒": "Reagent Kits",
+  "超滤离心管": "Ultrafiltration Tubes",
+  "生物试剂": "Biological Reagents", "有机溶剂化学试剂": "Organic Solvents",
+  "ADC": "ADC", "ADC-Linker-Payload": "ADC-Linker-Payload",
+  "PROTAC": "PROTAC", "SiRNA": "SiRNA", "通用": "General",
+};
+// 翻译分类/子分类名
+const tCat = (lang, cat) => lang === "zh" ? cat : (CAT_EN[cat] || cat);
+const tSub = (lang, sub) => lang === "zh" ? sub : (SUB_EN[sub] || sub);
+
+// ─── 产品名称/规格 中→英词汇替换 ──────────────────────────────
+// 长词/复合词优先放前面（先匹配长字符串）
+const _NAME_MAP = [
+  // 复合专有名词（长词先匹配）
+  ["重组胰蛋白酶","Recombinant Trypsin"],["重组赖氨酰内切酶","Recombinant Lys-C"],
+  ["自动化导电吸头","Automation Conductive Tip"],
+  ["糖苷酶F 快速","PNGase F Rapid"],["糖苷酶F 普通","PNGase F Standard"],["糖苷酶F","PNGase F"],
+  ["N糖标准品","N-Glycan Standard"],["N糖试剂盒","N-Glycan Kit"],
+  ["高甘露糖混标","High Mannose Mixed Std"],["高唾液酸","High Sialic Acid"],
+  ["超滤离心管","Ultrafiltration Tube"],
+  ["磷酸二氢钠","Sodium Dihydrogen Phosphate"],["磷酸氢二钠","Disodium Hydrogen Phosphate"],
+  ["磷酸二氢钾","Potassium Dihydrogen Phosphate"],
+  ["乙酸乙酯","Ethyl Acetate"],["二氯甲烷","Dichloromethane"],
+  // 消毒/材质
+  ["辐照灭菌","Radiation Sterilized"],["灭菌","Sterile"],["无菌","Sterile"],["冻干","Lyophilized"],
+  ["亲水","Hydrophilic"],["疏水","Hydrophobic"],["低吸附","Low-Bind"],["导电","Conductive"],
+  // 结构特征
+  ["带滤芯","w/Filter"],["带刻度","Graduated"],["不带刻度","Non-Graduated"],
+  ["加长粗款","Extended Wide"],["加长细款","Extended Slim"],["加长","Extended"],
+  ["宽口","Wide-Mouth"],["窄口","Narrow-Mouth"],["广口","Wide-Mouth"],["广颈","Wide-Neck"],
+  ["全裙边","Full Skirt"],["半裙边","Semi Skirt"],["无裙边","No Skirt"],
+  ["高裙边","Tall Skirt"],["宽裙边","Wide Skirt"],
+  ["圆底","Round-Bottom"],["锥底","Conical"],["V底","V-Bottom"],["U底","U-Bottom"],["平底","Flat-Bottom"],
+  ["可立","Self-Standing"],["可拆","Removable"],
+  // 颜色/外观
+  ["透明","Clear"],["黑色","Black"],["白色","White"],["黄色","Yellow"],
+  ["蓝色","Blue"],["红色","Red"],["避光","Light-Protected"],["双色","Dual-Color"],
+  // 包装形式
+  ["盒装","Boxed"],["袋装","Bagged"],["独立包装","Indiv.Wrapped"],["散装","Bulk"],
+  // 材质
+  ["聚丙烯","PP"],["聚苯乙烯","PS"],["聚乙烯","PE"],["玻璃底","Glass Bottom"],
+  // 通用产品名
+  ["吸头","Pipette Tip"],["离心管","Centrifuge Tube"],["培养皿","Culture Dish"],
+  ["培养瓶","Culture Flask"],["培养板","Culture Plate"],["摇瓶","Shake Flask"],
+  ["细胞工厂","Cell Factory"],["细胞刮刀","Cell Scraper"],["细胞过滤器","Cell Strainer"],
+  ["深孔板","Deep Well Plate"],["酶标板","ELISA Plate"],["试剂槽","Reagent Reservoir"],
+  ["试剂瓶","Reagent Bottle"],["移液管","Serological Pipette"],
+  ["针式过滤器","Syringe Filter"],["过滤系统","Filtration System"],
+  // 自动化
+  ["自动化","Automation"],["高通量","High-Throughput"],
+  // 酶/试剂类
+  ["重组","Recombinant"],["质谱级","MS-Grade"],["质量控制","QC"],
+  ["唾液酸酶","Sialidase"],["赖氨酰内切酶","Lys-C Endoprotease"],["胰蛋白酶","Trypsin"],
+  ["稀释液","Dilution Buffer"],["磁珠","Magnetic Beads"],["游离糖链","Free Glycans"],["捕获","Capture"],
+  ["标准品","Standard"],["检测","Detection"],["分析","Analysis"],
+  ["纯化","Purification"],["提取","Extraction"],["预处理","Pretreatment"],
+  // 化学试剂
+  ["无水","Anhydrous"],["二水","Dihydrate"],["三水","Trihydrate"],
+  ["氯化钠","Sodium Chloride"],["氯化钾","Potassium Chloride"],["氯化铵","Ammonium Chloride"],
+  ["氯化钙","Calcium Chloride"],["氯化镁","Magnesium Chloride"],
+  ["硫酸钠","Sodium Sulfate"],["硫酸铵","Ammonium Sulfate"],["硫酸镁","Magnesium Sulfate"],
+  ["碳酸钠","Sodium Carbonate"],["碳酸氢钠","Sodium Bicarbonate"],["乙酸钠","Sodium Acetate"],
+  ["正己烷","n-Hexane"],["乙腈","Acetonitrile"],["甲醇","Methanol"],["乙醇","Ethanol"],
+  ["丙酮","Acetone"],["石英砂","Quartz Sand"],["草酸","Oxalic Acid"],
+  // 规格级别
+  ["制备级","Prep Grade"],["梯度","Gradient"],["分析纯","AR"],["色谱纯","HPLC Grade"],
+  ["超纯","Ultra-Pure"],["分子生物学级","Mol.Bio.Grade"],
+];
+// 长词先替换（中盒必须在盒前面）
+const _SPEC_MAP = [
+  ["中盒","inner-box"],["独立包装","Indiv.Wrapped"],
+  ["盒","box"],["箱","case"],["袋","bag"],["叠","stack"],["架","rack"],
+  ["瓶","btl"],["桶","drum"],["支","pcs"],["个","pcs"],["包","pack"],
+  ["克","g"],["千克","kg"],["毫克","mg"],["微克","µg"],["毫升","mL"],["升","L"],
+];
+function tName(lang, name) {
+  if (lang === "zh" || !name) return name || "";
+  let s = name.replace(/，/g, ", ").replace(/（/g, " (").replace(/）/g, ")").replace(/。/g, ". ");
+  for (const [zh, en] of _NAME_MAP) s = s.split(zh).join(en);
+  // 在英文字母/数字与中文字符之间插入空格，清理多余空格
+  s = s.replace(/([a-zA-Z])([0-9])/g, "$1 $2").replace(/([0-9])([a-zA-Z])/g, "$1 $2");
+  return s.replace(/\s{2,}/g, " ").trim();
+}
+function tSpec(lang, spec) {
+  if (lang === "zh" || !spec) return spec || "";
+  let s = spec.replace(/，/g, ", ").replace(/（/g, " (").replace(/）/g, ")");
+  for (const [zh, en] of _SPEC_MAP) s = s.split(zh).join(en);
+  return s.replace(/\s{2,}/g, " ").trim();
+}
+
 function getProductImage(sku) {
   return _getImageFromMap(sku, "", "main") || null;
 }
@@ -392,7 +507,7 @@ function CategorySection({ lang, onSelectCat }) {
             <GlassCard key={cat} style={{ padding: "28px 16px", textAlign: "center" }}>
               <div onClick={() => onSelectCat(cat)}>
                 <div style={{ fontSize: 36, marginBottom: 10 }}>{meta.icon}</div>
-                <div style={{ fontSize: 14, fontWeight: 600, color: T.textPrimary, marginBottom: 4 }}>{cat}</div>
+                <div style={{ fontSize: 14, fontWeight: 600, color: T.textPrimary, marginBottom: 4 }}>{tCat(lang, cat)}</div>
                 <div style={{ fontSize: 12, color: T.textSecondary }}>{count.toLocaleString()} {lang === "zh" ? "个产品" : "products"}</div>
               </div>
             </GlassCard>
@@ -661,7 +776,7 @@ function TrustedBy({ lang }) {
       </p>
       <div style={{ display: "inline-flex", alignItems: "center", gap: 10, background: "rgba(255,255,255,0.8)", backdropFilter: "blur(12px)", border: "1px solid rgba(200,16,46,0.12)", borderRadius: 14, padding: "10px 24px", boxShadow: "0 2px 16px rgba(200,16,46,0.06)" }}>
         <div style={{ width: 28, height: 28, borderRadius: 6, background: `linear-gradient(135deg, ${T.red}, ${T.redDark})`, display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", fontSize: 13, fontWeight: 800, fontFamily: T.fontHead }}>协</div>
-        <span style={{ fontSize: 15, fontWeight: 700, color: "#333", fontFamily: T.fontHead, letterSpacing: 0.2 }}>上海市生物医药行业协会</span>
+        <span style={{ fontSize: 15, fontWeight: 700, color: "#333", fontFamily: T.fontHead, letterSpacing: 0.2 }}>{lang === "zh" ? "上海市生物医药行业协会" : "Shanghai Biopharmaceutical Industry Assoc."}</span>
       </div>
     </div>
   );
@@ -728,10 +843,10 @@ function ProductCatalogSection({ lang, initialCat, search, onViewDetail }) {
             const meta = CAT_META[cat]||{icon:"📦"}; const isA = activeCat===cat; const subs = subCats[cat]||[];
             return (<div key={cat}>
               <div onClick={() => { setActiveCat(cat); setActiveSub(null); setPage(0); }} style={{ padding: "9px 16px", fontSize: 13, cursor: "pointer", fontWeight: isA ? 600 : 400, color: isA&&!activeSub ? T.red : T.textSecondary, background: isA&&!activeSub ? T.redLight : "transparent", borderLeft: isA&&!activeSub ? `3px solid ${T.red}` : "3px solid transparent", display: "flex", alignItems: "center", gap: 6 }}>
-                <span style={{ fontSize: 14 }}>{meta.icon}</span><span style={{ flex: 1 }}>{cat}</span><span style={{ fontSize: 11, color: T.textSecondary }}>{count}</span>
+                <span style={{ fontSize: 14 }}>{meta.icon}</span><span style={{ flex: 1 }}>{tCat(lang, cat)}</span><span style={{ fontSize: 11, color: T.textSecondary }}>{count}</span>
               </div>
               {isA && subs.length > 1 && subs.map(([sub, sc]) => (
-                <div key={sub} onClick={() => { setActiveSub(activeSub===sub?null:sub); setPage(0); }} style={{ padding: "5px 16px 5px 40px", fontSize: 12, cursor: "pointer", color: activeSub===sub ? T.red : T.textSecondary, fontWeight: activeSub===sub ? 600 : 400 }}>{sub || "其他"} ({sc})</div>
+                <div key={sub} onClick={() => { setActiveSub(activeSub===sub?null:sub); setPage(0); }} style={{ padding: "5px 16px 5px 40px", fontSize: 12, cursor: "pointer", color: activeSub===sub ? T.red : T.textSecondary, fontWeight: activeSub===sub ? 600 : 400 }}>{tSub(lang, sub) || (lang === "zh" ? "其他" : "Other")} ({sc})</div>
               ))}
             </div>);
           })}
@@ -752,11 +867,11 @@ function ProductCatalogSection({ lang, initialCat, search, onViewDetail }) {
                   <td style={{...tdS, textAlign:"left"}}>
                     <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
                       {getProductImage(p.sku) && <img src={getProductImage(p.sku)} alt="" style={{ width: 36, height: 36, objectFit: "contain", borderRadius: 4, background: T.redLight, flexShrink: 0 }} />}
-                      <div><div style={{ fontWeight: 500, color: T.red, lineHeight: 1.3 }}>{p.name||"—"}</div>{p.sub && <div style={{ fontSize: 11, color: T.textSecondary }}>{p.sub}</div>}</div>
+                      <div><div style={{ fontWeight: 500, color: T.red, lineHeight: 1.3 }}>{tName(lang, p.name)||"—"}</div>{p.sub && <div style={{ fontSize: 11, color: T.textSecondary }}>{tSub(lang, p.sub)}</div>}</div>
                     </div>
                   </td>
-                  <td style={tdS}><span style={{ fontSize: 11, background: T.redLight, padding: "2px 7px", borderRadius: 4, color: T.red }}>{p.cat}</span></td>
-                  <td style={tdS}><span style={{ fontSize: 12, color: T.textSecondary }}>{p.spec||"—"}</span></td>
+                  <td style={tdS}><span style={{ fontSize: 11, background: T.redLight, padding: "2px 7px", borderRadius: 4, color: T.red }}>{tCat(lang, p.cat)}</span></td>
+                  <td style={tdS}><span style={{ fontSize: 12, color: T.textSecondary }}>{tSpec(lang, p.spec)||"—"}</span></td>
                   <td style={tdS}><button onClick={e=>{e.stopPropagation();onViewDetail(p)}} style={{ background: T.red, color: "#fff", border: "none", borderRadius: 5, padding: "4px 12px", fontSize: 11, fontWeight: 600, cursor: "pointer", fontFamily: T.font }}>{lang==="zh"?"详情":"Details"}</button></td>
                 </tr>
               ))}
@@ -795,12 +910,12 @@ function ProductDetailView({ product: p, lang, onBack, onViewDetail }) {
           <div style={{ flex: 1, padding: "24px 28px" }}>
             <div style={{ display: "flex", gap: 6, marginBottom: 10 }}>
               <span style={{ fontSize: 11, fontWeight: 700, color: T.red, background: T.redLight, padding: "3px 8px", borderRadius: 4 }}>{p.brand}</span>
-              <span style={{ fontSize: 11, background: T.redLight, padding: "3px 8px", borderRadius: 4, color: T.red }}>{p.cat}</span>
+              <span style={{ fontSize: 11, background: T.redLight, padding: "3px 8px", borderRadius: 4, color: T.red }}>{tCat(lang, p.cat)}</span>
             </div>
-            <h1 style={{ fontSize: 20, fontWeight: 700, color: T.red, margin: "0 0 6px", lineHeight: 1.3 }}>{p.name||p.sku}</h1>
+            <h1 style={{ fontSize: 20, fontWeight: 700, color: T.red, margin: "0 0 6px", lineHeight: 1.3 }}>{tName(lang, p.name)||p.sku}</h1>
             <div style={{ fontSize: 13, color: T.textSecondary, marginBottom: 18 }}>{lang==="zh"?"货号":"SKU"}: <code style={{ color: T.red, background: T.redLight, padding: "2px 8px", borderRadius: 4, fontWeight: 600 }}>{p.sku}</code></div>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "10px 20px", marginBottom: 20, fontSize: 13 }}>
-              {[[lang==="zh"?"品牌":"Brand",p.brand],[lang==="zh"?"规格":"Spec",p.spec||"—"],[lang==="zh"?"分类":"Category",p.cat],[lang==="zh"?"子分类":"Sub",p.sub||"—"]].map(([k,v],i) => (
+              {[[lang==="zh"?"品牌":"Brand",p.brand],[lang==="zh"?"规格":"Spec",tSpec(lang,p.spec)||"—"],[lang==="zh"?"分类":"Category",tCat(lang,p.cat)],[lang==="zh"?"子分类":"Sub",tSub(lang,p.sub)||"—"]].map(([k,v],i) => (
                 <div key={i}><div style={{ fontSize: 11, fontWeight: 600, color: T.textSecondary, textTransform: "uppercase", marginBottom: 2 }}>{k}</div><div style={{ fontWeight: 500, color: T.red }}>{v}</div></div>
               ))}
             </div>
@@ -815,8 +930,8 @@ function ProductDetailView({ product: p, lang, onBack, onViewDetail }) {
             {tabs.map((tb,i) => <div key={i} onClick={() => setTab(i)} style={{ padding: "12px 20px", fontSize: 13, fontWeight: tab===i?600:400, color: tab===i?T.red:T.textSecondary, borderBottom: tab===i?`2px solid ${T.red}`:"2px solid transparent", cursor: "pointer" }}>{tb}</div>)}
           </div>
           <div style={{ padding: "20px 28px", fontSize: 14, color: T.textSecondary, lineHeight: 1.8, minHeight: 100 }}>
-            {tab===0 && <p>{p.brand} {p.name}，{lang==="zh"?`适用于${p.cat}相关应用。`:`For ${p.cat} applications.`}</p>}
-            {tab===1 && <table style={{width:"100%",borderCollapse:"collapse",fontSize:14,color:T.red}}><tbody>{[[lang==="zh"?"货号":"SKU",p.sku],[lang==="zh"?"品牌":"Brand",p.brand],[lang==="zh"?"规格":"Spec",p.spec||"—"],[lang==="zh"?"分类":"Cat",p.cat]].map(([k,v],i) => <tr key={i} style={{borderBottom:`1px solid ${T.border}`}}><td style={{padding:"8px 12px 8px 0",fontWeight:600,width:150,color:T.textSecondary}}>{k}</td><td style={{padding:"8px 0"}}>{v}</td></tr>)}</tbody></table>}
+            {tab===0 && <p>{p.brand} {tName(lang, p.name)}{lang==="zh"?"，":". "}{lang==="zh"?`适用于${p.cat}相关应用。`:`For ${tCat("en",p.cat)} applications.`}</p>}
+            {tab===1 && <table style={{width:"100%",borderCollapse:"collapse",fontSize:14,color:T.red}}><tbody>{[[lang==="zh"?"货号":"SKU",p.sku],[lang==="zh"?"品牌":"Brand",p.brand],[lang==="zh"?"规格":"Spec",tSpec(lang,p.spec)||"—"],[lang==="zh"?"分类":"Cat",tCat(lang,p.cat)]].map(([k,v],i) => <tr key={i} style={{borderBottom:`1px solid ${T.border}`}}><td style={{padding:"8px 12px 8px 0",fontWeight:600,width:150,color:T.textSecondary}}>{k}</td><td style={{padding:"8px 0"}}>{v}</td></tr>)}</tbody></table>}
             {tab===2 && <p>{lang==="zh"?"详细使用说明请参考产品随附说明书。":"See product datasheet for instructions."}</p>}
             {tab===3 && <p>{lang==="zh"?"请按照产品标签储存。常见条件：室温、2-8°C、-20°C。":"Store per label. RT, 2-8°C, or -20°C."}</p>}
           </div>
@@ -832,7 +947,7 @@ function ProductDetailView({ product: p, lang, onBack, onViewDetail }) {
                   {getProductImage(r.sku) ? <img src={getProductImage(r.sku)} alt="" style={{ width: 32, height: 32, objectFit: "contain", borderRadius: 4, background: T.redLight }} /> : <span style={{ fontSize: 24 }}>{meta.icon}</span>}
                   <code style={{ fontSize: 10, color: T.red, background: T.redLight, padding: "1px 5px", borderRadius: 3 }}>{r.sku}</code>
                 </div>
-                <div style={{ fontSize: 12, fontWeight: 600, color: T.red, lineHeight: 1.3 }}>{r.name||"—"}</div>
+                <div style={{ fontSize: 12, fontWeight: 600, color: T.red, lineHeight: 1.3 }}>{tName(lang, r.name)||"—"}</div>
               </div>
             </GlassCard>
           ))}
