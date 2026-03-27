@@ -56,7 +56,7 @@ export async function onRequestPost(context) {
       },
       body: JSON.stringify({
         from: 'Booster官网留言 <onboarding@resend.dev>',
-        to: ['service@tflabservice.com'],
+        to: ['ssccben@gmail.com'],
         reply_to: email || undefined,
         subject: `【官网留言】${name} - ${company || ''}`,
         html: emailBody,
