@@ -33118,18 +33118,6 @@
     "description": "IdeS",
     "skuMatch": "BSDT80406-700"
   },
-  "T1S80101": {
-    "image": "试剂盒/T1S80101_Rapiflow96.jpg",
-    "matchType": "exact",
-    "category": "试剂盒",
-    "skuMatch": "T1S80101"
-  },
-  "T1S80102": {
-    "image": "试剂盒/T1S80102_Rapiflow_24T.jpg",
-    "matchType": "exact",
-    "category": "试剂盒",
-    "skuMatch": "T1S80102"
-  },
   "T80002": {
     "image": "试剂盒/T80002_IgM_ELISA.jpg",
     "matchType": "exact",
