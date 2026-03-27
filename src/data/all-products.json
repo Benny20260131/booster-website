@@ -17746,5 +17746,41 @@
     "spec": "10µg",
     "price": 1500,
     "brand": "Booster"
+  },
+  {
+    "cat": "质控试剂盒",
+    "sub": "试剂盒",
+    "sku": "T1S80101",
+    "name": "N糖试剂盒 RapiFlow 96Test",
+    "spec": "96T/Kit",
+    "price": 8000,
+    "brand": "Booster"
+  },
+  {
+    "cat": "质控试剂盒",
+    "sub": "试剂盒",
+    "sku": "T1S80102",
+    "name": "N糖试剂盒 RapiFlow 24Test",
+    "spec": "24T/Kit",
+    "price": 3000,
+    "brand": "Booster"
+  },
+  {
+    "cat": "质控试剂盒",
+    "sub": "试剂盒",
+    "sku": "T80002",
+    "name": "重组人IgM ELISA检测试剂盒",
+    "spec": "96T/Kit",
+    "price": 3500,
+    "brand": "Booster"
+  },
+  {
+    "cat": "质控试剂盒",
+    "sub": "试剂盒",
+    "sku": "T901S0201",
+    "name": "胰岛素ELISA检测试剂盒",
+    "spec": "96T/Kit",
+    "price": 3500,
+    "brand": "Booster"
   }
 ]

@@ -32778,95 +32778,82 @@
     "targetCategories": "通用,unknown,图片展示"
   },
   "T80001": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "重组人IgG1标准物质",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T80001_IgG1_Standard.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80001"
   },
   "T80003": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "重组人IgG4标准物质",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T80003_IgG4_Standard.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80003"
   },
   "T80011": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "N糖标准品1",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T80011_Nglycan1.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80011"
   },
   "T80012": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "N糖标准品2-高甘露糖混标",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T80012_Nglycan2.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80012"
   },
   "T80013": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "N糖标准品3-高唾液酸",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T80013_Nglycan3.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80013"
   },
   "T80020": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "DNA Dilution Buffer（DNA稀释液）",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T80020_DNA_Buffer.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80020"
   },
   "T80021": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "RT-PCR级水",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T80021_RTPCR_Water.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80021"
   },
   "T80101": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "Hilic磁珠Kit-捕获游离糖链",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T80101_Hilic_Beads.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80101"
   },
   "T80201": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "HEK293细胞残留DNA检测试剂盒",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T80201_HEK293_DNA.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80201"
   },
   "T80201-2": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "HEK293片段残留检测试剂盒",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T80201-2_HEK293_Fragment.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80201-2"
   },
   "T80202": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "Sf9细胞残留DNA检测试剂盒",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T80202_Sf9_DNA.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80202"
   },
   "T80203": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "质粒残留DNA检测试剂盒（Ⅰ）（线性）",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T80203_Plasmid_Linear.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80203"
   },
   "T80203-2": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "质粒残留DNA检测试剂盒（Ⅰ）（非线性）",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T80203-2_Plasmid_NonLinear.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80203-2"
   },
   "T80204": {
     "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
@@ -32883,81 +32870,70 @@
     "targetCategories": "通用,unknown,图片展示"
   },
   "T80205": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "支原体检测试剂盒",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T80205_Mycoplasma.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80205"
   },
   "T80206": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "支原体前处理试剂盒（磁珠法）",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T80206_Mycoplasma_Pretreatment.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80206"
   },
   "T80209": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "BHK残留DNA检测试剂盒",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T80209_BHK_DNA.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80209"
   },
   "T80210": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "MDCK宿主细胞残留检测试剂盒",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T80210_MDCK_DNA.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80210"
   },
   "T80211": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "茂源链酶菌宿主残留检测试剂盒",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T80211_Streptomyces_DNA.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80211"
   },
   "T80212": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "黑曲霉菌宿主残留检测试剂盒",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T80212_Aspergillus_DNA.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80212"
   },
   "T80213": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "杆状病毒宿主残留检测试剂盒",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T80213_Baculovirus_DNA.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80213"
   },
   "T80214": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "HPV病毒宿主残留检测试剂盒",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T80214_HPV_DNA.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80214"
   },
   "T80215": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "宿主细胞残留前处理试剂盒（磁珠法）",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T80215_Pretreatment_Magnetic.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80215"
   },
   "T80216": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "宿主细胞残留前处理试剂盒Plus（磁珠法）",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T80216_Pretreatment_Magnetic_Plus.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80216"
   },
   "T80217": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "CHO细胞残留DNA检测试剂盒（USP）",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T80217_CHO_DNA_USP.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80217"
   },
   " T80217-2": {
     "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
@@ -32967,67 +32943,58 @@
     "targetCategories": "通用,unknown,图片展示"
   },
   "T80218": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "CHO细胞残留DNA检测试剂盒（ChP）",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T80218_CHO_DNA_ChP.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80218"
   },
   "T80218-2": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "CHO片段残留检测试剂盒（中版）",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T80218-2_CHO_Fragment_CN.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80218-2"
   },
   "T80219": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "Vero HCD 检测试剂盒",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T80219_Vero_HCD.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80219"
   },
   "T80220": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "E.coli细胞残留DNA检测试剂盒（USP）",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T80220_EColi_DNA_USP.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80220"
   },
   "T80221": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "E.coli细胞残留DNA检测试剂盒（ChP）",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T80221_EColi_DNA_ChP.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80221"
   },
   "T80222": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "毕赤酵母 HCD检测试剂盒",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T80222_Pichia_DNA.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80222"
   },
   "T80223": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "酿酒酵母 HCD检测试剂盒",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T80223_Saccharomyces_DNA.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80223"
   },
   "T80301": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "CHO细胞HCP ELISA检测试剂盒",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T80301_CHO_HCP.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80301"
   },
   "T80302": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "E.coli细胞HCP ELISA检测试剂盒",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T80302_EColi_HCP.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80302"
   },
   "T80303": {
     "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
@@ -33037,25 +33004,22 @@
     "targetCategories": "通用,unknown,图片展示"
   },
   "T80401": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "荧光素酶报告基因试剂盒",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T80401_Luciferase.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80401"
   },
   "T1S80105": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "N糖试剂盒 2AB 磁珠 24Test",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T1S80105_2AB_Magnetic_24T.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T1S80105"
   },
   "T1S80106": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "N糖试剂盒 2AB 磁珠96Test",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T1S80106_2AB_Magnetic_96T.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T1S80106"
   },
   "BSDTF1096": {
     "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
@@ -33065,11 +33029,10 @@
     "targetCategories": "通用,unknown,图片展示"
   },
   "T901S1401": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "I 型胶原蛋白ELISA试剂盒",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T901S1401_Collagen_ELISA.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T901S1401"
   },
   "BSDTYD012": {
     "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
@@ -33079,25 +33042,22 @@
     "targetCategories": "通用,unknown,图片展示"
   },
   "T1S80204": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "N糖试剂盒 2AB 纯化96孔板 24Test",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T1S80204_2AB_Purification_24T.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T1S80204"
   },
   "T1S80205": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "N糖试剂盒 2AB 纯化萃取柱 24Test",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T1S80205_2AB_Column_24T.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T1S80205"
   },
   "T1S80206": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "N糖试剂盒 2AB 纯化96孔板 96Test",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/T1S80206_2AB_Purification_96T.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T1S80206"
   },
   "BSDTYC024": {
     "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
@@ -33157,5 +33117,35 @@
     "category": "工具酶",
     "description": "IdeS",
     "skuMatch": "BSDT80406-700"
+  },
+  "T1S80101": {
+    "image": "试剂盒/T1S80101_Rapiflow96.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T1S80101"
+  },
+  "T1S80102": {
+    "image": "试剂盒/T1S80102_Rapiflow_24T.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T1S80102"
+  },
+  "T80002": {
+    "image": "试剂盒/T80002_IgM_ELISA.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80002"
+  },
+  "T80217-2": {
+    "image": "试剂盒/T80217-2_CHO_Fragment_US.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T80217-2"
+  },
+  "T901S0201": {
+    "image": "试剂盒/T901S0201_Insulin.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "T901S0201"
   }
 }
