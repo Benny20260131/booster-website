@@ -1,5 +1,6 @@
 import { useState, useMemo, useCallback, useEffect, useRef } from "react";
 import { getProductImage as _getImageFromMap } from "./data/imageLoader.js";
+import ALL_PRODUCTS from "./data/all-products.json";
 
 const T = {
   red: "#C8102E", redDark: "#9B0023", redLight: "#FFE8EC", redSoft: "#FFF1F3",
@@ -20,9 +21,6 @@ const CAT_META = {
   "早期研发": { icon: "🧫", color: "#E0F7FA" },
   "化学试剂与小分子": { icon: "⚗️", color: "#FFF8E1" },
 };
-
-import ALL_PRODUCTS from "./data/all-products.json";
-
 
 function getProductImage(sku) {
   return _getImageFromMap(sku, "", "main") || null;
@@ -589,8 +587,8 @@ function StatsBar({ lang }) {
 }
 
 function ContactForm({ lang }) {
-  const [form, setForm] = React.useState({ name: "", email: "", company: "", message: "" });
-  const [status, setStatus] = React.useState("idle");
+  const [form, setForm] = useState({ name: "", email: "", company: "", message: "" });
+  const [status, setStatus] = useState("idle");
   const inputStyle = { width: "100%", padding: "10px 14px", borderRadius: 10, border: `1px solid ${T.border}`, fontSize: 14, fontFamily: T.font, outline: "none", boxSizing: "border-box", background: "#fff", color: T.textPrimary };
   const handleSubmit = async () => {
     if (!form.name || !form.message) { alert(lang === "zh" ? "请填写姓名和留言内容" : "Please fill in name and message"); return; }
