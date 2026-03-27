@@ -6041,11 +6041,10 @@
     "skuMatch": "BSDTYN024"
   },
   "BSD-SW-003535": {
-    "image": "BSD-SW-003535.png",
-    "matchType": "generic",
-    "category": "试剂盒",
-    "description": "无内毒素质粒大提试剂盒",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003535.jpg",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003535"
   },
   "BSDT1YM500-05": {
     "image": "BSDT1YM500-05.png",
@@ -6202,11 +6201,10 @@
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003566": {
-    "image": "BSD-SW-003566.png",
-    "matchType": "generic",
-    "category": "试剂盒",
-    "description": "高保真酶mix ",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003566.jpg",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003566"
   },
   "BSD-HC-RB-8ML-001": {
     "image": "gsbio/试剂瓶_20230629164059FB5D24C1F75B5BA4.jpg",
@@ -27677,123 +27675,106 @@
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003530": {
-    "image": "细胞培养类_细胞培养皿_266.jpg",
-    "matchType": "category-fixed",
-    "category": "试剂盒",
-    "description": "快速质粒小提试剂盒",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003530.jpg",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003530"
   },
   "BSD-SW-003531": {
-    "image": "细胞培养类_细胞培养皿_266.jpg",
-    "matchType": "category-fixed",
-    "category": "试剂盒",
-    "description": "极速质粒小提试剂盒",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003531.jpg",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003531"
   },
   "BSD-SW-003532": {
-    "image": "细胞培养类_细胞培养皿_266.jpg",
-    "matchType": "category-fixed",
-    "category": "试剂盒",
-    "description": "质粒小中提试剂盒",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003532.jpg",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003532"
   },
   "BSD-SW-003533": {
-    "image": "细胞培养类_细胞培养皿_266.jpg",
-    "matchType": "category-fixed",
-    "category": "试剂盒",
-    "description": "无内毒素质粒小提试剂盒",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003533.jpg",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003533"
   },
   "BSD-SW-003534": {
-    "image": "细胞培养类_细胞培养皿_266.jpg",
-    "matchType": "category-fixed",
-    "category": "试剂盒",
-    "description": "无内毒素质粒中提试剂盒",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003534.jpg",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003534"
   },
   "BSD-SW-003536": {
-    "image": "细胞培养类_细胞培养皿_266.jpg",
-    "matchType": "category-fixed",
-    "category": "试剂盒",
-    "description": "DNA纯化试剂盒",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003536.jpg",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003536"
   },
   "BSD-SW-003537": {
-    "image": "细胞培养类_细胞培养皿_266.jpg",
-    "matchType": "category-fixed",
-    "category": "试剂盒",
-    "description": "通用DNA提取试剂盒",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003537.jpg",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003537"
   },
   "BSD-SW-003538": {
-    "image": "细胞培养类_细胞培养皿_266.jpg",
-    "matchType": "category-fixed",
-    "category": "试剂盒",
-    "description": "植物DNA提取试剂盒",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003538.jpg",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003538"
   },
   "BSD-SW-003539": {
-    "image": "细胞培养类_细胞培养皿_266.jpg",
-    "matchType": "category-fixed",
-    "category": "试剂盒",
-    "description": "BOOSTER Zol Reagent-TrizoL Reagent替代品",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003539.jpg",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003539"
   },
   "BSD-SW-003540": {
-    "image": "细胞培养类_细胞培养皿_266.jpg",
-    "matchType": "category-fixed",
-    "category": "试剂盒",
-    "description": "RNA快速提取试剂盒-单柱法",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003540.jpg",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003540"
   },
   "BSD-SW-003541": {
-    "image": "细胞培养类_细胞培养皿_266.jpg",
-    "matchType": "category-fixed",
-    "category": "试剂盒",
-    "description": "高纯RNA提取试剂盒-TrizoL前处理结合柱法",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003541.jpg",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003541"
   },
   "BSD-SW-003542": {
-    "image": "细胞培养类_细胞培养皿_266.jpg",
-    "matchType": "category-fixed",
-    "category": "试剂盒",
-    "description": "安全型RNA提取试剂盒-双柱，无酚氯仿/巯基乙醇",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003542.jpg",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003542"
   },
   "BSD-SW-003543": {
-    "image": "细胞培养类_细胞培养皿_266.jpg",
-    "matchType": "category-fixed",
-    "category": "试剂盒",
-    "description": "通用植物RNA试剂盒-常规和多糖多酚类植物",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003543.jpg",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003543"
   },
   "BSD-SW-003544": {
-    "image": "分子生物类_PCR封板膜_4.jpg",
-    "matchType": "category-fixed",
-    "category": "试剂盒",
-    "description": "2 × Taq Super Mix (Dye plus) ",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003544.jpg",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003544"
   },
   "BSD-SW-003545": {
-    "image": "分子生物类_PCR封板膜_4.jpg",
-    "matchType": "category-fixed",
-    "category": "试剂盒",
-    "description": "2 × Taq Super Mix (Dye plus) ",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003545.jpg",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003545"
   },
   "BSD-SW-003546": {
-    "image": "分子生物类_PCR封板膜_4.jpg",
-    "matchType": "category-fixed",
-    "category": "试剂盒",
-    "description": "2 × Taq Super Mix (Dye plus) ",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003546.jpg",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003546"
   },
   "BSD-SW-003547": {
-    "image": "分子生物类_PCR封板膜_4.jpg",
-    "matchType": "category-fixed",
-    "category": "试剂盒",
-    "description": "2 × Taq Super Mix for PAGE ",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003547.jpg",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003547"
   },
   "BSD-SW-003548": {
     "image": "分子生物类_PCR封板膜_4.jpg",
@@ -27859,11 +27840,10 @@
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003557": {
-    "image": "分子生物类_PCR封板膜_4.jpg",
-    "matchType": "category-fixed",
-    "category": "试剂盒",
-    "description": "HotStart Taq SuperMix(antibody modification)",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003557.jpg",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003557"
   },
   "BSD-SW-003558": {
     "image": "分子生物类_PCR封板膜_4.jpg",
@@ -27873,18 +27853,16 @@
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003559": {
-    "image": "分子生物类_PCR封板膜_4.jpg",
-    "matchType": "category-fixed",
-    "category": "试剂盒",
-    "description": "MultipLex PCR Kit ",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003559.jpg",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003559"
   },
   "BSD-SW-003560": {
-    "image": "分子生物类_PCR封板膜_4.jpg",
-    "matchType": "category-fixed",
-    "category": "试剂盒",
-    "description": "MultipLex PCR Kit ",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003560.jpg",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003560"
   },
   "BSD-SW-003561": {
     "image": "分子生物类_PCR封板膜_4.jpg",
@@ -27894,11 +27872,10 @@
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSD-SW-003563": {
-    "image": "细胞培养类_细胞培养皿_266.jpg",
-    "matchType": "category-fixed",
-    "category": "试剂盒",
-    "description": "RNase-free ddH2O ",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "早期研发/BSD-SW-003563.jpg",
+    "matchType": "exact",
+    "category": "早期研发",
+    "skuMatch": "BSD-SW-003563"
   },
   "BSD-SW-003564": {
     "image": "细胞培养类_细胞培养皿_266.jpg",
