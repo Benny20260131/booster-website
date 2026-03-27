@@ -33017,11 +33017,10 @@
     "skuMatch": "T1S80106"
   },
   "BSDTF1096": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "胰岛素定量检测INS试剂盒",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/BSDTF1096.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "BSDTF1096"
   },
   "T901S1401": {
     "image": "试剂盒/T901S1401_Collagen_ELISA.jpg",
@@ -33030,11 +33029,10 @@
     "skuMatch": "T901S1401"
   },
   "BSDTYD012": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "负压抽屉装置",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/BSDTYD012.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "BSDTYD012"
   },
   "T1S80204": {
     "image": "试剂盒/T1S80204_2AB_Purification_24T.jpg",
@@ -33062,18 +33060,16 @@
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSDTYR096": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "废液回收板",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/BSDTYR096.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "BSDTYR096"
   },
   "BSDTYP096": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "96孔样本收集板",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "试剂盒/BSDTYP096.jpg",
+    "matchType": "exact",
+    "category": "试剂盒",
+    "skuMatch": "BSDTYP096"
   },
   "BSDCB01": {
     "image": "BSDCB01.png"
