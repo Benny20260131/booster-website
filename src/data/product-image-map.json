@@ -32542,11 +32542,10 @@
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSDT80401-100": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "重组胰蛋白酶（质谱级）",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "工具酶/BSDT80401-100.jpg",
+    "matchType": "exact",
+    "category": "工具酶",
+    "skuMatch": "BSDT80401-100"
   },
   "BSDT80402-100": {
     "image": "工具酶/BSDT80402-100_Trypsin_NEW.jpg",
@@ -32563,11 +32562,10 @@
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSDT80421-10": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "唾液酸酶（α2-3,6,8,9）",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "工具酶/BSDT80421-10.jpg",
+    "matchType": "exact",
+    "category": "工具酶",
+    "skuMatch": "BSDT80421-10"
   },
   "BSDT80422-2": {
     "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
@@ -32577,25 +32575,22 @@
     "targetCategories": "通用,unknown,图片展示"
   },
   "BSDT80422-10": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "唾液酸酶（α2-3,6,8）",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "工具酶/BSDT80422-10.jpg",
+    "matchType": "exact",
+    "category": "工具酶",
+    "skuMatch": "BSDT80422-10"
   },
   "BSDT80404-50": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "重组赖氨酰内切酶(Lys-C)",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "工具酶/BSDT80404-50.jpg",
+    "matchType": "exact",
+    "category": "工具酶",
+    "skuMatch": "BSDT80404-50"
   },
   "BSDT80404-20": {
-    "image": "移液处理_1.3mL圆孔U底深孔板_96.jpg",
-    "matchType": "generic",
-    "category": "未分类",
-    "description": "重组赖氨酰内切酶(Lys-C)",
-    "targetCategories": "通用,unknown,图片展示"
+    "image": "工具酶/BSDT80404-20.jpg",
+    "matchType": "exact",
+    "category": "工具酶",
+    "skuMatch": "BSDT80404-20"
   },
   "BSDT80405-3": {
     "image": "工具酶/BSDT80405-3KU_EndoH_NEW.jpg",
