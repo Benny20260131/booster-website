@@ -17647,5 +17647,104 @@
     "spec": "",
     "price": 0,
     "brand": "Booster"
+  },
+  {
+    "cat": "质控分析工具酶",
+    "sub": "工具酶",
+    "sku": "BSDT80405-100",
+    "name": "EndoH内切糖苷酶H",
+    "spec": "100KU",
+    "price": 800,
+    "brand": "Booster"
+  },
+  {
+    "cat": "质控分析工具酶",
+    "sub": "工具酶",
+    "sku": "BSDT80405-15",
+    "name": "EndoH内切糖苷酶H",
+    "spec": "15KU",
+    "price": 800,
+    "brand": "Booster"
+  },
+  {
+    "cat": "质控分析工具酶",
+    "sub": "工具酶",
+    "sku": "BSDT80405-20",
+    "name": "重组胰蛋白酶   (质谱级,冻干)",
+    "spec": "20ugx5",
+    "price": 800,
+    "brand": "Booster"
+  },
+  {
+    "cat": "质控分析工具酶",
+    "sub": "工具酶",
+    "sku": "BSDT80405-3",
+    "name": "EndoH内切糖苷酶H",
+    "spec": "3KU",
+    "price": 800,
+    "brand": "Booster"
+  },
+  {
+    "cat": "质控分析工具酶",
+    "sub": "工具酶",
+    "sku": "BSDT80406-700",
+    "name": "IdeS蛋白酶",
+    "spec": "700U",
+    "price": 1200,
+    "brand": "Booster"
+  },
+  {
+    "cat": "质控分析工具酶",
+    "sub": "工具酶",
+    "sku": "BSDT80407-2",
+    "name": "IdeZ蛋白酶",
+    "spec": "2KU",
+    "price": 700,
+    "brand": "Booster"
+  },
+  {
+    "cat": "质控分析工具酶",
+    "sub": "工具酶",
+    "sku": "BSDT80409-20",
+    "name": "重组Glu-C蛋白酶,冻干",
+    "spec": "20µg",
+    "price": 1500,
+    "brand": "Booster"
+  },
+  {
+    "cat": "质控分析工具酶",
+    "sub": "工具酶",
+    "sku": "BSDT80423-20",
+    "name": "O糖蛋白酶",
+    "spec": "20U",
+    "price": 1000,
+    "brand": "Booster"
+  },
+  {
+    "cat": "质控分析工具酶",
+    "sub": "工具酶",
+    "sku": "BSDT80602-0.2",
+    "name": "重组透明质酸酶（冻干）",
+    "spec": "0.2mg",
+    "price": 1200,
+    "brand": "Booster"
+  },
+  {
+    "cat": "质控分析工具酶",
+    "sub": "工具酶",
+    "sku": "BSDT80602-0.5",
+    "name": "重组透明质酸酶（冻干）",
+    "spec": "0.5mg",
+    "price": 1200,
+    "brand": "Booster"
+  },
+  {
+    "cat": "质控分析工具酶",
+    "sub": "工具酶",
+    "sku": "BSDTY0320-10",
+    "name": "ASP-N酶",
+    "spec": "10µg",
+    "price": 1500,
+    "brand": "Booster"
   }
 ]
