@@ -13,6 +13,37 @@ const T = {
   radius: 16,
 };
 
+// ─── Liquid Glass 样式常量 ────────────────────────────────────────
+const LG = {
+  // 主色：红色玻璃
+  primary: {
+    background: "linear-gradient(145deg, rgba(255,255,255,0.24) 0%, rgba(255,255,255,0.06) 50%, rgba(255,255,255,0.14) 100%), rgba(200,16,46,0.68)",
+    backdropFilter: "blur(28px) saturate(200%)",
+    WebkitBackdropFilter: "blur(28px) saturate(200%)",
+    border: "1px solid rgba(255,255,255,0.42)",
+    boxShadow: "inset 0 1.5px 0 rgba(255,255,255,0.55), inset 0 -1px 0 rgba(0,0,0,0.10), 0 8px 32px rgba(200,16,46,0.28), 0 2px 8px rgba(0,0,0,0.08)",
+    color: "#fff",
+    fontWeight: 700,
+    cursor: "pointer",
+    transition: "all 0.25s cubic-bezier(0.4,0,0.2,1)",
+  },
+  // 幽灵：透明玻璃
+  ghost: {
+    background: "linear-gradient(145deg, rgba(255,255,255,0.26) 0%, rgba(255,255,255,0.08) 50%, rgba(255,255,255,0.18) 100%)",
+    backdropFilter: "blur(24px) saturate(180%)",
+    WebkitBackdropFilter: "blur(24px) saturate(180%)",
+    border: "1px solid rgba(200,16,46,0.28)",
+    boxShadow: "inset 0 1.5px 0 rgba(255,255,255,0.70), inset 0 -1px 0 rgba(200,16,46,0.06), 0 4px 16px rgba(0,0,0,0.06)",
+    color: "#C8102E",
+    fontWeight: 600,
+    cursor: "pointer",
+    transition: "all 0.25s cubic-bezier(0.4,0,0.2,1)",
+  },
+  // 悬停时通用 delta
+  hoverOn:  (el) => { el.style.transform = "translateY(-2px) scale(1.025)"; el.style.filter = "brightness(1.08)"; },
+  hoverOff: (el) => { el.style.transform = "none"; el.style.filter = "none"; },
+};
+
 const CAT_META = {
   "实验耗材": { icon: "🧪", color: "#FFE8EC" },
   "质控分析工具酶": { icon: "🔬", color: "#E8F5E9" },
@@ -191,7 +222,7 @@ function TopBar({ lang, setLang }) {
       </span>
       <div style={{ position: "absolute", right: 24, top: "50%", transform: "translateY(-50%)", display: "flex", gap: 2 }}>
         {["zh","en"].map(l => (
-          <button key={l} onClick={() => setLang(l)} style={{ background: lang === l ? "rgba(255,255,255,0.2)" : "transparent", color: "#fff", border: "none", borderRadius: 4, padding: "1px 8px", fontSize: 11, cursor: "pointer", fontFamily: T.font, fontWeight: lang === l ? 700 : 400 }}>
+          <button key={l} onClick={() => setLang(l)} style={{ background: lang===l ? "linear-gradient(145deg,rgba(255,255,255,0.30),rgba(255,255,255,0.12))" : "transparent", backdropFilter: lang===l ? "blur(12px)" : "none", color: "#fff", border: lang===l ? "1px solid rgba(255,255,255,0.40)" : "none", borderRadius: 6, padding: "2px 10px", fontSize: 11, cursor: "pointer", fontFamily: T.font, fontWeight: lang===l ? 700 : 400, boxShadow: lang===l ? "inset 0 1px 0 rgba(255,255,255,0.50), 0 2px 6px rgba(0,0,0,0.10)" : "none", transition: "all 0.2s" }}>
             {l === "zh" ? "中文" : "EN"}
           </button>
         ))}
@@ -263,7 +294,8 @@ function NavHeader({ lang, section, setSection, user, onLogin, onRegister, onLog
                 {user.position && <div style={{ fontSize: 12, color: "#aaa", marginBottom: 10 }}>{user.position}</div>}
                 <div style={{ fontSize: 12, color: "#666", marginBottom: 12, paddingBottom: 12, borderBottom: "1px solid #f0f0f0" }}>{user.email}</div>
                 <button onClick={() => { onLogout(); setShowUserMenu(false); }}
-                  style={{ width: "100%", background: "transparent", border: "1.5px solid rgba(200,16,46,0.2)", borderRadius: 8, padding: "7px", fontSize: 12, fontWeight: 600, color: T.red, cursor: "pointer", fontFamily: T.font }}>
+                  onMouseEnter={e => LG.hoverOn(e.currentTarget)} onMouseLeave={e => LG.hoverOff(e.currentTarget)}
+                  style={{ width: "100%", ...LG.ghost, borderRadius: 8, padding: "7px", fontSize: 12, fontFamily: T.font }}>
                   {lang === "zh" ? "退出登录" : "Logout"}
                 </button>
               </div>
@@ -272,16 +304,14 @@ function NavHeader({ lang, section, setSection, user, onLogin, onRegister, onLog
         ) : (
           /* ── 未登录态 ── */
           <>
-            <button onClick={onLogin}
-              onMouseEnter={e => { e.currentTarget.style.background = "rgba(200,16,46,0.06)"; e.currentTarget.style.borderColor = T.red; }}
-              onMouseLeave={e => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.borderColor = "rgba(200,16,46,0.25)"; }}
-              style={{ background: "transparent", color: T.red, border: "1.5px solid rgba(200,16,46,0.25)", borderRadius: 10, padding: "6px 16px", fontSize: 12, fontWeight: 600, cursor: "pointer", fontFamily: T.font, transition: "all 0.2s" }}>
+            <button onClick={onLogin} className="lg-btn"
+              onMouseEnter={e => LG.hoverOn(e.currentTarget)} onMouseLeave={e => LG.hoverOff(e.currentTarget)}
+              style={{ ...LG.ghost, borderRadius: 10, padding: "6px 16px", fontSize: 12, fontFamily: T.font }}>
               {lang === "zh" ? "登录" : "Login"}
             </button>
-            <button onClick={onRegister}
-              onMouseEnter={e => e.currentTarget.style.transform = "scale(1.03)"}
-              onMouseLeave={e => e.currentTarget.style.transform = "scale(1)"}
-              style={{ background: `rgba(200,16,46,0.88)`, backdropFilter: "blur(2px)", color: "#fff", border: "none", borderRadius: 10, padding: "7px 16px", fontSize: 12, fontWeight: 700, cursor: "pointer", fontFamily: T.font, boxShadow: "inset 0 4px 4px rgba(255,255,255,0.20), 0 2px 8px rgba(200,16,46,0.3)", transition: "transform 0.2s" }}>
+            <button onClick={onRegister} className="lg-btn"
+              onMouseEnter={e => LG.hoverOn(e.currentTarget)} onMouseLeave={e => LG.hoverOff(e.currentTarget)}
+              style={{ ...LG.primary, borderRadius: 10, padding: "7px 16px", fontSize: 12, fontFamily: T.font }}>
               {lang === "zh" ? "注册" : "Register"}
             </button>
           </>
@@ -363,7 +393,7 @@ function LoginModal({ lang, onClose, onSuccess, onSwitchRegister }) {
   };
 
   const inputStyle = { width: "100%", border: "1.5px solid #eee", borderRadius: 10, padding: "12px 14px", fontSize: 15, fontFamily: "inherit", outline: "none", color: "#333", background: "#fafafa", boxSizing: "border-box", transition: "border-color 0.2s" };
-  const btnPrimary = { width: "100%", background: "rgba(200,16,46,0.90)", color: "#fff", border: "none", borderRadius: 12, padding: "13px", fontSize: 15, fontWeight: 700, cursor: loading ? "not-allowed" : "pointer", opacity: loading ? 0.7 : 1, fontFamily: "inherit", marginTop: 8 };
+  const btnPrimary = { ...LG.primary, width: "100%", borderRadius: 12, padding: "13px", fontSize: 15, fontFamily: "inherit", marginTop: 8, cursor: loading ? "not-allowed" : "pointer" };
 
   return (
     <ModalOverlay onClose={onClose}>
@@ -395,7 +425,7 @@ function LoginModal({ lang, onClose, onSuccess, onSwitchRegister }) {
             placeholder={tab === "email" ? "请输入注册邮箱" : "请输入手机号"} style={inputStyle} />
 
           {error && <p style={{ color: "#C8102E", fontSize: 13, margin: "8px 0 0" }}>⚠ {error}</p>}
-          <button onClick={sendOtp} disabled={loading || !contact.trim()} style={{ ...btnPrimary, opacity: (loading || !contact.trim()) ? 0.6 : 1 }}>
+          <button onClick={sendOtp} disabled={loading || !contact.trim()} className="lg-btn" onMouseEnter={e=>!(loading||!contact.trim())&&LG.hoverOn(e.currentTarget)} onMouseLeave={e=>LG.hoverOff(e.currentTarget)} style={{ ...btnPrimary, opacity: (loading || !contact.trim()) ? 0.6 : 1 }}>
             {loading ? "发送中..." : (lang === "zh" ? "发送验证码" : "Send Code")}
           </button>
         </>}
@@ -417,7 +447,7 @@ function LoginModal({ lang, onClose, onSuccess, onSwitchRegister }) {
             style={{ ...inputStyle, fontSize: 22, letterSpacing: 8, textAlign: "center", fontWeight: 700 }} />
 
           {error && <p style={{ color: "#C8102E", fontSize: 13, margin: "8px 0 0" }}>⚠ {error}</p>}
-          <button onClick={verifyOtp} disabled={loading || otp.length !== 6} style={{ ...btnPrimary, opacity: (loading || otp.length !== 6) ? 0.6 : 1 }}>
+          <button onClick={verifyOtp} disabled={loading || otp.length !== 6} className="lg-btn" onMouseEnter={e=>!(loading||otp.length!==6)&&LG.hoverOn(e.currentTarget)} onMouseLeave={e=>LG.hoverOff(e.currentTarget)} style={{ ...btnPrimary, opacity: (loading || otp.length !== 6) ? 0.6 : 1 }}>
             {loading ? "验证中..." : (lang === "zh" ? "登录" : "Login")}
           </button>
           <button onClick={() => { setStep(1); setOtp(""); setError(""); }} style={{ width: "100%", background: "transparent", border: "none", color: "#888", fontSize: 13, cursor: "pointer", marginTop: 8, fontFamily: "inherit" }}>
@@ -634,8 +664,9 @@ function RegisterModal({ lang, onClose, onSuccess, onSwitchLogin }) {
 
               {error && <p style={{ color: "#C8102E", fontSize: 13, margin: "12px 0 0", padding: "8px 12px", background: "#FFF5F7", borderRadius: 8 }}>⚠ {error}</p>}
 
-              <button onClick={submit} disabled={loading}
-                style={{ width: "100%", background: "rgba(200,16,46,0.90)", color: "#fff", border: "none", borderRadius: 12, padding: "13px", fontSize: 15, fontWeight: 700, cursor: loading ? "not-allowed" : "pointer", opacity: loading ? 0.7 : 1, fontFamily: "inherit", marginTop: 18 }}>
+              <button onClick={submit} disabled={loading} className="lg-btn"
+                onMouseEnter={e=>!loading&&LG.hoverOn(e.currentTarget)} onMouseLeave={e=>LG.hoverOff(e.currentTarget)}
+                style={{ ...LG.primary, width: "100%", borderRadius: 12, padding: "13px", fontSize: 15, fontFamily: "inherit", marginTop: 18, cursor: loading ? "not-allowed" : "pointer", opacity: loading ? 0.7 : 1 }}>
                 {loading ? (zh ? "提交中..." : "Submitting...") : (zh ? "立即注册" : "Create Account")}
               </button>
 
@@ -819,16 +850,9 @@ function HeroSection({ lang, onBrowse, onSearch }) {
 
           {/* CTAs */}
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-            <button onClick={onBrowse}
-              onMouseEnter={e => e.currentTarget.style.transform = "scale(1.02)"}
-              onMouseLeave={e => e.currentTarget.style.transform = "scale(1)"}
-              style={{
-                background: "rgba(200,16,46,0.88)", backdropFilter: "blur(2px)",
-                color: "#fff", border: "none", borderRadius: 16, padding: "14px 28px",
-                fontSize: 15, fontWeight: 700, cursor: "pointer", fontFamily: T.font,
-                boxShadow: "inset 0px 4px 4px 0px rgba(255,255,255,0.25), 0 4px 20px rgba(200,16,46,0.35)",
-                display: "flex", alignItems: "center", gap: 8, transition: "transform 0.2s ease",
-              }}>
+            <button onClick={onBrowse} className="lg-btn"
+              onMouseEnter={e => LG.hoverOn(e.currentTarget)} onMouseLeave={e => LG.hoverOff(e.currentTarget)}
+              style={{ ...LG.primary, borderRadius: 16, padding: "14px 28px", fontSize: 15, fontFamily: T.font, display: "flex", alignItems: "center", gap: 8 }}>
               {lang === "zh" ? "浏览产品目录" : "Browse Products"}
               <span style={{ width: 22, height: 22, borderRadius: "50%", background: "rgba(255,255,255,0.22)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 12 }}>→</span>
             </button>
@@ -865,11 +889,9 @@ function HeroSection({ lang, onBrowse, onSearch }) {
               placeholder={lang === "zh" ? "搜索产品货号、名称、规格..." : "Search by SKU, name or specification..."}
               style={{ flex: 1, border: "none", outline: "none", background: "transparent", fontSize: 16, fontFamily: T.font, color: "#333", padding: "10px 0" }}
             />
-            <button
-              onClick={doSearch}
-              onMouseEnter={e => e.currentTarget.style.transform = "scale(1.03)"}
-              onMouseLeave={e => e.currentTarget.style.transform = "scale(1)"}
-              style={{ background: `rgba(200,16,46,0.88)`, backdropFilter: "blur(2px)", color: "#fff", border: "none", borderRadius: 14, padding: "11px 26px", fontSize: 15, fontWeight: 700, cursor: "pointer", fontFamily: T.font, whiteSpace: "nowrap", boxShadow: "inset 0 4px 4px rgba(255,255,255,0.2), 0 4px 16px rgba(200,16,46,0.3)", transition: "transform 0.2s", flexShrink: 0 }}>
+            <button onClick={doSearch} className="lg-btn"
+              onMouseEnter={e => LG.hoverOn(e.currentTarget)} onMouseLeave={e => LG.hoverOff(e.currentTarget)}
+              style={{ ...LG.primary, borderRadius: 14, padding: "11px 26px", fontSize: 15, fontFamily: T.font, whiteSpace: "nowrap", flexShrink: 0 }}>
               {lang === "zh" ? "搜索产品" : "Search"}
             </button>
           </div>
@@ -988,10 +1010,9 @@ function SolutionsSection({ lang }) {
         {/* Solution Tabs */}
         <div style={{ display: "flex", gap: 8, justifyContent: "center", marginBottom: 32, flexWrap: "wrap" }}>
           {solutions.map((s, i) => (
-            <button key={i} onClick={() => setActiveSol(i)} style={{
-              background: activeSol === i ? T.red : "#fff", color: activeSol === i ? "#fff" : T.red,
-              border: activeSol === i ? `1px solid ${T.red}` : `1px solid ${T.border}`, borderRadius: 24, padding: "8px 20px", fontSize: 13, fontWeight: 600, cursor: "pointer", fontFamily: T.font, transition: "all 0.2s", display: "flex", alignItems: "center", gap: 6
-            }}>
+            <button key={i} onClick={() => setActiveSol(i)} className="lg-btn"
+              onMouseEnter={e => LG.hoverOn(e.currentTarget)} onMouseLeave={e => LG.hoverOff(e.currentTarget)}
+              style={{ ...(activeSol===i ? LG.primary : LG.ghost), borderRadius: 24, padding: "8px 20px", fontSize: 13, fontFamily: T.font, display: "flex", alignItems: "center", gap: 6 }}>
               <span>{s.icon}</span> {s.title}
             </button>
           ))}
@@ -1124,7 +1145,9 @@ function ContactForm({ lang }) {
       </div>
       {status === "success" && <div style={{ background: "#E8F5E9", color: "#2E7D32", borderRadius: 8, padding: "10px 14px", marginBottom: 12, fontSize: 14 }}>✅ {lang === "zh" ? "留言已发送，我们会尽快联系您！" : "Message sent!"}</div>}
       {status === "error" && <div style={{ background: "#FFEBEE", color: "#C62828", borderRadius: 8, padding: "10px 14px", marginBottom: 12, fontSize: 14 }}>❌ {lang === "zh" ? "发送失败，请发邮件至 service@tflabservice.com" : "Send failed."}</div>}
-      <button onClick={handleSubmit} disabled={status === "sending"} style={{ background: status === "sending" ? "#ccc" : T.red, color: "#fff", border: "none", borderRadius: 10, padding: "12px 28px", fontSize: 14, fontWeight: 700, cursor: status === "sending" ? "not-allowed" : "pointer", fontFamily: T.font, width: "100%" }}>
+      <button onClick={handleSubmit} disabled={status === "sending"} className="lg-btn"
+        onMouseEnter={e => status!=="sending" && LG.hoverOn(e.currentTarget)} onMouseLeave={e => LG.hoverOff(e.currentTarget)}
+        style={{ ...LG.primary, borderRadius: 10, padding: "12px 28px", fontSize: 14, fontFamily: T.font, width: "100%", opacity: status === "sending" ? 0.6 : 1, cursor: status === "sending" ? "not-allowed" : "pointer" }}>
         {status === "sending" ? (lang === "zh" ? "发送中..." : "Sending...") : (lang === "zh" ? "提交留言" : "Submit")}
       </button>
     </GlassCard>
@@ -1262,7 +1285,7 @@ function ProductCatalogSection({ lang, initialCat, search, onViewDetail }) {
                   </td>
                   <td style={tdS}><span style={{ fontSize: 11, background: T.redLight, padding: "2px 7px", borderRadius: 4, color: T.red }}>{tCat(lang, p.cat)}</span></td>
                   <td style={tdS}><span style={{ fontSize: 12, color: T.textSecondary }}>{tSpec(lang, p.spec)||"—"}</span></td>
-                  <td style={tdS}><button onClick={e=>{e.stopPropagation();onViewDetail(p)}} style={{ background: T.red, color: "#fff", border: "none", borderRadius: 5, padding: "4px 12px", fontSize: 11, fontWeight: 600, cursor: "pointer", fontFamily: T.font }}>{lang==="zh"?"详情":"Details"}</button></td>
+                  <td style={tdS}><button onClick={e=>{e.stopPropagation();onViewDetail(p)}} className="lg-btn" onMouseEnter={e=>LG.hoverOn(e.currentTarget)} onMouseLeave={e=>LG.hoverOff(e.currentTarget)} style={{...LG.primary, borderRadius:6, padding:"4px 12px", fontSize:11, fontFamily:T.font}}>{lang==="zh"?"详情":"Details"}</button></td>
                 </tr>
               ))}
             </tbody>
@@ -1280,13 +1303,135 @@ function ProductCatalogSection({ lang, initialCat, search, onViewDetail }) {
 
 const thS = { padding: "9px 10px", fontSize: 11, fontWeight: 700, color: T.textSecondary, textTransform: "uppercase", letterSpacing: 0.5, textAlign: "center", whiteSpace: "nowrap" };
 const tdS = { padding: "9px 10px", textAlign: "center", verticalAlign: "middle" };
-function PgBtn({ l, a, d, o }) { return <button onClick={d?undefined:o} style={{ minWidth: 30, height: 30, borderRadius: 6, border: a ? `1px solid ${T.red}` : `1px solid ${T.border}`, background: a ? T.red : "#fff", color: a ? "#fff" : d ? "#ddd" : T.red, fontSize: 12, cursor: d ? "default" : "pointer", fontFamily: T.font, display: "flex", alignItems: "center", justifyContent: "center" }}>{l}</button>; }
+function PgBtn({ l, a, d, o }) {
+  return <button onClick={d?undefined:o} className={a||d?"":"lg-btn"}
+    onMouseEnter={e=>!d&&!a&&LG.hoverOn(e.currentTarget)} onMouseLeave={e=>LG.hoverOff(e.currentTarget)}
+    style={{ ...(a?LG.primary:LG.ghost), minWidth:30, height:30, borderRadius:6, fontSize:12, fontFamily:T.font, display:"flex", alignItems:"center", justifyContent:"center", padding:"0 6px", opacity:d?0.35:1, cursor:d?"default":"pointer" }}>{l}</button>;
+}
 function pgn(c, t) { const p = []; if(t<=7){for(let i=0;i<t;i++)p.push(i);return p;} p.push(0); if(c>3)p.push("..."); for(let i=Math.max(1,c-1);i<=Math.min(t-2,c+1);i++)p.push(i); if(c<t-4)p.push("..."); p.push(t-1); return p; }
+
+// ═══════ 询价 Modal ═══════
+function InquiryModal({ lang, product: p, onClose }) {
+  const zh = lang === "zh";
+  const [form, setForm] = useState({ name: "", email: "", phone: "", qty: "", note: "" });
+  const [status, setStatus] = useState("idle"); // idle | sending | success | error
+  const set = (k, v) => setForm(f => ({ ...f, [k]: v }));
+
+  const handleSubmit = async () => {
+    if (!form.name.trim()) { alert(zh ? "请填写姓名" : "Please enter your name"); return; }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) { alert(zh ? "请输入正确的邮箱" : "Invalid email"); return; }
+    setStatus("sending");
+    const productLine = `【产品询价】\n货号（SKU）：${p.sku}\n产品名称：${p.name || "—"}\n品牌：${p.brand || "—"}\n规格：${p.spec || "—"}\n分类：${p.cat || "—"}`;
+    const qtyLine = form.qty ? `\n采购数量/需求：${form.qty}` : "";
+    const noteLine = form.note ? `\n备注：${form.note}` : "";
+    const message = productLine + qtyLine + noteLine;
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name: form.name, email: form.email, company: form.phone || "—", message }),
+      });
+      setStatus(res.ok ? "success" : "error");
+    } catch {
+      // 本地预览模式 fallback — 直接打开 mailto
+      const subject = encodeURIComponent(`【询价】${p.sku} ${p.name || ""}`);
+      const body = encodeURIComponent(`${message}\n\n联系人：${form.name}\n邮箱：${form.email}${form.phone ? "\n电话：" + form.phone : ""}`);
+      window.open(`mailto:service@tflabservice.com?subject=${subject}&body=${body}`);
+      setStatus("success");
+    }
+  };
+
+  const iStyle = { width: "100%", border: "1.5px solid #eee", borderRadius: 10, padding: "11px 14px", fontSize: 14, fontFamily: "inherit", outline: "none", color: "#333", background: "#fafafa", boxSizing: "border-box", transition: "border-color 0.2s" };
+  const lbl = (text, req) => <label style={{ fontSize: 13, fontWeight: 600, color: "#555", display: "block", marginBottom: 5 }}>{text}{req && <span style={{ color: T.red, marginLeft: 2 }}>*</span>}</label>;
+
+  return (
+    <ModalOverlay onClose={onClose}>
+      <div style={{ maxWidth: 500, width: "100%" }}>
+        {/* 头部 */}
+        <div style={{ background: "linear-gradient(135deg,#9B0023,#C8102E)", padding: "22px 28px 18px", position: "relative" }}>
+          <button onClick={onClose} style={{ position: "absolute", top: 14, right: 16, background: "rgba(255,255,255,0.2)", border: "none", borderRadius: "50%", width: 28, height: 28, color: "#fff", fontSize: 16, cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center" }}>×</button>
+          <h2 style={{ color: "#fff", margin: 0, fontSize: 19, fontWeight: 800 }}>📧 {zh ? "产品询价" : "Product Inquiry"}</h2>
+          <p style={{ color: "rgba(255,255,255,0.8)", margin: "4px 0 0", fontSize: 12 }}>{zh ? "填写后我们将在 1 个工作日内与您联系" : "We'll respond within 1 business day"}</p>
+        </div>
+
+        <div style={{ padding: "20px 28px 26px" }}>
+          {/* 产品信息（只读展示） */}
+          <div style={{ background: "#FFF5F7", border: "1px solid rgba(200,16,46,0.12)", borderRadius: 10, padding: "12px 16px", marginBottom: 20, display: "flex", gap: 12, alignItems: "flex-start" }}>
+            <span style={{ fontSize: 28, flexShrink: 0 }}>🧪</span>
+            <div>
+              <div style={{ fontSize: 13, fontWeight: 700, color: T.red, marginBottom: 2 }}>{tName(lang, p.name) || p.sku}</div>
+              <div style={{ fontSize: 12, color: "#888" }}>
+                <code style={{ background: T.redLight, color: T.red, padding: "1px 6px", borderRadius: 3, fontWeight: 600, marginRight: 8 }}>{p.sku}</code>
+                {p.brand && <span style={{ marginRight: 8 }}>{p.brand}</span>}
+                {p.spec && <span>{tSpec(lang, p.spec)}</span>}
+              </div>
+            </div>
+          </div>
+
+          {status === "success" ? (
+            <div style={{ textAlign: "center", padding: "24px 0" }}>
+              <div style={{ fontSize: 48, marginBottom: 12 }}>✅</div>
+              <h3 style={{ color: T.red, margin: "0 0 8px", fontSize: 18 }}>{zh ? "询价已发送！" : "Inquiry Sent!"}</h3>
+              <p style={{ color: "#666", fontSize: 14, margin: "0 0 20px" }}>{zh ? "我们会在 1 个工作日内通过邮件回复您。" : "We'll reply to your email within 1 business day."}</p>
+              <button onClick={onClose} className="lg-btn" onMouseEnter={e=>LG.hoverOn(e.currentTarget)} onMouseLeave={e=>LG.hoverOff(e.currentTarget)}
+                style={{ ...LG.primary, borderRadius: 10, padding: "10px 28px", fontSize: 14, fontFamily: "inherit" }}>
+                {zh ? "关闭" : "Close"}
+              </button>
+            </div>
+          ) : (
+            <>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
+                <div>
+                  {lbl(zh ? "姓名" : "Name", true)}
+                  <input value={form.name} onChange={e => set("name", e.target.value)}
+                    onFocus={e => e.target.style.borderColor = T.red} onBlur={e => e.target.style.borderColor = "#eee"}
+                    placeholder={zh ? "请输入姓名" : "Your name"} style={iStyle} />
+                </div>
+                <div>
+                  {lbl(zh ? "联系电话" : "Phone")}
+                  <input value={form.phone} onChange={e => set("phone", e.target.value)}
+                    onFocus={e => e.target.style.borderColor = T.red} onBlur={e => e.target.style.borderColor = "#eee"}
+                    placeholder={zh ? "选填" : "Optional"} style={iStyle} />
+                </div>
+              </div>
+              <div style={{ marginTop: 12 }}>
+                {lbl(zh ? "邮箱地址" : "Email", true)}
+                <input type="email" value={form.email} onChange={e => set("email", e.target.value)}
+                  onFocus={e => e.target.style.borderColor = T.red} onBlur={e => e.target.style.borderColor = "#eee"}
+                  placeholder={zh ? "用于接收报价回复" : "We'll reply to this address"} style={iStyle} />
+              </div>
+              <div style={{ marginTop: 12 }}>
+                {lbl(zh ? "采购数量 / 需求" : "Quantity / Requirements")}
+                <input value={form.qty} onChange={e => set("qty", e.target.value)}
+                  onFocus={e => e.target.style.borderColor = T.red} onBlur={e => e.target.style.borderColor = "#eee"}
+                  placeholder={zh ? "如：100 盒，或描述具体需求" : "e.g. 100 boxes, or describe needs"} style={iStyle} />
+              </div>
+              <div style={{ marginTop: 12 }}>
+                {lbl(zh ? "备注留言" : "Additional Notes")}
+                <textarea value={form.note} onChange={e => set("note", e.target.value)}
+                  onFocus={e => e.target.style.borderColor = T.red} onBlur={e => e.target.style.borderColor = "#eee"}
+                  rows={3} placeholder={zh ? "其他要求或说明（选填）" : "Other requirements (optional)"}
+                  style={{ ...iStyle, resize: "vertical" }} />
+              </div>
+              {status === "error" && <p style={{ color: T.red, fontSize: 13, margin: "10px 0 0", padding: "8px 12px", background: "#FFF5F7", borderRadius: 8 }}>❌ {zh ? "发送失败，请稍后重试或邮件联系 service@tflabservice.com" : "Send failed. Please email service@tflabservice.com"}</p>}
+              <button onClick={handleSubmit} disabled={status === "sending"} className="lg-btn"
+                onMouseEnter={e => status !== "sending" && LG.hoverOn(e.currentTarget)} onMouseLeave={e => LG.hoverOff(e.currentTarget)}
+                style={{ ...LG.primary, width: "100%", borderRadius: 12, padding: "13px", fontSize: 15, fontFamily: "inherit", marginTop: 16, cursor: status === "sending" ? "not-allowed" : "pointer", opacity: status === "sending" ? 0.7 : 1 }}>
+                {status === "sending" ? (zh ? "发送中..." : "Sending...") : (zh ? "提交询价" : "Submit Inquiry")}
+              </button>
+            </>
+          )}
+        </div>
+      </div>
+    </ModalOverlay>
+  );
+}
 
 // ═══════ PRODUCT DETAIL ═══════
 function ProductDetailView({ product: p, lang, onBack, onViewDetail }) {
   const meta = CAT_META[p.cat]||{icon:"📦",color:"#F5F5F5"};
   const [tab, setTab] = useState(0);
+  const [showInquiry, setShowInquiry] = useState(false);
   const tabs = lang==="zh"?["产品描述","技术参数","使用说明","储存运输"]:["Description","Specs","Instructions","Storage"];
   const related = useMemo(() => ALL_PRODUCTS.filter(r => r.sku!==p.sku && r.cat===p.cat && r.sub===p.sub).slice(0,6), [p.sku,p.cat,p.sub]);
   return (
@@ -1310,8 +1455,8 @@ function ProductDetailView({ product: p, lang, onBack, onViewDetail }) {
               ))}
             </div>
             <div style={{ display: "flex", gap: 10 }}>
-              <button style={{ background: T.red, color: "#fff", border: "none", borderRadius: 8, padding: "10px 22px", fontSize: 13, fontWeight: 700, cursor: "pointer", fontFamily: T.font }}>📧 {lang==="zh"?"立即询价":"Quote"}</button>
-              <button style={{ background: "#fff", color: T.red, border: `1px solid ${T.border}`, borderRadius: 8, padding: "10px 22px", fontSize: 13, fontWeight: 600, cursor: "pointer", fontFamily: T.font }}>📄 {lang==="zh"?"产品说明书":"Datasheet"}</button>
+              <button onClick={() => setShowInquiry(true)} className="lg-btn" onMouseEnter={e=>LG.hoverOn(e.currentTarget)} onMouseLeave={e=>LG.hoverOff(e.currentTarget)} style={{...LG.primary, borderRadius:8, padding:"10px 22px", fontSize:13, fontFamily:T.font}}>📧 {lang==="zh"?"立即询价":"Quote"}</button>
+              <button className="lg-btn" onMouseEnter={e=>LG.hoverOn(e.currentTarget)} onMouseLeave={e=>LG.hoverOff(e.currentTarget)} style={{...LG.ghost, borderRadius:8, padding:"10px 22px", fontSize:13, fontFamily:T.font}}>📄 {lang==="zh"?"产品说明书":"Datasheet"}</button>
             </div>
           </div>
         </div>
@@ -1343,6 +1488,8 @@ function ProductDetailView({ product: p, lang, onBack, onViewDetail }) {
           ))}
         </div>
       </div>}
+
+      {showInquiry && <InquiryModal lang={lang} product={p} onClose={() => setShowInquiry(false)} />}
     </div>
   );
 }
@@ -1384,6 +1531,9 @@ export default function BoosterHomepage() {
         @keyframes fadeSlide { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
         @keyframes pulse { from { transform: scale(1); opacity: 0.03; } to { transform: scale(1.1); opacity: 0.06; } }
         @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+        @keyframes lgShimmer { 0%{background-position:200% center} 100%{background-position:-200% center} }
+        .lg-btn { position:relative; overflow:hidden; }
+        .lg-btn::after { content:""; position:absolute; inset:0; background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,0.18) 50%,transparent 60%); background-size:200% 100%; animation:lgShimmer 3.5s linear infinite; pointer-events:none; border-radius:inherit; }
       `}</style>
       <TopBar lang={lang} setLang={setLang} />
       <NavHeader lang={lang} section={section} setSection={go} user={user} onLogin={() => setShowLogin(true)} onRegister={() => setShowRegister(true)} onLogout={handleLogout} />
