@@ -408,7 +408,13 @@ function DNACanvas() {
 
 function HeroSection({ lang, onBrowse, onSolutions }) {
   return (
-    <div style={{ background: "#FFFFFF", position: "relative", overflow: "hidden", minHeight: 580, display: "flex", alignItems: "center" }}>
+    <div style={{ background: "transparent", position: "relative", overflow: "hidden", minHeight: 580, display: "flex", alignItems: "center" }}>
+      {/* 背景视频 */}
+      <video autoPlay muted loop playsInline style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", zIndex: 0, pointerEvents: "none", transform: "scaleX(-1)" }}>
+        <source src="/hero-bg.mp4" type="video/mp4" />
+      </video>
+      {/* 白色半透明遮罩，保证文字可读性 */}
+      <div style={{ position: "absolute", inset: 0, background: "rgba(255,255,255,0.62)", zIndex: 0, pointerEvents: "none" }} />
       {/* Background glow blobs */}
       <div style={{ position: "absolute", top: -120, left: -80, width: 520, height: 520, borderRadius: "50%", background: "radial-gradient(circle, rgba(255,180,190,0.55) 0%, rgba(200,16,46,0.12) 60%, transparent 80%)", filter: "blur(60px)", animation: "glowPulse 6s ease-in-out infinite", pointerEvents: "none" }} />
       <div style={{ position: "absolute", top: 40, left: 120, width: 320, height: 320, borderRadius: "50%", background: "radial-gradient(circle, rgba(255,120,140,0.35) 0%, transparent 70%)", filter: "blur(40px)", animation: "glowPulse 8s ease-in-out infinite 1s", pointerEvents: "none" }} />
