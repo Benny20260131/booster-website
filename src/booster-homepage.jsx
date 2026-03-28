@@ -200,9 +200,9 @@ function TopBar({ lang, setLang }) {
   );
 }
 
-function NavHeader({ lang, section, setSection, search, setSearch }) {
-  const [sf, setSf] = useState(false);
+function NavHeader({ lang, section, setSection, user, onLogin, onRegister, onLogout }) {
   const [hovered, setHovered] = useState(null);
+  const [showUserMenu, setShowUserMenu] = useState(false);
   const navItems = lang === "zh"
     ? [["home","首页"],["products","产品中心"],["solutions","解决方案"],["contact","联系我们"]]
     : [["home","Home"],["products","Products"],["solutions","Solutions"],["contact","Contact"]];
@@ -245,36 +245,413 @@ function NavHeader({ lang, section, setSection, search, setSearch }) {
         {/* Divider */}
         <div style={{ width: 1, height: 18, background: "rgba(200,16,46,0.15)", margin: "0 4px" }} />
 
-        {/* Search */}
-        <div style={{ display: "flex", alignItems: "center", background: sf ? "rgba(200,16,46,0.06)" : "rgba(0,0,0,0.04)", borderRadius: 10, padding: "0 10px", height: 32, border: sf ? `1.5px solid ${T.red}` : "1.5px solid transparent", transition: "all 0.2s", width: 160 }}>
-          <span style={{ fontSize: 12, opacity: 0.45, marginRight: 5 }}>🔍</span>
-          <input value={search} onChange={e => { setSearch(e.target.value); if (e.target.value) setSection("products"); }}
-            placeholder={lang === "zh" ? "搜索产品..." : "Search..."}
-            onFocus={() => setSf(true)} onBlur={() => setSf(false)}
-            style={{ border: "none", outline: "none", background: "transparent", flex: 1, fontSize: 12, fontFamily: T.font, color: "#333" }} />
-        </div>
-
-        {/* CTA */}
-        <button onClick={() => setSection("contact")} style={{
-          background: `rgba(200,16,46,0.85)`,
-          backdropFilter: "blur(2px)",
-          color: "#fff", border: "none", borderRadius: 12, padding: "7px 16px",
-          fontSize: 12, fontWeight: 600, cursor: "pointer", fontFamily: T.font,
-          boxShadow: "inset 0px 4px 4px 0px rgba(255,255,255,0.20), 0 2px 8px rgba(200,16,46,0.3)",
-          display: "flex", alignItems: "center", gap: 6, transition: "transform 0.2s",
-          marginLeft: 4,
-        }}
-        onMouseEnter={e => e.currentTarget.style.transform = "scale(1.03)"}
-        onMouseLeave={e => e.currentTarget.style.transform = "scale(1)"}
-        >
-          {lang === "zh" ? "联系我们" : "Contact"}
-          <span style={{ width: 16, height: 16, borderRadius: "50%", background: "rgba(255,255,255,0.25)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 9 }}>→</span>
-        </button>
+        {user ? (
+          /* ── 已登录态 ── */
+          <div style={{ position: "relative" }}>
+            <div onClick={() => setShowUserMenu(v => !v)}
+              style={{ display: "flex", alignItems: "center", gap: 8, cursor: "pointer", padding: "4px 10px 4px 4px", borderRadius: 10, background: showUserMenu ? "rgba(200,16,46,0.06)" : "transparent", transition: "background 0.2s" }}>
+              <div style={{ width: 28, height: 28, borderRadius: "50%", background: `linear-gradient(135deg,${T.red},${T.redDark})`, display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", fontSize: 13, fontWeight: 800, flexShrink: 0 }}>
+                {user.name.charAt(0)}
+              </div>
+              <span style={{ fontSize: 13, fontWeight: 600, color: T.red, maxWidth: 80, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{user.name}</span>
+              <span style={{ fontSize: 10, color: "#aaa" }}>▾</span>
+            </div>
+            {showUserMenu && (
+              <div style={{ position: "absolute", right: 0, top: "calc(100% + 8px)", background: "rgba(255,255,255,0.97)", backdropFilter: "blur(20px)", border: "1px solid rgba(200,16,46,0.12)", borderRadius: 14, boxShadow: "0 12px 40px rgba(0,0,0,0.12)", padding: "16px", minWidth: 220, zIndex: 100 }}>
+                <div style={{ fontSize: 13, fontWeight: 700, color: T.red, marginBottom: 2 }}>{user.name}</div>
+                {user.company && <div style={{ fontSize: 12, color: "#888", marginBottom: 2 }}>{user.company}</div>}
+                {user.position && <div style={{ fontSize: 12, color: "#aaa", marginBottom: 10 }}>{user.position}</div>}
+                <div style={{ fontSize: 12, color: "#666", marginBottom: 12, paddingBottom: 12, borderBottom: "1px solid #f0f0f0" }}>{user.email}</div>
+                <button onClick={() => { onLogout(); setShowUserMenu(false); }}
+                  style={{ width: "100%", background: "transparent", border: "1.5px solid rgba(200,16,46,0.2)", borderRadius: 8, padding: "7px", fontSize: 12, fontWeight: 600, color: T.red, cursor: "pointer", fontFamily: T.font }}>
+                  {lang === "zh" ? "退出登录" : "Logout"}
+                </button>
+              </div>
+            )}
+          </div>
+        ) : (
+          /* ── 未登录态 ── */
+          <>
+            <button onClick={onLogin}
+              onMouseEnter={e => { e.currentTarget.style.background = "rgba(200,16,46,0.06)"; e.currentTarget.style.borderColor = T.red; }}
+              onMouseLeave={e => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.borderColor = "rgba(200,16,46,0.25)"; }}
+              style={{ background: "transparent", color: T.red, border: "1.5px solid rgba(200,16,46,0.25)", borderRadius: 10, padding: "6px 16px", fontSize: 12, fontWeight: 600, cursor: "pointer", fontFamily: T.font, transition: "all 0.2s" }}>
+              {lang === "zh" ? "登录" : "Login"}
+            </button>
+            <button onClick={onRegister}
+              onMouseEnter={e => e.currentTarget.style.transform = "scale(1.03)"}
+              onMouseLeave={e => e.currentTarget.style.transform = "scale(1)"}
+              style={{ background: `rgba(200,16,46,0.88)`, backdropFilter: "blur(2px)", color: "#fff", border: "none", borderRadius: 10, padding: "7px 16px", fontSize: 12, fontWeight: 700, cursor: "pointer", fontFamily: T.font, boxShadow: "inset 0 4px 4px rgba(255,255,255,0.20), 0 2px 8px rgba(200,16,46,0.3)", transition: "transform 0.2s" }}>
+              {lang === "zh" ? "注册" : "Register"}
+            </button>
+          </>
+        )}
       </header>
     </div>
   );
 }
 
+
+// ═══════ 通用 Modal 遮罩 ═══════
+function ModalOverlay({ onClose, children }) {
+  return (
+    <div onClick={onClose} style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,0.50)", zIndex: 1000, display: "flex", alignItems: "center", justifyContent: "center", padding: 16 }}>
+      <div onClick={e => e.stopPropagation()} style={{ background: "rgba(255,255,255,0.97)", backdropFilter: "blur(30px)", borderRadius: 20, boxShadow: "0 24px 80px rgba(0,0,0,0.18)", width: "100%", maxWidth: 480, position: "relative", overflow: "hidden" }}>
+        {children}
+      </div>
+    </div>
+  );
+}
+
+// ═══════ 登录 Modal ═══════
+function LoginModal({ lang, onClose, onSuccess, onSwitchRegister }) {
+  const [tab, setTab] = useState("email");
+  const [step, setStep] = useState(1);
+  const [contact, setContact] = useState("");
+  const [otp, setOtp] = useState("");
+  const [token, setToken] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+  const [localMode, setLocalMode] = useState(false);
+
+  const sendOtp = async () => {
+    setError(""); setLoading(true);
+    try {
+      const res = await fetch("/api/send-otp", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ contact, type: tab }),
+      });
+      const data = await res.json();
+      if (!res.ok) { setError(data.error || "发送失败"); setLoading(false); return; }
+      setToken(data.token || "");
+      setStep(2);
+    } catch {
+      // 本地预览模式（Vite dev，CF Functions 不可用）
+      setLocalMode(true);
+      setStep(2);
+    }
+    setLoading(false);
+  };
+
+  const verifyOtp = async () => {
+    setError(""); setLoading(true);
+    try {
+      if (localMode) {
+        // 本地固定验证码
+        if (otp.trim() !== "888888") { setError("验证码错误（本地预览模式固定验证码为 888888）"); setLoading(false); return; }
+        const users = JSON.parse(localStorage.getItem("bsd_users") || "[]");
+        const found = users.find(u => u.email === contact || u.phone === contact);
+        if (!found) { setError("该账号未注册，请先注册"); setLoading(false); return; }
+        onSuccess(found); return;
+      }
+      const res = await fetch("/api/verify-otp", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ token, otp }),
+      });
+      const data = await res.json();
+      if (!res.ok) { setError(data.error || "验证失败"); setLoading(false); return; }
+      const users = JSON.parse(localStorage.getItem("bsd_users") || "[]");
+      const found = users.find(u => u.email === data.email);
+      if (!found) { setError("该账号未注册，请先注册"); setLoading(false); return; }
+      onSuccess(found);
+    } catch (e) {
+      setError("网络错误，请重试");
+    }
+    setLoading(false);
+  };
+
+  const inputStyle = { width: "100%", border: "1.5px solid #eee", borderRadius: 10, padding: "12px 14px", fontSize: 15, fontFamily: "inherit", outline: "none", color: "#333", background: "#fafafa", boxSizing: "border-box", transition: "border-color 0.2s" };
+  const btnPrimary = { width: "100%", background: "rgba(200,16,46,0.90)", color: "#fff", border: "none", borderRadius: 12, padding: "13px", fontSize: 15, fontWeight: 700, cursor: loading ? "not-allowed" : "pointer", opacity: loading ? 0.7 : 1, fontFamily: "inherit", marginTop: 8 };
+
+  return (
+    <ModalOverlay onClose={onClose}>
+      {/* 头部 */}
+      <div style={{ background: "linear-gradient(135deg,#9B0023,#C8102E)", padding: "24px 28px 20px" }}>
+        <button onClick={onClose} style={{ position: "absolute", top: 16, right: 18, background: "rgba(255,255,255,0.2)", border: "none", borderRadius: "50%", width: 28, height: 28, color: "#fff", fontSize: 16, cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center" }}>×</button>
+        <h2 style={{ color: "#fff", margin: 0, fontSize: 20, fontWeight: 800 }}>{lang === "zh" ? "登录账号" : "Login"}</h2>
+        <p style={{ color: "rgba(255,255,255,0.8)", margin: "4px 0 0", fontSize: 13 }}>{lang === "zh" ? "欢迎回到博仕达生物" : "Welcome back to Booster Bio"}</p>
+      </div>
+
+      <div style={{ padding: "24px 28px 28px" }}>
+        {step === 1 && <>
+          {/* Tab 切换 */}
+          <div style={{ display: "flex", background: "#f5f5f5", borderRadius: 10, padding: 3, marginBottom: 20 }}>
+            {[["email", lang === "zh" ? "📧 邮箱验证" : "📧 Email"], ["phone", lang === "zh" ? "📱 手机号" : "📱 Phone"]].map(([k, label]) => (
+              <button key={k} onClick={() => { setTab(k); setContact(""); setError(""); }}
+                style={{ flex: 1, padding: "8px", border: "none", borderRadius: 8, fontSize: 13, fontWeight: tab === k ? 700 : 500, color: tab === k ? "#C8102E" : "#888", background: tab === k ? "#fff" : "transparent", cursor: "pointer", boxShadow: tab === k ? "0 2px 8px rgba(0,0,0,0.08)" : "none", transition: "all 0.2s", fontFamily: "inherit" }}>
+                {label}
+              </button>
+            ))}
+          </div>
+
+          <label style={{ fontSize: 13, fontWeight: 600, color: "#555", display: "block", marginBottom: 6 }}>
+            {tab === "email" ? (lang === "zh" ? "邮箱地址" : "Email") : (lang === "zh" ? "手机号码" : "Phone")}
+          </label>
+          <input value={contact} onChange={e => setContact(e.target.value)}
+            onFocus={e => e.target.style.borderColor = "#C8102E"} onBlur={e => e.target.style.borderColor = "#eee"}
+            onKeyDown={e => e.key === "Enter" && sendOtp()}
+            placeholder={tab === "email" ? "请输入注册邮箱" : "请输入手机号"} style={inputStyle} />
+
+          {error && <p style={{ color: "#C8102E", fontSize: 13, margin: "8px 0 0" }}>⚠ {error}</p>}
+          <button onClick={sendOtp} disabled={loading || !contact.trim()} style={{ ...btnPrimary, opacity: (loading || !contact.trim()) ? 0.6 : 1 }}>
+            {loading ? "发送中..." : (lang === "zh" ? "发送验证码" : "Send Code")}
+          </button>
+        </>}
+
+        {step === 2 && <>
+          <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 20, padding: "10px 14px", background: "#FFF5F7", borderRadius: 10, border: "1px solid rgba(200,16,46,0.15)" }}>
+            <span style={{ fontSize: 18 }}>📬</span>
+            <div>
+              <p style={{ margin: 0, fontSize: 13, fontWeight: 600, color: "#C8102E" }}>验证码已发送</p>
+              <p style={{ margin: 0, fontSize: 12, color: "#888" }}>{localMode ? `本地预览模式，固定验证码：888888` : `已发送至 ${contact}`}</p>
+            </div>
+          </div>
+
+          <label style={{ fontSize: 13, fontWeight: 600, color: "#555", display: "block", marginBottom: 6 }}>输入 6 位验证码</label>
+          <input value={otp} onChange={e => setOtp(e.target.value.replace(/\D/g, "").slice(0, 6))}
+            onFocus={e => e.target.style.borderColor = "#C8102E"} onBlur={e => e.target.style.borderColor = "#eee"}
+            onKeyDown={e => e.key === "Enter" && verifyOtp()}
+            placeholder="请输入验证码" maxLength={6}
+            style={{ ...inputStyle, fontSize: 22, letterSpacing: 8, textAlign: "center", fontWeight: 700 }} />
+
+          {error && <p style={{ color: "#C8102E", fontSize: 13, margin: "8px 0 0" }}>⚠ {error}</p>}
+          <button onClick={verifyOtp} disabled={loading || otp.length !== 6} style={{ ...btnPrimary, opacity: (loading || otp.length !== 6) ? 0.6 : 1 }}>
+            {loading ? "验证中..." : (lang === "zh" ? "登录" : "Login")}
+          </button>
+          <button onClick={() => { setStep(1); setOtp(""); setError(""); }} style={{ width: "100%", background: "transparent", border: "none", color: "#888", fontSize: 13, cursor: "pointer", marginTop: 8, fontFamily: "inherit" }}>
+            ← 重新获取验证码
+          </button>
+        </>}
+
+        <p style={{ textAlign: "center", fontSize: 13, color: "#888", marginTop: 20, marginBottom: 0 }}>
+          还没有账号？
+          <span onClick={onSwitchRegister} style={{ color: "#C8102E", fontWeight: 600, cursor: "pointer", marginLeft: 4 }}>立即注册</span>
+        </p>
+      </div>
+    </ModalOverlay>
+  );
+}
+
+// ═══════ 注册 Modal ═══════
+const COUNTRY_CODES = [
+  // 亚太
+  { code: "+86",  flag: "🇨🇳", name: "中国 China" },
+  { code: "+852", flag: "🇭🇰", name: "香港 Hong Kong" },
+  { code: "+853", flag: "🇲🇴", name: "澳门 Macau" },
+  { code: "+886", flag: "🇹🇼", name: "台湾 Taiwan" },
+  { code: "+81",  flag: "🇯🇵", name: "日本 Japan" },
+  { code: "+82",  flag: "🇰🇷", name: "韩国 Korea" },
+  { code: "+65",  flag: "🇸🇬", name: "新加坡 Singapore" },
+  { code: "+60",  flag: "🇲🇾", name: "马来西亚 Malaysia" },
+  { code: "+66",  flag: "🇹🇭", name: "泰国 Thailand" },
+  { code: "+84",  flag: "🇻🇳", name: "越南 Vietnam" },
+  { code: "+62",  flag: "🇮🇩", name: "印尼 Indonesia" },
+  { code: "+63",  flag: "🇵🇭", name: "菲律宾 Philippines" },
+  { code: "+95",  flag: "🇲🇲", name: "缅甸 Myanmar" },
+  { code: "+855", flag: "🇰🇭", name: "柬埔寨 Cambodia" },
+  { code: "+856", flag: "🇱🇦", name: "老挝 Laos" },
+  { code: "+61",  flag: "🇦🇺", name: "澳大利亚 Australia" },
+  { code: "+64",  flag: "🇳🇿", name: "新西兰 New Zealand" },
+  { code: "+91",  flag: "🇮🇳", name: "印度 India" },
+  { code: "+92",  flag: "🇵🇰", name: "巴基斯坦 Pakistan" },
+  { code: "+880", flag: "🇧🇩", name: "孟加拉 Bangladesh" },
+  { code: "+94",  flag: "🇱🇰", name: "斯里兰卡 Sri Lanka" },
+  { code: "+977", flag: "🇳🇵", name: "尼泊尔 Nepal" },
+  { code: "+93",  flag: "🇦🇫", name: "阿富汗 Afghanistan" },
+  { code: "+98",  flag: "🇮🇷", name: "伊朗 Iran" },
+  // 中东
+  { code: "+971", flag: "🇦🇪", name: "阿联酋 UAE" },
+  { code: "+966", flag: "🇸🇦", name: "沙特 Saudi Arabia" },
+  { code: "+972", flag: "🇮🇱", name: "以色列 Israel" },
+  { code: "+90",  flag: "🇹🇷", name: "土耳其 Turkey" },
+  { code: "+962", flag: "🇯🇴", name: "约旦 Jordan" },
+  { code: "+961", flag: "🇱🇧", name: "黎巴嫩 Lebanon" },
+  { code: "+964", flag: "🇮🇶", name: "伊拉克 Iraq" },
+  { code: "+965", flag: "🇰🇼", name: "科威特 Kuwait" },
+  { code: "+974", flag: "🇶🇦", name: "卡塔尔 Qatar" },
+  { code: "+973", flag: "🇧🇭", name: "巴林 Bahrain" },
+  { code: "+968", flag: "🇴🇲", name: "阿曼 Oman" },
+  // 欧洲
+  { code: "+44",  flag: "🇬🇧", name: "英国 UK" },
+  { code: "+49",  flag: "🇩🇪", name: "德国 Germany" },
+  { code: "+33",  flag: "🇫🇷", name: "法国 France" },
+  { code: "+39",  flag: "🇮🇹", name: "意大利 Italy" },
+  { code: "+34",  flag: "🇪🇸", name: "西班牙 Spain" },
+  { code: "+31",  flag: "🇳🇱", name: "荷兰 Netherlands" },
+  { code: "+32",  flag: "🇧🇪", name: "比利时 Belgium" },
+  { code: "+41",  flag: "🇨🇭", name: "瑞士 Switzerland" },
+  { code: "+43",  flag: "🇦🇹", name: "奥地利 Austria" },
+  { code: "+46",  flag: "🇸🇪", name: "瑞典 Sweden" },
+  { code: "+47",  flag: "🇳🇴", name: "挪威 Norway" },
+  { code: "+45",  flag: "🇩🇰", name: "丹麦 Denmark" },
+  { code: "+358", flag: "🇫🇮", name: "芬兰 Finland" },
+  { code: "+48",  flag: "🇵🇱", name: "波兰 Poland" },
+  { code: "+420", flag: "🇨🇿", name: "捷克 Czech Rep." },
+  { code: "+36",  flag: "🇭🇺", name: "匈牙利 Hungary" },
+  { code: "+40",  flag: "🇷🇴", name: "罗马尼亚 Romania" },
+  { code: "+30",  flag: "🇬🇷", name: "希腊 Greece" },
+  { code: "+351", flag: "🇵🇹", name: "葡萄牙 Portugal" },
+  { code: "+353", flag: "🇮🇪", name: "爱尔兰 Ireland" },
+  { code: "+7",   flag: "🇷🇺", name: "俄罗斯 Russia" },
+  { code: "+380", flag: "🇺🇦", name: "乌克兰 Ukraine" },
+  // 北美
+  { code: "+1",   flag: "🇺🇸", name: "美国 USA" },
+  { code: "+1",   flag: "🇨🇦", name: "加拿大 Canada" },
+  { code: "+52",  flag: "🇲🇽", name: "墨西哥 Mexico" },
+  // 南美
+  { code: "+55",  flag: "🇧🇷", name: "巴西 Brazil" },
+  { code: "+54",  flag: "🇦🇷", name: "阿根廷 Argentina" },
+  { code: "+56",  flag: "🇨🇱", name: "智利 Chile" },
+  { code: "+57",  flag: "🇨🇴", name: "哥伦比亚 Colombia" },
+  { code: "+51",  flag: "🇵🇪", name: "秘鲁 Peru" },
+  // 非洲
+  { code: "+27",  flag: "🇿🇦", name: "南非 South Africa" },
+  { code: "+20",  flag: "🇪🇬", name: "埃及 Egypt" },
+  { code: "+234", flag: "🇳🇬", name: "尼日利亚 Nigeria" },
+  { code: "+254", flag: "🇰🇪", name: "肯尼亚 Kenya" },
+  { code: "+212", flag: "🇲🇦", name: "摩洛哥 Morocco" },
+  { code: "+216", flag: "🇹🇳", name: "突尼斯 Tunisia" },
+  { code: "+custom", flag: "✏️", name: "自定义 Custom..." },
+];
+
+function RegisterModal({ lang, onClose, onSuccess, onSwitchLogin }) {
+  const [form, setForm] = useState({ name: "", email: "", phone: "", dialCode: "+86", company: "", position: "" });
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+  const [done, setDone] = useState(false);
+
+  const set = (k, v) => setForm(f => ({ ...f, [k]: v }));
+
+  const zh = lang === "zh";
+
+  const submit = async () => {
+    setError("");
+    if (!form.name.trim()) { setError(zh ? "请填写姓名" : "Please enter your name"); return; }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) { setError(zh ? "请输入正确的邮箱地址" : "Please enter a valid email address"); return; }
+    if (!form.phone.trim() || form.phone.replace(/\D/g, "").length < 5) { setError(zh ? "请输入正确的手机号码" : "Please enter a valid phone number"); return; }
+    if (!form.company.trim()) { setError(zh ? "请填写公司名称" : "Please enter your company name"); return; }
+
+    setLoading(true);
+    const dial = form.dialCode === "+custom" ? (form.customDial || "") : form.dialCode;
+    const fullPhone = `${dial} ${form.phone.trim()}`;
+    const userData = { name: form.name.trim(), email: form.email.trim(), phone: fullPhone, company: form.company.trim(), position: form.position.trim() };
+    try {
+      const res = await fetch("/api/register", {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(userData),
+      });
+      const data = await res.json();
+      if (!res.ok) { setError(data.error || (zh ? "注册失败，请重试" : "Registration failed, please try again")); setLoading(false); return; }
+    } catch {
+      // local preview mode, continue
+    }
+
+    const users = JSON.parse(localStorage.getItem("bsd_users") || "[]");
+    if (users.find(u => u.email === userData.email)) { setError(zh ? "该邮箱已注册，请直接登录" : "This email is already registered, please login"); setLoading(false); return; }
+    users.push(userData);
+    localStorage.setItem("bsd_users", JSON.stringify(users));
+    setLoading(false);
+    setDone(true);
+    setTimeout(() => onSuccess(userData), 2500);
+  };
+
+  const inputStyle = (err) => ({ width: "100%", border: `1.5px solid ${err ? "#C8102E" : "#eee"}`, borderRadius: 10, padding: "11px 14px", fontSize: 14, fontFamily: "inherit", outline: "none", color: "#333", background: "#fafafa", boxSizing: "border-box", transition: "border-color 0.2s" });
+  const label = (text, required) => (
+    <label style={{ fontSize: 13, fontWeight: 600, color: "#555", display: "block", marginBottom: 5 }}>
+      {text}{required && <span style={{ color: "#C8102E", marginLeft: 2 }}>*</span>}
+    </label>
+  );
+
+  return (
+    <ModalOverlay onClose={onClose}>
+      <div style={{ maxWidth: 520, width: "100%" }}>
+        {/* 头部 */}
+        <div style={{ background: "linear-gradient(135deg,#9B0023,#C8102E)", padding: "24px 28px 20px" }}>
+          <button onClick={onClose} style={{ position: "absolute", top: 16, right: 18, background: "rgba(255,255,255,0.2)", border: "none", borderRadius: "50%", width: 28, height: 28, color: "#fff", fontSize: 16, cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center" }}>×</button>
+          <h2 style={{ color: "#fff", margin: 0, fontSize: 20, fontWeight: 800 }}>{lang === "zh" ? "注册账号" : "Create Account"}</h2>
+          <p style={{ color: "rgba(255,255,255,0.8)", margin: "4px 0 0", fontSize: 13 }}>{lang === "zh" ? "加入博仕达生物，获取专属服务" : "Join Booster Bio for exclusive services"}</p>
+        </div>
+
+        <div style={{ padding: "24px 28px 28px" }}>
+          {done ? (
+            <div style={{ textAlign: "center", padding: "24px 0" }}>
+              <div style={{ fontSize: 52, marginBottom: 16 }}>🎉</div>
+              <h3 style={{ color: "#C8102E", margin: "0 0 8px", fontSize: 20 }}>{zh ? "注册成功！" : "Registration Successful!"}</h3>
+              <p style={{ color: "#666", fontSize: 14, margin: 0 }}>{zh ? "欢迎加入博仕达生物，正在为您登录..." : "Welcome to Booster Bio, logging you in..."}</p>
+            </div>
+          ) : (
+            <>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>
+                <div>
+                  {label(zh ? "姓名" : "Full Name", true)}
+                  <input value={form.name} onChange={e => set("name", e.target.value)}
+                    onFocus={e => e.target.style.borderColor = "#C8102E"} onBlur={e => e.target.style.borderColor = "#eee"}
+                    placeholder={zh ? "请输入真实姓名" : "Your full name"} style={inputStyle()} />
+                </div>
+                <div>
+                  {label(zh ? "职位" : "Job Title")}
+                  <input value={form.position} onChange={e => set("position", e.target.value)}
+                    onFocus={e => e.target.style.borderColor = "#C8102E"} onBlur={e => e.target.style.borderColor = "#eee"}
+                    placeholder={zh ? "如：采购经理（选填）" : "e.g. Procurement Manager (optional)"} style={inputStyle()} />
+                </div>
+              </div>
+
+              <div style={{ marginTop: 14 }}>
+                {label(zh ? "公司名称" : "Company / Institution", true)}
+                <input value={form.company} onChange={e => set("company", e.target.value)}
+                  onFocus={e => e.target.style.borderColor = "#C8102E"} onBlur={e => e.target.style.borderColor = "#eee"}
+                  placeholder={zh ? "请输入公司/机构全称" : "Full company or institution name"} style={inputStyle()} />
+              </div>
+
+              <div style={{ marginTop: 14 }}>
+                {label(zh ? "邮箱地址" : "Email Address", true)}
+                <input type="email" value={form.email} onChange={e => set("email", e.target.value)}
+                  onFocus={e => e.target.style.borderColor = "#C8102E"} onBlur={e => e.target.style.borderColor = "#eee"}
+                  placeholder={zh ? "用于登录和接收通知" : "Used for login and notifications"} style={inputStyle()} />
+              </div>
+
+              <div style={{ marginTop: 14 }}>
+                {label(zh ? "手机号码" : "Mobile Number", true)}
+                <div style={{ display: "flex", gap: 8 }}>
+                  <select value={form.dialCode} onChange={e => set("dialCode", e.target.value)}
+                    style={{ border: "1.5px solid #eee", borderRadius: 10, padding: "11px 8px", fontSize: 13, fontFamily: "inherit", outline: "none", color: "#333", background: "#fafafa", cursor: "pointer", flexShrink: 0, width: 160 }}>
+                    {COUNTRY_CODES.map((c, i) => (
+                      <option key={i} value={c.code}>{c.flag} {c.code !== "+custom" ? c.code : ""} {c.name}</option>
+                    ))}
+                  </select>
+                  {form.dialCode === "+custom" && (
+                    <input value={form.customDial || ""} onChange={e => set("customDial", e.target.value.replace(/[^\d+]/g, ""))}
+                      placeholder="+xxx"
+                      style={{ border: "1.5px solid #C8102E", borderRadius: 10, padding: "11px 10px", fontSize: 14, fontFamily: "inherit", outline: "none", color: "#333", background: "#fafafa", width: 72, flexShrink: 0 }} />
+                  )}
+                  <input type="tel" value={form.phone} onChange={e => set("phone", e.target.value.replace(/[^\d\s\-]/g, ""))}
+                    onFocus={e => e.target.style.borderColor = "#C8102E"} onBlur={e => e.target.style.borderColor = "#eee"}
+                    placeholder={zh ? "请输入手机号码" : "Phone number"} style={{ ...inputStyle(), flex: 1 }} />
+                </div>
+              </div>
+
+              {error && <p style={{ color: "#C8102E", fontSize: 13, margin: "12px 0 0", padding: "8px 12px", background: "#FFF5F7", borderRadius: 8 }}>⚠ {error}</p>}
+
+              <button onClick={submit} disabled={loading}
+                style={{ width: "100%", background: "rgba(200,16,46,0.90)", color: "#fff", border: "none", borderRadius: 12, padding: "13px", fontSize: 15, fontWeight: 700, cursor: loading ? "not-allowed" : "pointer", opacity: loading ? 0.7 : 1, fontFamily: "inherit", marginTop: 18 }}>
+                {loading ? (zh ? "提交中..." : "Submitting...") : (zh ? "立即注册" : "Create Account")}
+              </button>
+
+              <p style={{ textAlign: "center", fontSize: 13, color: "#888", marginTop: 16, marginBottom: 0 }}>
+                {zh ? "已有账号？" : "Already have an account? "}
+                <span onClick={onSwitchLogin} style={{ color: "#C8102E", fontWeight: 600, cursor: "pointer", marginLeft: 4 }}>
+                  {zh ? "直接登录" : "Login"}
+                </span>
+              </p>
+            </>
+          )}
+        </div>
+      </div>
+    </ModalOverlay>
+  );
+}
 
 function DNACanvas() {
   const canvasRef = useRef(null);
@@ -406,15 +783,11 @@ function DNACanvas() {
 }
 
 
-function HeroSection({ lang, onBrowse, onSolutions }) {
+function HeroSection({ lang, onBrowse, onSearch }) {
+  const [q, setQ] = useState("");
+  const doSearch = () => { if (q.trim()) onSearch(q.trim()); };
   return (
     <div style={{ background: "transparent", position: "relative", overflow: "hidden", minHeight: 580, display: "flex", alignItems: "center" }}>
-      {/* 背景视频 */}
-      <video autoPlay muted loop playsInline style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", zIndex: 0, pointerEvents: "none", transform: "scaleX(-1)" }}>
-        <source src="/hero-bg.mp4" type="video/mp4" />
-      </video>
-      {/* 白色半透明遮罩，保证文字可读性 */}
-      <div style={{ position: "absolute", inset: 0, background: "rgba(255,255,255,0.62)", zIndex: 0, pointerEvents: "none" }} />
       {/* Background glow blobs */}
       <div style={{ position: "absolute", top: -120, left: -80, width: 520, height: 520, borderRadius: "50%", background: "radial-gradient(circle, rgba(255,180,190,0.55) 0%, rgba(200,16,46,0.12) 60%, transparent 80%)", filter: "blur(60px)", animation: "glowPulse 6s ease-in-out infinite", pointerEvents: "none" }} />
       <div style={{ position: "absolute", top: 40, left: 120, width: 320, height: 320, borderRadius: "50%", background: "radial-gradient(circle, rgba(255,120,140,0.35) 0%, transparent 70%)", filter: "blur(40px)", animation: "glowPulse 8s ease-in-out infinite 1s", pointerEvents: "none" }} />
@@ -459,17 +832,6 @@ function HeroSection({ lang, onBrowse, onSolutions }) {
               {lang === "zh" ? "浏览产品目录" : "Browse Products"}
               <span style={{ width: 22, height: 22, borderRadius: "50%", background: "rgba(255,255,255,0.22)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 12 }}>→</span>
             </button>
-            <button onClick={onSolutions}
-              onMouseEnter={e => { e.currentTarget.style.background = "rgba(200,16,46,0.06)"; e.currentTarget.style.borderColor = T.red; }}
-              onMouseLeave={e => { e.currentTarget.style.background = "rgba(255,255,255,0.5)"; e.currentTarget.style.borderColor = "rgba(200,16,46,0.2)"; }}
-              style={{
-                background: "rgba(255,255,255,0.5)", backdropFilter: "blur(8px)",
-                color: T.red, border: "1.5px solid rgba(200,16,46,0.2)", borderRadius: 16,
-                padding: "14px 28px", fontSize: 15, fontWeight: 600, cursor: "pointer",
-                fontFamily: T.font, transition: "all 0.2s",
-              }}>
-              {lang === "zh" ? "节能解决方案" : "Energy Solutions"}
-            </button>
           </div>
         </div>
 
@@ -491,6 +853,28 @@ function HeroSection({ lang, onBrowse, onSolutions }) {
             <div style={{ fontSize: 22, fontWeight: 800, color: "#a020b0", fontFamily: T.fontHead, lineHeight: 1 }}>1800<span style={{ fontSize: 13, fontWeight: 600 }}>+</span></div>
           </div>
         </div>
+
+        {/* ── 全宽搜索框 ── */}
+        <div style={{ gridColumn: "1 / -1", marginTop: 40 }}>
+          <div style={{ display: "flex", alignItems: "center", background: "rgba(255,255,255,0.88)", backdropFilter: "blur(24px) saturate(180%)", border: "1.5px solid rgba(200,16,46,0.18)", borderRadius: 20, padding: "6px 8px 6px 22px", boxShadow: "0 8px 40px rgba(200,16,46,0.12), inset 0 1px 0 rgba(255,255,255,0.9)", maxWidth: 720, margin: "0 auto" }}>
+            <span style={{ fontSize: 18, opacity: 0.4, marginRight: 10, flexShrink: 0 }}>🔍</span>
+            <input
+              value={q}
+              onChange={e => setQ(e.target.value)}
+              onKeyDown={e => e.key === "Enter" && doSearch()}
+              placeholder={lang === "zh" ? "搜索产品货号、名称、规格..." : "Search by SKU, name or specification..."}
+              style={{ flex: 1, border: "none", outline: "none", background: "transparent", fontSize: 16, fontFamily: T.font, color: "#333", padding: "10px 0" }}
+            />
+            <button
+              onClick={doSearch}
+              onMouseEnter={e => e.currentTarget.style.transform = "scale(1.03)"}
+              onMouseLeave={e => e.currentTarget.style.transform = "scale(1)"}
+              style={{ background: `rgba(200,16,46,0.88)`, backdropFilter: "blur(2px)", color: "#fff", border: "none", borderRadius: 14, padding: "11px 26px", fontSize: 15, fontWeight: 700, cursor: "pointer", fontFamily: T.font, whiteSpace: "nowrap", boxShadow: "inset 0 4px 4px rgba(255,255,255,0.2), 0 4px 16px rgba(200,16,46,0.3)", transition: "transform 0.2s", flexShrink: 0 }}>
+              {lang === "zh" ? "搜索产品" : "Search"}
+            </button>
+          </div>
+        </div>
+
       </div>
     </div>
   );
@@ -971,12 +1355,26 @@ export default function BoosterHomepage() {
   const [productCat, setProductCat] = useState(null);
   const [detailProduct, setDetailProduct] = useState(null);
 
+  // ── Auth state ──
+  const [user, setUser] = useState(() => { try { return JSON.parse(localStorage.getItem("bsd_user") || "null"); } catch { return null; } });
+  const [showLogin, setShowLogin] = useState(false);
+  const [showRegister, setShowRegister] = useState(false);
+
+  const handleLoginSuccess = useCallback((u) => { localStorage.setItem("bsd_user", JSON.stringify(u)); setUser(u); setShowLogin(false); setShowRegister(false); }, []);
+  const handleRegisterSuccess = useCallback((u) => { handleLoginSuccess(u); }, [handleLoginSuccess]);
+  const handleLogout = useCallback(() => { localStorage.removeItem("bsd_user"); setUser(null); }, []);
+
   const go = useCallback((s) => { setSection(s); setDetailProduct(null); if(s!=="products"){ setProductCat(null); setSearch(""); } window.scrollTo?.({top:0,behavior:"smooth"}); }, []);
   const goProducts = useCallback((cat) => { setProductCat(cat||null); setSection("products"); setDetailProduct(null); window.scrollTo?.({top:0,behavior:"smooth"}); }, []);
   const goDetail = useCallback((p) => { setDetailProduct(p); setSection("products"); window.scrollTo?.({top:0,behavior:"smooth"}); }, []);
 
   return (
-    <div style={{ fontFamily: T.font, color: T.red, WebkitFontSmoothing: "antialiased", minHeight: "100vh", background: "#FFFFFF" }}>
+    <div style={{ fontFamily: T.font, color: T.red, WebkitFontSmoothing: "antialiased", minHeight: "100vh", background: "transparent", position: "relative" }}>
+      {/* ── 全页固定视频背景 ── */}
+      <video autoPlay muted loop playsInline style={{ position: "fixed", inset: 0, width: "100%", height: "100%", objectFit: "cover", zIndex: -2, pointerEvents: "none", transform: "scaleX(-1)" }}>
+        <source src="/hero-bg.mp4" type="video/mp4" />
+      </video>
+      <div style={{ position: "fixed", inset: 0, background: "rgba(255,255,255,0.60)", zIndex: -1, pointerEvents: "none" }} />
       <style>{`
         * { box-sizing: border-box; margin: 0; }
         input::placeholder, textarea::placeholder { color: #E8A0AB; }
@@ -988,10 +1386,10 @@ export default function BoosterHomepage() {
         @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
       `}</style>
       <TopBar lang={lang} setLang={setLang} />
-      <NavHeader lang={lang} section={section} setSection={go} search={search} setSearch={setSearch} />
+      <NavHeader lang={lang} section={section} setSection={go} user={user} onLogin={() => setShowLogin(true)} onRegister={() => setShowRegister(true)} onLogout={handleLogout} />
 
       {section === "home" && <>
-        <HeroSection lang={lang} onBrowse={() => goProducts(null)} onSolutions={() => go("solutions")} />
+        <HeroSection lang={lang} onBrowse={() => goProducts(null)} onSearch={(q) => { setSearch(q); go("products"); }} />
         <CategorySection lang={lang} onSelectCat={goProducts} />
         <SolutionsSection lang={lang} />
         <StatsBar lang={lang} />
@@ -1005,6 +1403,10 @@ export default function BoosterHomepage() {
 
       <TrustedBy lang={lang} />
       <Footer lang={lang} />
+
+      {/* ── Auth Modals ── */}
+      {showLogin && <LoginModal lang={lang} onClose={() => setShowLogin(false)} onSuccess={handleLoginSuccess} onSwitchRegister={() => { setShowLogin(false); setShowRegister(true); }} />}
+      {showRegister && <RegisterModal lang={lang} onClose={() => setShowRegister(false)} onSuccess={handleRegisterSuccess} onSwitchLogin={() => { setShowRegister(false); setShowLogin(true); }} />}
     </div>
   );
 }
