@@ -1,7 +1,9 @@
-# 博仕达生物官网 — 开发文档
+# 博仕达生物官网 — 完整开发文档
 
 > **上海博仕达生物工程有限公司** 官方网站
 > 线上地址：[https://tflabservice.com](https://tflabservice.com)
+> GitHub：[https://github.com/Benny20260131/booster-website](https://github.com/Benny20260131/booster-website)
+> 文档最后更新：2026年3月
 
 ---
 
@@ -12,11 +14,14 @@
 3. [本地开发环境搭建](#3-本地开发环境搭建)
 4. [⚠️ 上线部署规范（必读）](#4-️-上线部署规范必读)
 5. [目录结构](#5-目录结构)
-6. [数据文件说明](#6-数据文件说明)
-7. [环境变量配置](#7-环境变量配置)
-8. [常见问题 & 故障排查](#8-常见问题--故障排查)
-9. [产品数据维护](#9-产品数据维护)
-10. [部署信息汇总](#10-部署信息汇总)
+6. [功能模块说明](#6-功能模块说明)
+7. [数据文件说明](#7-数据文件说明)
+8. [环境变量配置](#8-环境变量配置)
+9. [Cloudflare Functions API](#9-cloudflare-functions-api)
+10. [常见问题 & 故障排查](#10-常见问题--故障排查)
+11. [产品数据维护](#11-产品数据维护)
+12. [部署信息汇总](#12-部署信息汇总)
+13. [版本历史](#13-版本历史)
 
 ---
 
@@ -27,11 +32,14 @@
 | 功能 | 说明 |
 |------|------|
 | 产品展示 | 7大分类、1900+ SKU、分页浏览、关键词搜索 |
-| 图片匹配 | 每个 SKU 自动匹配最合适的产品图片 |
-| 产品详情 | 点击产品卡片查看详情、规格、相关产品 |
-| 联系表单 | 留言板提交后自动发邮件到公司邮箱 |
-| 多语言 | 支持中文 / English 切换 |
+| 产品详情 | 点击产品卡片查看详情、规格、相关产品、询价 |
+| 用户注册 | 填写姓名/邮箱/国际手机号/公司/职位完成注册，发送欢迎邮件 |
+| 用户登录 | 邮箱 OTP 验证码登录，10分钟有效，支持本地预览模式 |
+| 产品询价 | 询价弹窗预填产品信息，提交后发送邮件至公司邮箱 |
+| 联系留言 | 留言板提交后自动发邮件到公司邮箱 |
+| 多语言 | 支持中文 / English 完整切换（含所有弹窗） |
 | 解决方案 | 展示公司服务场景 |
+| 视频背景 | 全页背景视频（Kling AI 生成，镜像显示） |
 
 **产品分类（7大类）：**
 - 🧪 实验耗材（吸头、PCR管/板、离心管、培养板等）
@@ -50,19 +58,28 @@
 ┌─────────────────────────────────────────────────────┐
 │                   浏览器 (SPA)                       │
 │   React 18 + Vite 5 + Tailwind CSS                  │
-│   booster-homepage.jsx (主组件)                      │
+│   booster-homepage.jsx（主组件，约 1500+ 行）         │
 └───────────────────┬─────────────────────────────────┘
                     │ HTTPS
 ┌───────────────────▼─────────────────────────────────┐
 │              Cloudflare Pages                        │
 │  • 静态文件托管 (dist/)                              │
 │  • 自定义域名：tflabservice.com（SSL 已启用）         │
-│  • Pages Function：/api/contact（发邮件）             │
+│  • Pages Functions：/api/contact / register          │
+│                     /api/send-otp / verify-otp       │
 └───────────────────┬─────────────────────────────────┘
-                    │ 自动部署
+                    │ 自动部署（git push 触发）
 ┌───────────────────▼─────────────────────────────────┐
 │         GitHub (Benny20260131/booster-website)        │
 │         分支：main → 推送即触发 Cloudflare 构建       │
+└─────────────────────────────────────────────────────┘
+                    │ 邮件发送
+┌───────────────────▼─────────────────────────────────┐
+│              Resend API                              │
+│  from: service@tflabservice.com                      │
+│  • OTP 验证码邮件                                    │
+│  • 注册欢迎邮件 + 管理员通知                          │
+│  • 询价/留言邮件                                     │
 └─────────────────────────────────────────────────────┘
 ```
 
@@ -99,6 +116,7 @@ npm install
 
 # 3. 启动本地开发服务器
 npm run dev
+# → 浏览器访问 http://localhost:5173
 ```
 
 ### 可用命令
@@ -109,6 +127,17 @@ npm run dev
 | `npm run build` | 生产构建，输出到 `dist/` 目录 |
 | `npm run preview` | 在本地预览构建后的生产版本，访问 http://localhost:4173 |
 | `npm run image:status` | 查看图片处理进度 |
+
+### 本地预览模式说明
+
+由于 Cloudflare Pages Functions 在本地 `npm run dev` 时不运行，以下功能有特殊降级行为：
+
+| 功能 | 本地行为 | 线上行为 |
+|------|----------|---------|
+| 发送 OTP 验证码 | 弹窗提示固定验证码 `888888` | 发送真实邮件到用户邮箱 |
+| 注册 | 仅存入 localStorage，不发邮件 | 存 localStorage + 发欢迎邮件 |
+| 询价提交 | 打开 `mailto:` 链接 | 直接发送邮件到 service@tflabservice.com |
+| 联系留言 | 报错（正常现象） | 正常发邮件 |
 
 ---
 
@@ -130,7 +159,7 @@ npm run dev
 ──────────────────────────────────────────────────────
 操作：打开 http://localhost:5173
 预期：
-  ✅ 首页正常显示（博仕达 Logo、导航栏、产品分类卡片）
+  ✅ 首页正常显示（博仕达 Logo、导航栏、背景视频）
   ✅ 没有空白页或纯白屏
   ❌ 若页面空白 → 直接看第 3 步
 
@@ -139,17 +168,20 @@ npm run dev
 操作：按 F12 → 切换到 Console（控制台）标签
 预期：
   ✅ 没有红色 ERROR 报错
-  ✅ 黄色 Warning 可忽略（如 Duplicate key 警告）
+  ✅ 黄色 Warning 可忽略
   ❌ 若有红色错误，必须修复后才能继续
 
 第 4 步：测试核心功能
 ──────────────────────────────────────────────────────
 依次测试：
-  ✅ 点击导航"产品中心" → 产品列表正常加载
-  ✅ 在搜索框输入关键词 → 搜索结果正常显示
+  ✅ 背景视频正常播放（镜像显示）
+  ✅ Hero 搜索框输入关键词并跳转到产品列表
+  ✅ 点击"注册"→ 填写表单 → 提交成功 → 顶部显示用户名
+  ✅ 点击"退出" → 恢复登录/注册按钮
+  ✅ 点击"登录" → 输入邮箱 → 本地显示 888888 → 登录成功
   ✅ 点击产品卡片 → 产品详情页正常打开
-  ✅ 点击"联系我们" → 留言表单正常显示
-  ✅ 语言切换（中文 / EN）正常
+  ✅ 产品详情页点击"询价" → 询价弹窗正常显示，产品信息正确
+  ✅ 语言切换（中文 / EN）正常，所有弹窗文字同步切换
 
 第 5 步：执行生产构建
 ──────────────────────────────────────────────────────
@@ -168,7 +200,7 @@ npm run dev
 
 ══════════════════════════════════════════════════════
   ✅ 以上 6 步全部通过后，才可执行推送：
-     git add .
+     git add src/booster-homepage.jsx（或具体文件）
      git commit -m "简要说明修改内容"
      git push origin main
   → Cloudflare 将自动构建并部署（约 1-3 分钟）
@@ -192,7 +224,7 @@ booster-website/
 ├── src/                              # 源代码
 │   ├── main.jsx                      # React 入口（挂载 BoosterHomepage）
 │   ├── index.css                     # 全局样式
-│   ├── booster-homepage.jsx          # 主页面组件（核心业务逻辑）
+│   ├── booster-homepage.jsx          # 主页面组件（核心业务逻辑，~1500 行）
 │   │
 │   └── data/                         # 数据层
 │       ├── all-products.json         # 产品数据库（1961 条 SKU）
@@ -200,20 +232,23 @@ booster-website/
 │       └── imageLoader.js            # 图片加载模块（统一获取接口）
 │
 ├── public/                           # 静态资源（构建时原样复制到 dist/）
-│   └── images/products/              # 产品图片
-│       ├── *.jpg / *.png            # 产品实物图
-│       ├── default-吸头.svg          # 各分类默认占位图
-│       ├── default-pcr.svg
-│       ├── default-离心管.svg
-│       ├── gsbio/                    # 从 gsbio.com.cn 爬取的图片
-│       └── products-optimized/       # 压缩优化版（webp）
+│   ├── hero-bg.mp4                   # 首页背景视频（Kling AI 生成，镜像显示）
+│   └── images/
+│       └── products/                 # 产品图片
+│           ├── *.jpg / *.png         # 产品实物图
+│           ├── default-吸头.svg       # 各分类默认占位图
+│           └── products-optimized/   # 压缩优化版（webp）
 │
-├── functions/                        # Cloudflare Pages Functions
+├── functions/                        # Cloudflare Pages Functions（无服务器后端）
 │   └── api/
-│       └── contact.js               # POST /api/contact → Resend 发邮件
+│       ├── contact.js               # POST /api/contact → 发留言邮件
+│       ├── register.js              # POST /api/register → 注册 + 欢迎邮件
+│       ├── send-otp.js             # POST /api/send-otp → 发送登录验证码
+│       └── verify-otp.js           # POST /api/verify-otp → 校验验证码
 │
 ├── scripts/                          # 维护工具脚本（不部署到线上）
 │   ├── fix-image-mappings.js        # 批量修复错误图片映射
+│   ├── fix-wrong-mappings.js        # 修复错误分类映射
 │   ├── scrape-gsbio-images.js       # 爬取 gsbio 产品图
 │   └── batch-rename.js              # 批量重命名图片
 │
@@ -221,17 +256,99 @@ booster-website/
 ├── vite.config.js                    # Vite 构建配置
 ├── tailwind.config.js                # Tailwind 配置
 ├── package.json                      # 依赖与脚本命令
+├── package-lock.json                 # 依赖锁定文件
+├── postcss.config.js                 # PostCSS 配置
 ├── .gitignore                        # 忽略：node_modules/, dist/, .env
 └── README.md                         # 本文档
 ```
 
 ---
 
-## 6. 数据文件说明
+## 6. 功能模块说明
+
+### 6.1 主页组件结构（booster-homepage.jsx）
+
+```
+BoosterHomepage（根组件）
+├── 全页背景视频（position:fixed，scaleX(-1) 镜像）
+├── NavHeader（顶部导航）
+│   ├── Logo + 导航菜单
+│   ├── 语言切换（中 / EN）
+│   ├── 未登录：登录按钮 + 注册按钮
+│   └── 已登录：用户头像 + 姓名 + 退出下拉
+├── HeroSection（首页大图区）
+│   ├── 公司标语
+│   └── 全宽搜索框（跳转产品列表）
+├── CategorySection（产品分类卡片）
+├── ProductCatalogSection（产品列表 + 搜索 + 分页）
+├── ProductDetailView（产品详情页）
+│   └── InquiryModal（询价弹窗）
+├── SolutionsSection（解决方案）
+├── ContactSection（联系我们 + 留言表单）
+├── FooterSection（页脚）
+├── LoginModal（登录弹窗）
+└── RegisterModal（注册弹窗）
+```
+
+### 6.2 Liquid Glass 设计风格
+
+所有按钮采用苹果 WWDC 2025 发布的 Liquid Glass 风格：
+
+```js
+// 主色按钮（红色玻璃）
+LG.primary = {
+  background: "linear-gradient(145deg, rgba(255,255,255,0.24)...), rgba(200,16,46,0.68)",
+  backdropFilter: "blur(28px) saturate(200%)",
+  border: "1px solid rgba(255,255,255,0.42)",
+  boxShadow: "inset 0 1.5px 0 rgba(255,255,255,0.55)...",
+}
+
+// 幽灵按钮（透明玻璃）
+LG.ghost = {
+  background: "linear-gradient(145deg, rgba(255,255,255,0.26)...)",
+  backdropFilter: "blur(24px) saturate(180%)",
+  border: "1px solid rgba(200,16,46,0.28)",
+}
+```
+
+### 6.3 用户认证（localStorage MVP）
+
+> **注意：当前为 MVP 方案，用户数据存储在浏览器 localStorage，无服务器数据库。**
+> 后续如需多设备同步或更安全的认证，需迁移到真实数据库（如 Cloudflare D1）。
+
+| localStorage Key | 内容 |
+|-----------------|------|
+| `bsd_user` | 当前登录用户对象 `{ name, email, phone, company, position }` |
+| `bsd_users` | 所有已注册用户数组 |
+
+**登录流程：**
+```
+用户输入邮箱 → POST /api/send-otp → 获得 token（含加密OTP）
+→ 用户输入验证码 → POST /api/verify-otp（token + otp）→ 验证通过
+→ 从 localStorage 查找用户资料 → 写入 bsd_user → 登录完成
+```
+
+**OTP 无数据库实现原理：**
+```
+token = btoa(email + ":" + otp + ":" + timestamp)
+// token 返回给前端保存，验证时解码比对，无需数据库
+// 10 分钟有效期由 timestamp 控制
+```
+
+### 6.4 国际区号选择器
+
+注册弹窗电话号码栏包含：
+- 左侧下拉：70+ 国家区号（含旗帜 emoji）
+- 右侧输入：电话号码（≥5位即可，适配国际号码）
+- 支持"自定义"选项手动输入区号
+
+---
+
+## 7. 数据文件说明
 
 ### `src/data/all-products.json` — 产品数据库
 
-包含所有产品完整信息（528 KB，1961 条），结构如下：
+包含所有产品完整信息（528 KB，1961 条），每条结构如下：
 
 ```json
 {
@@ -245,11 +362,9 @@ booster-website/
 }
 ```
 
----
-
 ### `src/data/product-image-map.json` — 图片映射表
 
-SKU 与图片路径的映射（1.2 MB，4735 条），结构如下：
+SKU 与图片路径的映射（1.2 MB，4735 条）：
 
 ```json
 {
@@ -273,11 +388,7 @@ SKU 与图片路径的映射（1.2 MB，4735 条），结构如下：
 | `category` | 分类通用图片 | 可覆盖 |
 | `generic` | 通用占位图 | 可覆盖 |
 
----
-
 ### `src/data/imageLoader.js` — 图片加载模块
-
-组件通过此模块获取图片路径，不直接访问 JSON：
 
 ```javascript
 getProductImage(sku, category, type)  // type: 'main' | 'compressed' | 'thumb'
@@ -287,23 +398,70 @@ getImageInfo(sku)                      // 获取匹配详情（用于调试）
 
 ---
 
-## 7. 环境变量配置
+## 8. 环境变量配置
 
 ### 线上（Cloudflare Pages 控制台配置）
 
 | 变量名 | 说明 | 配置位置 |
 |--------|------|---------|
-| `RESEND_API_KEY` | Resend 邮件服务 API 密钥（已加密存储） | Cloudflare Dashboard → Pages → booster-website → 设置 → 变量和机密 |
+| `RESEND_API_KEY` | Resend 邮件服务 API 密钥 | Cloudflare Dashboard → Pages → booster-website → 设置 → 变量和机密 |
 
-### 本地开发说明
+### 本地开发
 
-联系表单 `/api/contact` 是 Cloudflare Pages Function，**本地 `npm run dev` 时不运行**，因此：
-- 本地提交表单会报错（属正常现象，不影响其他功能测试）
-- 邮件功能只有线上部署后才能使用
+Cloudflare Functions 在本地不运行，无需配置 `.env`。
+所有 API 调用在本地会自动降级（见第 3 节本地预览模式说明）。
 
 ---
 
-## 8. 常见问题 & 故障排查
+## 9. Cloudflare Functions API
+
+### POST `/api/contact` — 提交留言
+
+```json
+// 请求
+{ "name": "张三", "email": "test@example.com", "company": "某某公司", "message": "留言内容" }
+
+// 成功响应
+{ "success": true }
+```
+
+### POST `/api/register` — 用户注册
+
+```json
+// 请求（name/email/phone/company 必填，position 选填）
+{ "name": "张三", "email": "test@example.com", "phone": "+86 13800138000", "company": "某某公司", "position": "研究员" }
+
+// 成功响应
+{ "success": true, "user": { "name": "张三", "email": "...", ... } }
+```
+> 同时发送：欢迎邮件到用户邮箱 + 管理员通知到 service@tflabservice.com
+
+### POST `/api/send-otp` — 发送登录验证码
+
+```json
+// 请求
+{ "contact": "test@example.com", "type": "email" }
+
+// 成功响应（token 用于后续验证，10分钟有效）
+{ "success": true, "token": "base64编码的token" }
+```
+
+### POST `/api/verify-otp` — 校验验证码
+
+```json
+// 请求
+{ "token": "...", "otp": "123456" }
+
+// 成功响应
+{ "success": true, "email": "test@example.com" }
+
+// 失败响应示例
+{ "error": "验证码已过期，请重新获取" }
+```
+
+---
+
+## 10. 常见问题 & 故障排查
 
 ### ❌ 网站打开空白页
 
@@ -329,7 +487,7 @@ getImageInfo(sku)                      // 获取匹配详情（用于调试）
 ```
 打开 F12 → Network 标签 → 刷新页面 → 找到 .js 文件
 ✅ 正常大小：约 1-2 MB
-❌ 异常：超过 4 MB → 可能将图片（base64）或大量 JSON 数据直接写在 .jsx 文件里
+❌ 异常：超过 4 MB → 可能将大型数据直接写在 .jsx 里
    修复：将大型数据提取到独立 JSON 文件，用 import 引入
 ```
 
@@ -344,8 +502,6 @@ import data from './data.json';
 const T = { color: 'red' };
 ```
 
----
-
 ### ❌ 构建失败（`npm run build` 报错）
 
 ```
@@ -357,8 +513,6 @@ const T = { color: 'red' };
 3. 修复后重新运行 npm run build，直到无 ERROR
 ```
 
----
-
 ### ❌ 产品图片不显示
 
 ```
@@ -368,20 +522,26 @@ const T = { color: 'red' };
 4. 本地 npm run dev 确认显示正常后再推送
 ```
 
----
-
-### ❌ 联系表单提交失败（线上）
+### ❌ 登录/注册功能失效（线上）
 
 ```
-1. Cloudflare Dashboard → Pages → booster-website → 设置
-2. 确认 RESEND_API_KEY 环境变量已设置
-3. 查看 functions/api/contact.js 代码是否正确
-4. 检查 Cloudflare Pages Functions 日志
+1. 确认 RESEND_API_KEY 在 Cloudflare 环境变量中已配置
+2. Cloudflare Dashboard → Pages → booster-website
+   → Functions → 查看日志是否有报错
+3. 检查 functions/api/ 下对应文件代码
+```
+
+### ❌ 背景视频不播放
+
+```
+1. 确认 public/hero-bg.mp4 文件存在
+2. 浏览器兼容性：Chrome/Edge/Safari 支持 MP4，Firefox 可能需要 WebM 格式
+3. 视频自动播放需 muted 属性（已设置），部分浏览器策略可能仍阻止
 ```
 
 ---
 
-## 9. 产品数据维护
+## 11. 产品数据维护
 
 ### 添加新产品
 
@@ -414,18 +574,18 @@ const T = { color: 'red' };
 }
 ```
 
-**注意：** 图片文件必须放在 `public/images/products/` 目录下，且 JSON 格式必须合法。
+图片文件需放在 `public/images/products/` 目录下。
 
 ### 修复批量图片映射
 
 ```bash
-# 修复错误的分类图片映射
 node scripts/fix-image-mappings.js
+node scripts/fix-wrong-mappings.js
 ```
 
 ---
 
-## 10. 部署信息汇总
+## 12. 部署信息汇总
 
 | 项目 | 信息 |
 |------|------|
@@ -436,14 +596,17 @@ node scripts/fix-image-mappings.js
 | 生产分支 | main |
 | 构建命令 | `npm run build` |
 | 构建输出目录 | `dist` |
-| 邮件接收地址 | service@tflabservice.com |
+| 邮件服务 | Resend API（RESEND_API_KEY 已配置） |
+| 发件地址 | service@tflabservice.com |
+| 管理员收件地址 | service@tflabservice.com |
 
 ### 自动部署流程
 
 ```
 本地修改代码
     ↓ 完成本地 6 步验证
-git add . && git commit -m "修改说明"
+git add <文件名>
+git commit -m "修改说明"
     ↓
 git push origin main
     ↓
@@ -456,17 +619,20 @@ Cloudflare 拉取代码并执行 npm run build（约 1-3 分钟）
 
 ---
 
-## 版本历史
+## 13. 版本历史
 
-| 提交 | 内容 |
-|------|------|
-| e79a8ac | 修复 ContactForm `React.useState` 未导入导致空白页 |
-| 507d5b7 | 移除 5MB 内嵌 base64 图片，bundle 从 6.3MB → 1.6MB |
-| 85eeb3d | 修复 292 条错误分类图片映射 |
-| 50722ce | 添加留言表单自动发邮件（Resend API + Cloudflare Function） |
-| 1c527ca | 更新公司名称为上海博仕达生物工程有限公司 |
-| 17cdea2 | 移除蛋白和毛细管电泳耗材分类 |
-| f98872a | 初始提交 |
+| 提交 | 时间 | 内容 |
+|------|------|------|
+| 0d6fc8e | 2026-03 | 全站升级：登录/注册/询价/Liquid Glass/国际区号/i18n修复 |
+| a11cc86 | 2026-03 | feat: add login/register modals with OTP auth and full i18n |
+| 24bcee4 | 2026-03 | feat: add hero background video with mirror effect |
+| c3c8117 | 2026-03 | fix: 留言邮件发送地址改为 service@tflabservice.com |
+| e188811 | 2026-03 | test: 临时改收件人为gmail测试Resend是否通 |
+| a1a333b | 2026-03 | feat: 添加早期2试剂盒产品图片（13个SKU） |
+| 85eeb3d | 2026-03 | fix: 修复 292 条错误分类图片映射 |
+| 50722ce | 2026-03 | feat: 添加留言表单自动发邮件（Resend API + CF Function） |
+| 1c527ca | 2026-03 | feat: 更新公司名称为上海博仕达生物工程有限公司 |
+| f98872a | 2026-03 | feat: 初始提交 |
 
 ---
 
