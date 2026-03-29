@@ -1383,10 +1383,11 @@ function PeptideQCSection({ lang, onContact, onProducts }) {
                     <span style={{ fontSize: 14, fontWeight: 700, color: hoveredNode === i ? T.red : "#555", textAlign: "center", lineHeight: 1.35, padding: "0 18px", letterSpacing: 0.2 }}>{node.label}</span>
                   </BorderGlow>
                 </div>
-                {/* Connector arrow */}
+                {/* Water-pipe connector */}
                 {i < nodes.length - 1 && (
-                  <div style={{ width: 88, height: 3, background: `linear-gradient(90deg, ${T.red}50, ${T.red})`, position: "relative", flexShrink: 0, margin: "0 6px" }}>
-                    <span style={{ position: "absolute", right: -9, top: "50%", transform: "translateY(-50%)", color: T.red, fontSize: 22, fontWeight: 900, lineHeight: 1 }}>›</span>
+                  <div style={{ display: "flex", alignItems: "center", flexShrink: 0, margin: "0 6px" }}>
+                    <div className="pipe-flow" style={{ width: 88 }} />
+                    <div className="pipe-arrow-tip" />
                   </div>
                 )}
               </div>
