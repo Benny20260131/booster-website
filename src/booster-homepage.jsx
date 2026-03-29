@@ -1151,10 +1151,10 @@ function PeptideQCSection({ lang, onContact, onProducts }) {
       desc: zh ? "满足 EMA 正交分析强制要求，每批次出具 CoA，即开即用" : "Meets EMA mandatory orthogonal analysis requirements. CoA included, ready-to-use.",
       tagColor: "#FFE8EC", tagText: "#C8102E",
       products: [
-        { tag: zh ? "测序级" : "Seq. Grade", name: zh ? "胰蛋白酶（TPCK 处理）" : "Trypsin (TPCK-Treated)", spec: "Trypsin Sequencing Grade\nLys/Arg-C 端切割 | >98% 纯度", badges: [zh ? "极高特异性" : "High Specificity", zh ? "重组来源" : "Recombinant"] },
-        { tag: zh ? "正交酶" : "Orthogonal", name: "Glu-C（V8 蛋白酶）", spec: "Endoproteinase Glu-C\nGlu/Asp-C 端切割 | pH 4.0/8.0", badges: [zh ? "正交首选" : "Orthogonal", "EMA Compliant"] },
-        { tag: zh ? "测序级" : "Seq. Grade", name: "Lys-C 赖氨酸蛋白酶", spec: "Endoproteinase Lys-C\nLys-C 端高特异切割 | 耐变性剂", badges: [zh ? "高特异性" : "High Specificity", zh ? "抗尿素" : "Urea-Stable"] },
-        { tag: zh ? "正交酶" : "Orthogonal", name: "Asp-N 天冬氨酸蛋白酶", spec: "Endoproteinase Asp-N\nAsp/Cys-N 端切割 | 稀有酶", badges: ["N-terminal", zh ? "稀缺规格" : "Rare Grade"] },
+        { tag: zh ? "测序级" : "Seq. Grade", name: zh ? "胰蛋白酶（TPCK 处理）" : "Trypsin (TPCK-Treated)", spec: zh ? "Trypsin Sequencing Grade\nLys/Arg-C 端切割 | >98% 纯度" : "Trypsin Sequencing Grade\nLys/Arg-C Cleavage | >98% Purity", badges: [zh ? "极高特异性" : "High Specificity", zh ? "重组来源" : "Recombinant"] },
+        { tag: zh ? "正交酶" : "Orthogonal", name: zh ? "Glu-C（V8 蛋白酶）" : "Glu-C (V8 Protease)", spec: zh ? "Endoproteinase Glu-C\nGlu/Asp-C 端切割 | pH 4.0/8.0" : "Endoproteinase Glu-C\nGlu/Asp-C Cleavage | pH 4.0/8.0", badges: [zh ? "正交首选" : "Orthogonal", "EMA Compliant"] },
+        { tag: zh ? "测序级" : "Seq. Grade", name: zh ? "Lys-C 赖氨酸蛋白酶" : "Lys-C Endoproteinase", spec: zh ? "Endoproteinase Lys-C\nLys-C 端高特异切割 | 耐变性剂" : "Endoproteinase Lys-C\nLys-C High-Specificity | Denaturant-Stable", badges: [zh ? "高特异性" : "High Specificity", zh ? "抗尿素" : "Urea-Stable"] },
+        { tag: zh ? "正交酶" : "Orthogonal", name: zh ? "Asp-N 天冬氨酸蛋白酶" : "Asp-N Endoproteinase", spec: zh ? "Endoproteinase Asp-N\nAsp/Cys-N 端切割 | 稀有酶" : "Endoproteinase Asp-N\nAsp/Cys-N Cleavage | Rare Enzyme", badges: ["N-terminal", zh ? "稀缺规格" : "Rare Grade"] },
       ],
     },
     {
@@ -1162,10 +1162,10 @@ function PeptideQCSection({ lang, onContact, onProducts }) {
       desc: zh ? "应对 FDA/ChP 宿主安全性要求，极高灵敏度，抗基质干扰设计" : "Addresses FDA/ChP host safety requirements with ultra-high sensitivity.",
       tagColor: "#EDE7F6", tagText: "#6A1B9A",
       products: [
-        { tag: zh ? "高灵敏度" : "High Sensitivity", name: zh ? "HCP ELISA 试剂盒（宿主细胞蛋白）" : "HCP ELISA Kit (Host Cell Protein)", spec: "Host Cell Protein ELISA Kit\n检出限 <1 ng/mL | CHO 通用型", badges: [zh ? "极高灵敏度" : "Ultra Sensitive", zh ? "抗基质干扰" : "Matrix-Tolerant"] },
-        { tag: zh ? "定量检测" : "Quantitative", name: zh ? "HCD 宿主细胞 DNA 检测试剂盒" : "Host Cell DNA qPCR Kit", spec: "Host Cell DNA qPCR Kit\n检出限 <10 pg/mL | FDA 21 CFR", badges: ["qPCR", "FDA Compliant"] },
+        { tag: zh ? "高灵敏度" : "High Sensitivity", name: zh ? "HCP ELISA 试剂盒（宿主细胞蛋白）" : "HCP ELISA Kit (Host Cell Protein)", spec: zh ? "Host Cell Protein ELISA Kit\n检出限 <1 ng/mL | CHO 通用型" : "Host Cell Protein ELISA Kit\nDetection Limit <1 ng/mL | CHO Universal", badges: [zh ? "极高灵敏度" : "Ultra Sensitive", zh ? "抗基质干扰" : "Matrix-Tolerant"] },
+        { tag: zh ? "定量检测" : "Quantitative", name: zh ? "HCD 宿主细胞 DNA 检测试剂盒" : "Host Cell DNA qPCR Kit", spec: zh ? "Host Cell DNA qPCR Kit\n检出限 <10 pg/mL | FDA 21 CFR" : "Host Cell DNA qPCR Kit\nDetection Limit <10 pg/mL | FDA 21 CFR", badges: ["qPCR", "FDA Compliant"] },
         { tag: zh ? "无动物来源" : "Animal-Free", name: zh ? "rFC 重组因子 C 内毒素检测试剂盒" : "rFC Recombinant Endotoxin Kit", spec: "Recombinant Factor C Endotoxin Kit\n0.001–10 EU/mL", badges: [zh ? "无动物来源" : "Animal-Free", "ChP 2025"] },
-        { tag: zh ? "动力学法" : "Kinetic", name: "LAL 鲎试剂定量检测套装", spec: "LAL Kinetic Chromogenic Kit\n动力学显色法 | 96 孔板", badges: [zh ? "动力学法" : "Kinetic Method", zh ? "高通量" : "High-Throughput"] },
+        { tag: zh ? "动力学法" : "Kinetic", name: zh ? "LAL 鲎试剂定量检测套装" : "LAL Kinetic Chromogenic Kit", spec: zh ? "LAL Kinetic Chromogenic Kit\n动力学显色法 | 96 孔板" : "LAL Kinetic Chromogenic Kit\nKinetic Chromogenic | 96-Well Plate", badges: [zh ? "动力学法" : "Kinetic Method", zh ? "高通量" : "High-Throughput"] },
       ],
     },
     {
@@ -1173,10 +1173,10 @@ function PeptideQCSection({ lang, onContact, onProducts }) {
       desc: zh ? "专为多肽理化特性设计，解决 HPLC 峰拖尾与非特异性吸附难题" : "Engineered for peptide properties. Eliminates HPLC peak tailing and non-specific adsorption.",
       tagColor: "#FFF3E0", tagText: "#E65100",
       products: [
-        { tag: zh ? "制备级" : "Preparative", name: zh ? "宽孔径 RP-HPLC 反相柱（C4/C8）" : "Wide-Pore RP-HPLC Column (C4/C8)", spec: "Wide-Pore Reversed Phase Column\n300Å 孔径 | 适配 >10kDa 多肽", badges: ["300Å", zh ? "分析/制备" : "Analytical/Prep"] },
-        { tag: zh ? "低吸附" : "Low-Binding", name: zh ? "低吸附 SPE 固相萃取柱（C18）" : "Low-Binding SPE Cartridge (C18)", spec: "Low-Binding SPE Cartridge\n多肽专用 | 回收率 >90%", badges: [zh ? "低吸附" : "Low-Bind", ">90% Recovery"] },
-        { tag: zh ? "超滤" : "Ultrafiltration", name: zh ? "低吸附超滤浓缩管" : "Low-Binding Centrifugal Filter", spec: "Low-Binding Centrifugal Filter\n3/10/30 kDa 截留 | PES 膜", badges: ["PES", zh ? "低蛋白结合" : "Low Protein Binding"] },
-        { tag: zh ? "样品处理" : "Sample Prep", name: zh ? "多肽图谱制样试剂盒（一体化）" : "Peptide Mapping Sample Prep Kit", spec: "Peptide Mapping Sample Prep Kit\n变性/还原/烷基化/酶切一步完成", badges: [zh ? "一体化" : "All-in-One", zh ? "标准化" : "Standardized"] },
+        { tag: zh ? "制备级" : "Preparative", name: zh ? "宽孔径 RP-HPLC 反相柱（C4/C8）" : "Wide-Pore RP-HPLC Column (C4/C8)", spec: zh ? "Wide-Pore Reversed Phase Column\n300Å 孔径 | 适配 >10kDa 多肽" : "Wide-Pore Reversed Phase Column\n300Å Pore Size | For Peptides >10kDa", badges: ["300Å", zh ? "分析/制备" : "Analytical/Prep"] },
+        { tag: zh ? "低吸附" : "Low-Binding", name: zh ? "低吸附 SPE 固相萃取柱（C18）" : "Low-Binding SPE Cartridge (C18)", spec: zh ? "Low-Binding SPE Cartridge\n多肽专用 | 回收率 >90%" : "Low-Binding SPE Cartridge\nPeptide-Specific | Recovery >90%", badges: [zh ? "低吸附" : "Low-Bind", ">90% Recovery"] },
+        { tag: zh ? "超滤" : "Ultrafiltration", name: zh ? "低吸附超滤浓缩管" : "Low-Binding Centrifugal Filter", spec: zh ? "Low-Binding Centrifugal Filter\n3/10/30 kDa 截留 | PES 膜" : "Low-Binding Centrifugal Filter\n3/10/30 kDa MWCO | PES Membrane", badges: ["PES", zh ? "低蛋白结合" : "Low Protein Binding"] },
+        { tag: zh ? "样品处理" : "Sample Prep", name: zh ? "多肽图谱制样试剂盒（一体化）" : "Peptide Mapping Sample Prep Kit", spec: zh ? "Peptide Mapping Sample Prep Kit\n变性/还原/烷基化/酶切一步完成" : "Peptide Mapping Sample Prep Kit\nDenaturation/Reduction/Alkylation/Digestion in One Step", badges: [zh ? "一体化" : "All-in-One", zh ? "标准化" : "Standardized"] },
       ],
     },
   ];
