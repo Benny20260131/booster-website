@@ -1188,10 +1188,10 @@ function PeptideQCSection({ lang, onContact, onProducts }) {
   );
 
   return (
-    <div style={{ fontFamily: T.font, background: T.bg }}>
+    <div style={{ fontFamily: T.font, background: "transparent" }}>
 
       {/* ── Hero ── */}
-      <section style={{ background: `linear-gradient(160deg, #fff 60%, ${T.redSoft} 100%)`, padding: "72px 0 56px" }}>
+      <section style={{ background: "transparent", padding: "72px 0 56px" }}>
         <div style={sectionPad}>
           <div style={{ maxWidth: 780 }}>
             {tag(zh ? "BIOTECH QC SOLUTION 2026" : "BIOTECH QC SOLUTION 2026", T.red)}
@@ -1222,7 +1222,7 @@ function PeptideQCSection({ lang, onContact, onProducts }) {
       </section>
 
       {/* ── Pain Points ── */}
-      <section style={{ padding: "72px 0", background: "#FAFAFA" }}>
+      <section style={{ padding: "72px 0", background: "transparent" }}>
         <div style={sectionPad}>
           <div style={sectionHd}>
             {tag(zh ? "⚠ 合规警报 — REGULATORY ALERT" : "⚠ REGULATORY ALERT", "#E53935")}
@@ -1254,7 +1254,7 @@ function PeptideQCSection({ lang, onContact, onProducts }) {
       </section>
 
       {/* ── Process Map ── */}
-      <section style={{ padding: "72px 0", background: T.bg }}>
+      <section style={{ padding: "72px 0", background: "transparent" }}>
         <div style={sectionPad}>
           <div style={sectionHd}>
             {tag(zh ? "⚙ 双路线质控图谱" : "⚙ DUAL-ROUTE QC MAP", T.red)}
@@ -1303,7 +1303,7 @@ function PeptideQCSection({ lang, onContact, onProducts }) {
       </section>
 
       {/* ── Arsenal ── */}
-      <section style={{ padding: "72px 0", background: "#FAFAFA" }}>
+      <section style={{ padding: "72px 0", background: "transparent" }}>
         <div style={sectionPad}>
           <div style={sectionHd}>
             {tag(zh ? "⚔ 底层武器库" : "⚔ THE ARSENAL", T.red)}
@@ -1341,7 +1341,7 @@ function PeptideQCSection({ lang, onContact, onProducts }) {
       </section>
 
       {/* ── Trust ── */}
-      <section style={{ padding: "72px 0", background: T.bg }}>
+      <section style={{ padding: "72px 0", background: "transparent" }}>
         <div style={sectionPad}>
           <div style={sectionHd}>
             {tag(zh ? "★ 为什么选择博仕达" : "★ WHY BOOSTER", T.red)}
@@ -1386,7 +1386,7 @@ function PeptideQCSection({ lang, onContact, onProducts }) {
       </section>
 
       {/* ── Lead Capture ── */}
-      <section style={{ padding: "72px 0 80px", background: T.redSoft }}>
+      <section style={{ padding: "72px 0 80px", background: "transparent" }}>
         <div style={sectionPad}>
           <div style={sectionHd}>
             {tag(zh ? "📥 立即领取" : "📥 DOWNLOAD NOW", T.red)}
