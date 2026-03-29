@@ -235,8 +235,8 @@ function NavHeader({ lang, section, setSection, user, onLogin, onRegister, onLog
   const [hovered, setHovered] = useState(null);
   const [showUserMenu, setShowUserMenu] = useState(false);
   const navItems = lang === "zh"
-    ? [["home","首页"],["products","产品中心"],["solutions","解决方案"],["contact","联系我们"]]
-    : [["home","Home"],["products","Products"],["solutions","Solutions"],["contact","Contact"]];
+    ? [["home","首页"],["products","产品中心"],["solutions","解决方案"],["peptideqc","多肽QC方案"],["contact","联系我们"]]
+    : [["home","Home"],["products","Products"],["solutions","Solutions"],["peptideqc","Peptide QC"],["contact","Contact"]];
   return (
     <div style={{ position: "sticky", top: 20, zIndex: 50, display: "flex", justifyContent: "center", padding: "0 16px", pointerEvents: "none" }}>
       <header style={{
@@ -1112,6 +1112,344 @@ function StatsBar({ lang }) {
   );
 }
 
+// ─── 多肽 QC 解决方案页 ──────────────────────────────────────────────
+function PeptideQCSection({ lang, onContact, onProducts }) {
+  const zh = lang === "zh";
+  const [route, setRoute] = useState("bio");
+  const [hoveredNode, setHoveredNode] = useState(null);
+  const [qcForm, setQcForm] = useState({ name: "", email: "", company: "", title: "" });
+  const [qcStatus, setQcStatus] = useState("idle");
+
+  const handleQcSubmit = async () => {
+    if (!qcForm.name || !qcForm.email) { alert(zh ? "请填写姓名和邮箱" : "Please fill name and email"); return; }
+    setQcStatus("sending");
+    try {
+      const res = await fetch("/api/contact", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ name: qcForm.name, email: qcForm.email, company: qcForm.company, message: `【白皮书申请】职位：${qcForm.title}` }) });
+      const data = await res.json();
+      if (res.ok && data.success) setQcStatus("success");
+      else setQcStatus("error");
+    } catch { setQcStatus("error"); }
+  };
+
+  const bioNodes = [
+    { icon: "🧫", label: zh ? "上游发酵" : "Fermentation", challenge: zh ? "HCP 残留定量检测" : "HCP Residue Detection", weapons: [zh ? "HCP ELISA 试剂盒（高灵敏度）" : "HCP ELISA Kit (High Sensitivity)", zh ? "HCD 宿主细胞 DNA 检测试剂盒" : "Host Cell DNA qPCR Kit"] },
+    { icon: "⚗️", label: zh ? "中游纯化" : "Purification", challenge: zh ? "多肽纯化回收率与残留杂质控制" : "Peptide Recovery & Impurity Control", weapons: [zh ? "宽孔径 RP-HPLC 反相柱（C4/C8）" : "Wide-Pore RP-HPLC Column (C4/C8)", zh ? "超滤浓缩管（低吸附型）" : "Low-Binding Centrifugal Filter"] },
+    { icon: "🔬", label: zh ? "序列确证" : "Seq. Confirmation", challenge: zh ? "序列覆盖度 ≥95%，正交酶切确证" : "≥95% Sequence Coverage, Orthogonal Digestion", weapons: [zh ? "测序级胰蛋白酶（TPCK 处理）" : "Sequencing-Grade Trypsin (TPCK)", zh ? "Glu-C / Lys-C 组合正交酶切" : "Glu-C / Lys-C Orthogonal Digestion"] },
+    { icon: "✅", label: zh ? "终放行" : "Final Release", challenge: zh ? "内毒素 / 生物负荷放行检测" : "Endotoxin / Bioburden Release Testing", weapons: [zh ? "rFC 重组内毒素检测试剂盒" : "rFC Recombinant Endotoxin Kit", zh ? "无干扰型 LAL 定量检测套装" : "LAL Kinetic Chromogenic Kit"] },
+  ];
+  const sppsNodes = [
+    { icon: "🧱", label: zh ? "固相合成" : "Solid Phase", challenge: zh ? "固相载体偶联效率与缺失序列监控" : "Coupling Efficiency & Deletion Sequence QC", weapons: [zh ? "低吸附 SPE 固相萃取柱" : "Low-Binding SPE Cartridge", zh ? "Fmoc 定量检测试剂（Kaiser Test）" : "Fmoc Quantification Reagent (Kaiser Test)"] },
+    { icon: "⚡", label: zh ? "裂解脱保护" : "Cleavage", challenge: zh ? "TFA 脱保护与侧链修饰杂质控制" : "TFA Deprotection & Side-Chain Impurity Control", weapons: [zh ? "多肽专用 C18 SPE 脱盐柱" : "Peptide-Grade C18 SPE Desalting Column", zh ? "反相分析柱（100Å 孔径）" : "Reversed Phase Column (100Å)"] },
+    { icon: "🌀", label: zh ? "纯化分离" : "Purification", challenge: zh ? "多杂质共洗脱，分辨率要求极高" : "Co-eluting Impurities, High Resolution Required", weapons: [zh ? "宽孔径制备级 RP-HPLC 柱（C4）" : "Preparative RP-HPLC Column (C4)", zh ? "离子对色谱专用耗材包" : "Ion-Pair Chromatography Consumables"] },
+    { icon: "🔍", label: zh ? "序列&放行" : "Seq.&Release", challenge: zh ? "EMA 强制正交酶切序列确证（≥95%）" : "EMA-Mandatory Orthogonal Seq. Confirmation (≥95%)", weapons: [zh ? "测序级胰蛋白酶 + Asp-N 双酶正交" : "Trypsin + Asp-N Dual-Enzyme Orthogonal", zh ? "多肽图谱分析方法学开发支持" : "Peptide Mapping Method Development Support"] },
+  ];
+  const nodes = route === "bio" ? bioNodes : sppsNodes;
+
+  const arsenalCats = [
+    {
+      icon: "🧬", label: zh ? "结构确证特异性酶矩阵（金标准重组酶）" : "Sequencing-Grade Enzyme Matrix",
+      desc: zh ? "满足 EMA 正交分析强制要求，每批次出具 CoA，即开即用" : "Meets EMA mandatory orthogonal analysis requirements. CoA included, ready-to-use.",
+      tagColor: "#FFE8EC", tagText: "#C8102E",
+      products: [
+        { tag: zh ? "测序级" : "Seq. Grade", name: zh ? "胰蛋白酶（TPCK 处理）" : "Trypsin (TPCK-Treated)", spec: "Trypsin Sequencing Grade\nLys/Arg-C 端切割 | >98% 纯度", badges: [zh ? "极高特异性" : "High Specificity", zh ? "重组来源" : "Recombinant"] },
+        { tag: zh ? "正交酶" : "Orthogonal", name: "Glu-C（V8 蛋白酶）", spec: "Endoproteinase Glu-C\nGlu/Asp-C 端切割 | pH 4.0/8.0", badges: [zh ? "正交首选" : "Orthogonal", "EMA Compliant"] },
+        { tag: zh ? "测序级" : "Seq. Grade", name: "Lys-C 赖氨酸蛋白酶", spec: "Endoproteinase Lys-C\nLys-C 端高特异切割 | 耐变性剂", badges: [zh ? "高特异性" : "High Specificity", zh ? "抗尿素" : "Urea-Stable"] },
+        { tag: zh ? "正交酶" : "Orthogonal", name: "Asp-N 天冬氨酸蛋白酶", spec: "Endoproteinase Asp-N\nAsp/Cys-N 端切割 | 稀有酶", badges: ["N-terminal", zh ? "稀缺规格" : "Rare Grade"] },
+      ],
+    },
+    {
+      icon: "🧫", label: zh ? "生物安全检测试剂盒" : "Biosafety Detection Kits",
+      desc: zh ? "应对 FDA/ChP 宿主安全性要求，极高灵敏度，抗基质干扰设计" : "Addresses FDA/ChP host safety requirements with ultra-high sensitivity.",
+      tagColor: "#EDE7F6", tagText: "#6A1B9A",
+      products: [
+        { tag: zh ? "高灵敏度" : "High Sensitivity", name: zh ? "HCP ELISA 试剂盒（宿主细胞蛋白）" : "HCP ELISA Kit (Host Cell Protein)", spec: "Host Cell Protein ELISA Kit\n检出限 <1 ng/mL | CHO 通用型", badges: [zh ? "极高灵敏度" : "Ultra Sensitive", zh ? "抗基质干扰" : "Matrix-Tolerant"] },
+        { tag: zh ? "定量检测" : "Quantitative", name: zh ? "HCD 宿主细胞 DNA 检测试剂盒" : "Host Cell DNA qPCR Kit", spec: "Host Cell DNA qPCR Kit\n检出限 <10 pg/mL | FDA 21 CFR", badges: ["qPCR", "FDA Compliant"] },
+        { tag: zh ? "无动物来源" : "Animal-Free", name: zh ? "rFC 重组因子 C 内毒素检测试剂盒" : "rFC Recombinant Endotoxin Kit", spec: "Recombinant Factor C Endotoxin Kit\n0.001–10 EU/mL", badges: [zh ? "无动物来源" : "Animal-Free", "ChP 2025"] },
+        { tag: zh ? "动力学法" : "Kinetic", name: "LAL 鲎试剂定量检测套装", spec: "LAL Kinetic Chromogenic Kit\n动力学显色法 | 96 孔板", badges: [zh ? "动力学法" : "Kinetic Method", zh ? "高通量" : "High-Throughput"] },
+      ],
+    },
+    {
+      icon: "🧲", label: zh ? "多肽专用分离耗材" : "Peptide-Grade Separation Consumables",
+      desc: zh ? "专为多肽理化特性设计，解决 HPLC 峰拖尾与非特异性吸附难题" : "Engineered for peptide properties. Eliminates HPLC peak tailing and non-specific adsorption.",
+      tagColor: "#FFF3E0", tagText: "#E65100",
+      products: [
+        { tag: zh ? "制备级" : "Preparative", name: zh ? "宽孔径 RP-HPLC 反相柱（C4/C8）" : "Wide-Pore RP-HPLC Column (C4/C8)", spec: "Wide-Pore Reversed Phase Column\n300Å 孔径 | 适配 >10kDa 多肽", badges: ["300Å", zh ? "分析/制备" : "Analytical/Prep"] },
+        { tag: zh ? "低吸附" : "Low-Binding", name: zh ? "低吸附 SPE 固相萃取柱（C18）" : "Low-Binding SPE Cartridge (C18)", spec: "Low-Binding SPE Cartridge\n多肽专用 | 回收率 >90%", badges: [zh ? "低吸附" : "Low-Bind", ">90% Recovery"] },
+        { tag: zh ? "超滤" : "Ultrafiltration", name: zh ? "低吸附超滤浓缩管" : "Low-Binding Centrifugal Filter", spec: "Low-Binding Centrifugal Filter\n3/10/30 kDa 截留 | PES 膜", badges: ["PES", zh ? "低蛋白结合" : "Low Protein Binding"] },
+        { tag: zh ? "样品处理" : "Sample Prep", name: zh ? "多肽图谱制样试剂盒（一体化）" : "Peptide Mapping Sample Prep Kit", spec: "Peptide Mapping Sample Prep Kit\n变性/还原/烷基化/酶切一步完成", badges: [zh ? "一体化" : "All-in-One", zh ? "标准化" : "Standardized"] },
+      ],
+    },
+  ];
+
+  const sectionPad = { maxWidth: 1280, margin: "0 auto", padding: "0 32px" };
+  const sectionHd = { textAlign: "center", marginBottom: 48 };
+  const tag = (txt, color = T.red) => (
+    <span style={{ display: "inline-block", fontSize: 11, fontWeight: 700, letterSpacing: 1.5, textTransform: "uppercase", color, background: color + "18", border: `1px solid ${color}30`, borderRadius: 6, padding: "3px 10px", marginBottom: 12 }}>{txt}</span>
+  );
+
+  return (
+    <div style={{ fontFamily: T.font, background: T.bg }}>
+
+      {/* ── Hero ── */}
+      <section style={{ background: `linear-gradient(160deg, #fff 60%, ${T.redSoft} 100%)`, padding: "72px 0 56px" }}>
+        <div style={sectionPad}>
+          <div style={{ maxWidth: 780 }}>
+            {tag(zh ? "BIOTECH QC SOLUTION 2026" : "BIOTECH QC SOLUTION 2026", T.red)}
+            <h1 style={{ fontSize: "clamp(28px,4vw,52px)", fontWeight: 800, fontFamily: T.fontHead, color: "#1a1a1a", lineHeight: 1.25, marginBottom: 20 }}>
+              {zh ? <>应对多肽产能狂飙：<br/>打通从<span style={{ color: T.red }}>「粗肽」</span>到<span style={{ color: T.red }}>「放行」</span>的合规生命线</> : <>Peptide Scale-Up Challenge:<br/>From <span style={{ color: T.red }}>Crude Peptide</span> to <span style={{ color: T.red }}>GMP Release</span></>}
+            </h1>
+            <p style={{ fontSize: 16, color: "#555", lineHeight: 1.8, marginBottom: 36, maxWidth: 640 }}>
+              {zh ? <>面对 <strong style={{ color: T.red }}>FDA 0.5% 杂质红线</strong>与 <strong style={{ color: T.red }}>EMA 最新审查指南（367182/2025）</strong>，博仕达为您提供全产业链质控闭环解决方案。</> : <>Facing <strong style={{ color: T.red }}>FDA 0.5% impurity threshold</strong> & <strong style={{ color: T.red }}>EMA Guideline 367182/2025</strong>, Booster delivers a full-chain QC closed-loop solution.</>}
+            </p>
+            <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+              <button className="lg-btn" onClick={onContact} style={{ ...LG.primary, borderRadius: 10, padding: "12px 28px", fontSize: 14, fontFamily: T.font }} onMouseEnter={e => LG.hoverOn(e.currentTarget)} onMouseLeave={e => LG.hoverOff(e.currentTarget)}>
+                {zh ? "📬 联系我们获取方案" : "📬 Contact Us"}
+              </button>
+              <button className="lg-btn" onClick={onProducts} style={{ ...LG.ghost, borderRadius: 10, padding: "12px 28px", fontSize: 14, fontFamily: T.font }} onMouseEnter={e => LG.hoverOn(e.currentTarget)} onMouseLeave={e => LG.hoverOff(e.currentTarget)}>
+                {zh ? "🔬 浏览相关产品" : "🔬 Browse Products"}
+              </button>
+            </div>
+          </div>
+          <div style={{ display: "flex", gap: 20, marginTop: 48, flexWrap: "wrap" }}>
+            {[["0.5%", zh ? "FDA 杂质触发红线" : "FDA Impurity Threshold"], ["3+", zh ? "监管机构深度接轨" : "Regulatory Bodies Aligned"], ["24h", zh ? "专家技术响应" : "Expert Response Time"], ["98%", zh ? "客户放行通过率" : "Client Release Pass Rate"]].map(([num, lbl]) => (
+              <GlassCard key={lbl} hover={false} style={{ padding: "20px 28px", minWidth: 130, textAlign: "center" }}>
+                <div style={{ fontSize: 32, fontWeight: 800, color: T.red, fontFamily: T.fontHead, lineHeight: 1 }}>{num}</div>
+                <div style={{ fontSize: 12, color: "#777", marginTop: 6, letterSpacing: 0.5 }}>{lbl}</div>
+              </GlassCard>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Pain Points ── */}
+      <section style={{ padding: "72px 0", background: "#FAFAFA" }}>
+        <div style={sectionPad}>
+          <div style={sectionHd}>
+            {tag(zh ? "⚠ 合规警报 — REGULATORY ALERT" : "⚠ REGULATORY ALERT", "#E53935")}
+            <h2 style={{ fontSize: "clamp(24px,3vw,40px)", fontWeight: 800, fontFamily: T.fontHead, color: "#1a1a1a", margin: "8px 0 0" }}>
+              {zh ? <>悬在头顶的<span style={{ color: T.red }}>三把利剑</span></> : <>Three Compliance <span style={{ color: T.red }}>Sword of Damocles</span></>}
+            </h2>
+          </div>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))", gap: 20, marginBottom: 32 }}>
+            {[
+              { icon: "⚡", title: zh ? "FDA 零容忍底线" : "FDA Zero-Tolerance Line", num: ">0.5%", text: zh ? "任何单杂超过此红线，将强制触发免疫原性自证义务。多批次同类杂质累积检出，可能导致整条管线临床暂停审查。" : "Any single impurity above this threshold triggers mandatory immunogenicity justification and may halt your entire clinical pipeline.", law: "ICH Q3C / FDA Guidance 2023", color: "#E53935" },
+              { icon: "🔬", title: zh ? "EMA 指南 367182/2025" : "EMA Guideline 367182/2025", num: zh ? "正交确证" : "Orthogonal", text: zh ? "强制要求正交分析法确认氨基酸序列，单一 LC-MS 报告不再获批。酶切 Peptide Mapping 须覆盖 95% 以上序列区段。" : "Mandatory orthogonal analysis for amino acid sequence confirmation. Single LC-MS reports are no longer accepted.", law: "EMA/CHMP 367182/2025", color: "#C8102E" },
+              { icon: "🧫", title: zh ? "ChP 2025 全面升级" : "ChP 2025 Full Upgrade", num: zh ? "HCP / 内毒素" : "HCP / Endotoxin", text: zh ? "全面强化生物源性杂质（HCP / 内毒素）与有关物质检出限标准，发酵来源多肽面临更严苛的宿主蛋白清除率要求。" : "Stringent biological impurity (HCP/endotoxin) and related substance detection limits. Fermentation-derived peptides face tougher host protein clearance requirements.", law: zh ? "中国药典 2025 年版" : "Chinese Pharmacopoeia 2025", color: "#8E24AA" },
+            ].map((p, i) => (
+              <GlassCard key={i} hover={false} style={{ padding: "32px 28px", borderLeft: `4px solid ${p.color}`, borderRadius: T.radius }}>
+                <div style={{ fontSize: 28, marginBottom: 16 }}>{p.icon}</div>
+                <div style={{ fontSize: 12, fontWeight: 700, color: p.color, letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 8 }}>{p.title}</div>
+                <div style={{ fontSize: 36, fontWeight: 900, color: p.color, fontFamily: T.fontHead, lineHeight: 1, marginBottom: 12 }}>{p.num}</div>
+                <p style={{ fontSize: 14, color: "#555", lineHeight: 1.7, marginBottom: 16 }}>{p.text}</p>
+                <span style={{ display: "inline-block", fontSize: 11, color: "#999", border: "1px solid #ddd", borderRadius: 4, padding: "3px 10px" }}>{p.law}</span>
+              </GlassCard>
+            ))}
+          </div>
+          <GlassCard hover={false} style={{ padding: "28px 36px", textAlign: "center" }}>
+            <p style={{ fontSize: 17, color: "#444", lineHeight: 1.7, margin: 0 }}>
+              {zh ? <>在合规审查的「放大镜」之下，您的<strong style={{ color: T.red }}>多肽图谱（Peptide Mapping）</strong>和<strong style={{ color: T.red }}>杂质回收率</strong>，真的经得起推敲吗？</> : <>Under the regulatory magnifying glass, can your <strong style={{ color: T.red }}>Peptide Map</strong> and <strong style={{ color: T.red }}>impurity recovery</strong> truly withstand scrutiny?</>}
+            </p>
+          </GlassCard>
+        </div>
+      </section>
+
+      {/* ── Process Map ── */}
+      <section style={{ padding: "72px 0", background: T.bg }}>
+        <div style={sectionPad}>
+          <div style={sectionHd}>
+            {tag(zh ? "⚙ 双路线质控图谱" : "⚙ DUAL-ROUTE QC MAP", T.red)}
+            <h2 style={{ fontSize: "clamp(24px,3vw,40px)", fontWeight: 800, fontFamily: T.fontHead, color: "#1a1a1a", margin: "8px 0 0" }}>
+              {zh ? <>点击节点，解锁<span style={{ color: T.red }}>专属质控武器</span></> : <>Hover Nodes to Unlock <span style={{ color: T.red }}>QC Solutions</span></>}
+            </h2>
+          </div>
+          <div style={{ display: "flex", justifyContent: "center", gap: 0, marginBottom: 48 }}>
+            {[["bio", zh ? "🧫 生物发酵路线" : "🧫 Bio Fermentation"], ["spps", zh ? "🧪 化学合成（SPPS）路线" : "🧪 Chemical Synthesis (SPPS)"]].map(([key, lbl]) => (
+              <button key={key} onClick={() => setRoute(key)} className="lg-btn"
+                style={{ ...(route === key ? LG.primary : LG.ghost), padding: "11px 28px", fontSize: 13, fontFamily: T.font, borderRadius: key === "bio" ? "10px 0 0 10px" : "0 10px 10px 0", fontWeight: 600 }}
+                onMouseEnter={e => LG.hoverOn(e.currentTarget)} onMouseLeave={e => LG.hoverOff(e.currentTarget)}>
+                {lbl}
+              </button>
+            ))}
+          </div>
+          <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "center", gap: 0, flexWrap: "nowrap", overflowX: "auto", padding: "16px 0 40px" }}>
+            {nodes.map((node, i) => (
+              <div key={i} style={{ display: "flex", alignItems: "center" }}>
+                <div style={{ position: "relative", display: "flex", flexDirection: "column", alignItems: "center" }}
+                  onMouseEnter={() => setHoveredNode(i)} onMouseLeave={() => setHoveredNode(null)}>
+                  {hoveredNode === i && (
+                    <div style={{ position: "absolute", bottom: "calc(100% + 12px)", left: "50%", transform: "translateX(-50%)", zIndex: 20, width: 240, background: "#fff", border: `1px solid ${T.border}`, borderRadius: 12, padding: 16, boxShadow: "0 8px 32px rgba(200,16,46,0.12)" }}>
+                      <div style={{ fontSize: 10, fontWeight: 700, color: T.red, letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 6 }}>▲ {zh ? "质控挑战" : "QC Challenge"}</div>
+                      <div style={{ fontSize: 13, color: "#333", fontWeight: 500, marginBottom: 12 }}>{node.challenge}</div>
+                      <div style={{ fontSize: 10, fontWeight: 700, color: "#555", letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 8 }}>◆ Booster {zh ? "武器" : "Solutions"}</div>
+                      {node.weapons.map((w, wi) => (
+                        <div key={wi} style={{ fontSize: 12, color: T.red, background: T.redLight, borderRadius: 6, padding: "4px 8px", marginBottom: 4 }}>{w}</div>
+                      ))}
+                    </div>
+                  )}
+                  <div style={{ width: 96, height: 96, borderRadius: "50%", background: hoveredNode === i ? T.redLight : "#FFF5F7", border: `2px solid ${hoveredNode === i ? T.red : T.border}`, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 4, cursor: "pointer", transition: "all 0.2s", boxShadow: hoveredNode === i ? `0 0 0 4px ${T.red}18` : "none" }}>
+                    <span style={{ fontSize: 24 }}>{node.icon}</span>
+                    <span style={{ fontSize: 10, fontWeight: 700, color: hoveredNode === i ? T.red : "#777", textAlign: "center", lineHeight: 1.3, padding: "0 6px" }}>{node.label}</span>
+                  </div>
+                </div>
+                {i < nodes.length - 1 && (
+                  <div style={{ width: 60, height: 2, background: `linear-gradient(90deg, ${T.red}60, ${T.red})`, position: "relative", flexShrink: 0, margin: "0 2px" }}>
+                    <span style={{ position: "absolute", right: -6, top: "50%", transform: "translateY(-50%)", color: T.red, fontSize: 14, fontWeight: 900 }}>›</span>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Arsenal ── */}
+      <section style={{ padding: "72px 0", background: "#FAFAFA" }}>
+        <div style={sectionPad}>
+          <div style={sectionHd}>
+            {tag(zh ? "⚔ 底层武器库" : "⚔ THE ARSENAL", T.red)}
+            <h2 style={{ fontSize: "clamp(24px,3vw,40px)", fontWeight: 800, fontFamily: T.fontHead, color: "#1a1a1a", margin: "8px 0 0" }}>
+              {zh ? <>精密产品矩阵，<span style={{ color: T.red }}>全流程覆盖</span></> : <>Precision Product Matrix, <span style={{ color: T.red }}>Full Coverage</span></>}
+            </h2>
+          </div>
+          <div style={{ display: "flex", flexDirection: "column", gap: 48 }}>
+            {arsenalCats.map((cat, ci) => (
+              <div key={ci}>
+                <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 6 }}>
+                  <span style={{ fontSize: 20 }}>{cat.icon}</span>
+                  <h3 style={{ fontSize: 16, fontWeight: 700, color: T.red, fontFamily: T.fontHead, margin: 0 }}>{cat.label}</h3>
+                  <div style={{ flex: 1, height: 1, background: `linear-gradient(90deg, ${T.red}40, transparent)` }} />
+                </div>
+                <p style={{ fontSize: 13, color: "#888", marginBottom: 20 }}>{cat.desc}</p>
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(260px,1fr))", gap: 16 }}>
+                  {cat.products.map((p, pi) => (
+                    <GlassCard key={pi} style={{ padding: "22px 20px" }}>
+                      <span style={{ display: "inline-block", fontSize: 10, fontWeight: 700, letterSpacing: 1.5, textTransform: "uppercase", color: cat.tagText, background: cat.tagColor, borderRadius: 4, padding: "2px 8px", marginBottom: 12 }}>{p.tag}</span>
+                      <div style={{ fontSize: 15, fontWeight: 700, color: "#222", marginBottom: 8, lineHeight: 1.4 }}>{p.name}</div>
+                      <div style={{ fontSize: 11, color: "#888", marginBottom: 14, lineHeight: 1.6, whiteSpace: "pre-line", fontFamily: "monospace" }}>{p.spec}</div>
+                      <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+                        {p.badges.map((b, bi) => (
+                          <span key={bi} style={{ fontSize: 10, color: T.red, border: `1px solid ${T.border}`, borderRadius: 4, padding: "2px 8px", fontWeight: 600 }}>{b}</span>
+                        ))}
+                      </div>
+                    </GlassCard>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Trust ── */}
+      <section style={{ padding: "72px 0", background: T.bg }}>
+        <div style={sectionPad}>
+          <div style={sectionHd}>
+            {tag(zh ? "★ 为什么选择博仕达" : "★ WHY BOOSTER", T.red)}
+            <h2 style={{ fontSize: "clamp(24px,3vw,40px)", fontWeight: 800, fontFamily: T.fontHead, color: "#1a1a1a", margin: "8px 0 0" }}>
+              {zh ? <>破除寡头垄断，<span style={{ color: T.red }}>掌握质控主动权</span></> : <>Break Monopoly, <span style={{ color: T.red }}>Own Your QC</span></>}
+            </h2>
+          </div>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1.4fr", gap: 40, alignItems: "start" }}>
+            <GlassCard hover={false} style={{ padding: 32, textAlign: "center" }}>
+              <div style={{ fontSize: 64, marginBottom: 16 }}>🔬</div>
+              <div style={{ fontSize: 22, fontWeight: 900, color: T.red, fontFamily: T.fontHead, letterSpacing: 2, marginBottom: 8 }}>BOOSTER 博仕达</div>
+              <div style={{ fontSize: 11, color: "#999", letterSpacing: 2, textTransform: "uppercase", marginBottom: 24 }}>Advanced Analytical Laboratory</div>
+              <div style={{ display: "flex", justifyContent: "center", gap: 24 }}>
+                {[["FDA", zh ? "合规" : "Compliant", T.red], ["EMA", zh ? "对齐" : "Aligned", "#6A1B9A"], ["ChP", "2025", "#E65100"]].map(([name, sub, c]) => (
+                  <div key={name} style={{ textAlign: "center" }}>
+                    <div style={{ fontSize: 18, fontWeight: 900, color: c, fontFamily: T.fontHead }}>{name}</div>
+                    <div style={{ fontSize: 10, color: "#999", letterSpacing: 1 }}>{sub}</div>
+                  </div>
+                ))}
+              </div>
+              <div style={{ marginTop: 24, display: "flex", justifyContent: "center", gap: 8, flexWrap: "wrap" }}>
+                {["ISO 9001", "GMP Ready", zh ? "即开即用" : "Ready-to-Use"].map(b => (
+                  <span key={b} style={{ fontSize: 11, color: T.red, border: `1px solid ${T.border}`, borderRadius: 4, padding: "3px 10px", fontWeight: 600 }}>{b}</span>
+                ))}
+              </div>
+            </GlassCard>
+            <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+              {[
+                { num: "01", title: zh ? "顶级法规背书" : "Top Regulatory Compliance", text: zh ? "深度接轨 ICH Q3C、FDA 杂质指南（2023 最新版）及 ChP 2025，每批产品随附完整合规性分析报告，直接作为申报文件附件提交。" : "Aligned with ICH Q3C, latest FDA impurity guidance (2023) and ChP 2025. Full compliance report included per batch, ready for BLA/NDA submission.", color: T.red },
+                { num: "02", title: zh ? "极致成本与供货保障" : "Cost & Supply Assurance", text: zh ? "打破赛默飞、默克等外企寡头的价格垄断，提供同等品质 30-50% 成本优势，核心产品全年现货保供，支持急单 24h 发货。" : "Breaking Thermo/Merck pricing monopoly. Equivalent quality at 30-50% cost advantage. Year-round stock, 24h rush order fulfillment.", color: "#6A1B9A" },
+                { num: "03", title: zh ? "深度应用技术支持" : "Deep Technical Support", text: zh ? "不止卖试剂，更提供多肽正交酶切策略定制、Peptide Mapping 方法学开发、杂质鉴定专项咨询，全程陪跑至 BLA/NDA 申报成功。" : "Beyond reagents: peptide orthogonal digestion strategy, Peptide Mapping method development, impurity identification consulting through to BLA/NDA approval.", color: "#E65100" },
+              ].map((a, i) => (
+                <GlassCard key={i} hover={false} style={{ padding: "22px 24px", borderLeft: `4px solid ${a.color}` }}>
+                  <div style={{ fontSize: 11, fontWeight: 700, color: a.color, letterSpacing: 2, marginBottom: 6 }}>{a.num} //</div>
+                  <div style={{ fontSize: 15, fontWeight: 700, color: "#222", marginBottom: 8 }}>{a.title}</div>
+                  <div style={{ fontSize: 14, color: "#555", lineHeight: 1.7 }}>{a.text}</div>
+                </GlassCard>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Lead Capture ── */}
+      <section style={{ padding: "72px 0 80px", background: T.redSoft }}>
+        <div style={sectionPad}>
+          <div style={sectionHd}>
+            {tag(zh ? "📥 立即领取" : "📥 DOWNLOAD NOW", T.red)}
+            <h2 style={{ fontSize: "clamp(24px,3vw,40px)", fontWeight: 800, fontFamily: T.fontHead, color: "#1a1a1a", margin: "8px 0 0" }}>
+              {zh ? <>您的多肽管线<span style={{ color: T.red }}>合规护身符</span></> : <>Your Peptide Pipeline <span style={{ color: T.red }}>Compliance Shield</span></>}
+            </h2>
+          </div>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1.2fr", gap: 40, alignItems: "start" }}>
+            <GlassCard hover={false} style={{ padding: "36px 32px" }}>
+              <div style={{ fontSize: 11, fontWeight: 700, color: T.red, letterSpacing: 2, textTransform: "uppercase", marginBottom: 16 }}>BOOSTER // 2026</div>
+              <h3 style={{ fontSize: 22, fontWeight: 800, fontFamily: T.fontHead, color: "#1a1a1a", lineHeight: 1.4, marginBottom: 20 }}>
+                {zh ? <>多肽药物<span style={{ color: T.red }}>全流程质控（QC）</span><br/>解决方案白皮书</> : <>Peptide Drug <span style={{ color: T.red }}>Full-Chain QC</span><br/>Solution Whitepaper</>}
+              </h3>
+              <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+                {(zh ? ["FDA 杂质红线应对策略", "EMA 正交分析完整方案", "ChP 2025 生物源杂质指南", "双路线质控产品选型矩阵"] : ["FDA Impurity Threshold Response Strategy", "EMA Orthogonal Analysis Complete Solution", "ChP 2025 Biological Impurity Guidelines", "Dual-Route QC Product Selection Matrix"]).map(item => (
+                  <div key={item} style={{ display: "flex", alignItems: "center", gap: 10, fontSize: 14, color: "#444" }}>
+                    <span style={{ color: T.red, fontWeight: 900 }}>✓</span>{item}
+                  </div>
+                ))}
+              </div>
+            </GlassCard>
+            <GlassCard hover={false} style={{ padding: "36px 32px" }}>
+              {qcStatus === "success" ? (
+                <div style={{ textAlign: "center", padding: "40px 0" }}>
+                  <div style={{ fontSize: 48, marginBottom: 16 }}>✅</div>
+                  <div style={{ fontSize: 18, fontWeight: 700, color: T.red, marginBottom: 8 }}>{zh ? "白皮书申请已发送！" : "Request Sent!"}</div>
+                  <div style={{ fontSize: 14, color: "#777" }}>{zh ? "我们的技术专家将在 24 小时内与您联系" : "Our technical expert will contact you within 24 hours."}</div>
+                </div>
+              ) : (
+                <>
+                  <h3 style={{ fontSize: 20, fontWeight: 700, color: "#1a1a1a", marginBottom: 6 }}>{zh ? "立即获取合规护身符" : "Get Your Compliance Shield Now"}</h3>
+                  <p style={{ fontSize: 13, color: "#888", marginBottom: 28, lineHeight: 1.6 }}>{zh ? "填写信息，PDF 将发送至您的邮箱。我们承诺不骚扰，仅限专业技术通讯。" : "Fill in the info and we'll send the PDF to your email. No spam, technical comms only."}</p>
+                  {[
+                    { label: zh ? "姓名" : "Name", key: "name", type: "text", placeholder: zh ? "您的姓名" : "Your name", required: true },
+                    { label: zh ? "企业邮箱" : "Business Email", key: "email", type: "email", placeholder: "your@company.com", required: true },
+                    { label: zh ? "公司名称" : "Company", key: "company", type: "text", placeholder: zh ? "公司/机构名称" : "Company name", required: false },
+                    { label: zh ? "职位 / 部门" : "Title / Dept.", key: "title", type: "text", placeholder: zh ? "如：QC 主管 / 注册事务部" : "e.g. QC Director / Regulatory Affairs", required: false },
+                  ].map(f => (
+                    <div key={f.key} style={{ marginBottom: 16 }}>
+                      <div style={{ fontSize: 12, fontWeight: 600, color: "#777", marginBottom: 6 }}>{f.label}{f.required && <span style={{ color: T.red }}> *</span>}</div>
+                      <input type={f.type} value={qcForm[f.key]} placeholder={f.placeholder}
+                        onChange={e => setQcForm(v => ({ ...v, [f.key]: e.target.value }))}
+                        style={{ width: "100%", padding: "10px 14px", borderRadius: 10, border: `1px solid ${T.border}`, fontSize: 14, fontFamily: T.font, outline: "none", boxSizing: "border-box", background: "#fff", color: "#333" }} />
+                    </div>
+                  ))}
+                  {qcStatus === "error" && <div style={{ background: "#FFEBEE", color: "#C62828", borderRadius: 8, padding: "10px 14px", marginBottom: 12, fontSize: 13 }}>❌ {zh ? "发送失败，请重试或发邮件至 service@tflabservice.com" : "Send failed. Try again or email service@tflabservice.com"}</div>}
+                  <button className="lg-btn" onClick={handleQcSubmit} disabled={qcStatus === "sending"}
+                    style={{ ...LG.primary, borderRadius: 10, padding: "13px 28px", fontSize: 14, fontFamily: T.font, width: "100%", opacity: qcStatus === "sending" ? 0.6 : 1 }}
+                    onMouseEnter={e => qcStatus !== "sending" && LG.hoverOn(e.currentTarget)} onMouseLeave={e => LG.hoverOff(e.currentTarget)}>
+                    {qcStatus === "sending" ? (zh ? "发送中..." : "Sending...") : (zh ? "📬 立即发送至我的邮箱" : "📬 Send to My Email")}
+                  </button>
+                  <div style={{ marginTop: 12, textAlign: "center", fontSize: 11, color: "#aaa" }}>🔒 {zh ? "信息受严格保护，不会用于营销目的" : "Your info is protected and will not be used for marketing."}</div>
+                </>
+              )}
+            </GlassCard>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  );
+}
+
 function ContactForm({ lang }) {
   const [form, setForm] = useState({ name: "", email: "", company: "", message: "" });
   const [status, setStatus] = useState("idle");
@@ -1549,6 +1887,7 @@ export default function BoosterHomepage() {
       {section === "products" && !detailProduct && <ProductCatalogSection lang={lang} initialCat={productCat} search={search} onViewDetail={goDetail} />}
       {section === "products" && detailProduct && <ProductDetailView product={detailProduct} lang={lang} onBack={() => setDetailProduct(null)} onViewDetail={goDetail} />}
       {section === "solutions" && <><SolutionsSection lang={lang} /><StatsBar lang={lang} /></>}
+      {section === "peptideqc" && <PeptideQCSection lang={lang} onContact={() => go("contact")} onProducts={() => go("products")} />}
       {section === "contact" && <ContactSection lang={lang} />}
 
       <TrustedBy lang={lang} />
