@@ -1,0 +1,91 @@
+/* ── BorderGlow — cursor-tracked edge glow card ─────────────────────────── */
+
+.border-glow-card {
+  position: relative;
+  border-radius: var(--border-radius, 28px);
+  padding: 2px;                        /* border thickness */
+  background: rgba(200, 16, 46, 0.05); /* faint baseline ring */
+  cursor: pointer;
+  isolation: isolate;
+  box-sizing: border-box;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.border-glow-card:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 12px 40px rgba(200, 16, 46, 0.10);
+}
+
+/* Conic glow — rendered only in the 2px border strip */
+.border-glow-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;                        /* must equal parent padding */
+  background: conic-gradient(
+    from var(--cursor-angle, 0deg) at 50% 50%,
+    transparent                              0deg,
+    var(--glow-color-20, rgba(200,16,46,0.10))  8deg,
+    var(--glow-color-50, rgba(200,16,46,0.30)) 16deg,
+    var(--glow-color,    rgba(200,16,46,0.68)) 22deg,
+    var(--glow-color-50, rgba(200,16,46,0.30)) 28deg,
+    var(--glow-color-20, rgba(200,16,46,0.10)) 40deg,
+    transparent                             55deg,
+    transparent                            360deg
+  );
+  /* Mask to show only the border strip, not the fill */
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  /* Fade in as cursor nears the edge (0–100 → 0–1) */
+  opacity: calc(var(--edge-proximity, 0) * 0.01);
+  pointer-events: none;
+  z-index: 2;
+  transition: opacity 0.08s linear;
+}
+
+/* Ambient gradient fill (very subtle, only when near edge) */
+.border-glow-card .edge-light {
+  position: absolute;
+  inset: 2px;
+  border-radius: calc(var(--border-radius, 28px) - 2px);
+  background:
+    var(--gradient-one,   none),
+    var(--gradient-two,   none),
+    var(--gradient-three, none),
+    var(--gradient-four,  none),
+    var(--gradient-five,  none),
+    var(--gradient-six,   none),
+    var(--gradient-seven, none),
+    var(--gradient-base, transparent);
+  opacity: calc(var(--fill-opacity, 0.25) * var(--edge-proximity, 0) * 0.005);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Content wrapper */
+.border-glow-inner {
+  position: relative;
+  z-index: 1;
+  background: var(--card-bg, rgba(255, 255, 255, 0.90));
+  border-radius: calc(var(--border-radius, 28px) - 2px);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  overflow: hidden;
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  transition: background 0.2s ease;
+}
+
+/* Sweep animation variant */
+.border-glow-card.sweep-active::before {
+  transition: none;
+}

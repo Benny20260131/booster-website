@@ -1,6 +1,85 @@
 import { useState, useMemo, useCallback, useEffect, useRef } from "react";
 import { getProductImage as _getImageFromMap } from "./data/imageLoader.js";
 import ALL_PRODUCTS from "./data/all-products.json";
+import "./BorderGlow.css";
+
+// ─── BorderGlow: cursor-tracked edge-glow card ────────────────────────────────
+function _parseHSL(s) {
+  const m = s.match(/([\d.]+)\s*([\d.]+)%?\s*([\d.]+)%?/);
+  return m ? { h: +m[1], s: +m[2], l: +m[3] } : { h: 360, s: 72, l: 45 };
+}
+function _buildGlowVars(glowColor, intensity) {
+  const { h, s, l } = _parseHSL(glowColor);
+  const base = `${h}deg ${s}% ${l}%`;
+  const ops = [100, 60, 50, 40, 30, 20, 10];
+  const keys = ['', '-60', '-50', '-40', '-30', '-20', '-10'];
+  const vars = {};
+  ops.forEach((op, i) => { vars[`--glow-color${keys[i]}`] = `hsl(${base} / ${Math.min(op * intensity, 100)}%)`; });
+  return vars;
+}
+const _GPOS = ['80% 55%','69% 34%','8% 6%','41% 38%','86% 85%','82% 18%','51% 4%'];
+const _GKEYS = ['--gradient-one','--gradient-two','--gradient-three','--gradient-four','--gradient-five','--gradient-six','--gradient-seven'];
+const _GCMAP = [0,1,2,0,1,2,1];
+function _buildGradVars(colors) {
+  const vars = {};
+  _GPOS.forEach((pos, i) => {
+    const c = colors[Math.min(_GCMAP[i], colors.length - 1)];
+    vars[_GKEYS[i]] = `radial-gradient(at ${pos}, ${c} 0px, transparent 50%)`;
+  });
+  vars['--gradient-base'] = `linear-gradient(${colors[0]} 0 100%)`;
+  return vars;
+}
+function BorderGlow({
+  children, className = '', glowColor = '360 72 45',
+  backgroundColor = 'rgba(255,255,255,0.90)', borderRadius = 28,
+  glowRadius = 2, glowIntensity = 1.0, coneSpread = 25,
+  colors = ['rgba(200,16,46,0.22)','rgba(255,120,120,0.14)','rgba(200,16,46,0.09)'],
+  fillOpacity = 0.25, style, onMouseEnter, onMouseLeave,
+}) {
+  const cardRef = useRef(null);
+  const getCenter = useCallback((el) => {
+    const { width, height } = el.getBoundingClientRect();
+    return [width / 2, height / 2];
+  }, []);
+  const getEdgeProx = useCallback((el, x, y) => {
+    const [cx, cy] = getCenter(el);
+    const dx = x - cx, dy = y - cy;
+    let kx = Infinity, ky = Infinity;
+    if (dx !== 0) kx = cx / Math.abs(dx);
+    if (dy !== 0) ky = cy / Math.abs(dy);
+    return Math.min(Math.max(1 / Math.min(kx, ky), 0), 1);
+  }, [getCenter]);
+  const getAngle = useCallback((el, x, y) => {
+    const [cx, cy] = getCenter(el);
+    const dx = x - cx, dy = y - cy;
+    if (!dx && !dy) return 0;
+    let deg = Math.atan2(dy, dx) * (180 / Math.PI) + 90;
+    return deg < 0 ? deg + 360 : deg;
+  }, [getCenter]);
+  const onPointerMove = useCallback((e) => {
+    const c = cardRef.current; if (!c) return;
+    const r = c.getBoundingClientRect();
+    const x = e.clientX - r.left, y = e.clientY - r.top;
+    c.style.setProperty('--edge-proximity', (getEdgeProx(c, x, y) * 100).toFixed(2));
+    c.style.setProperty('--cursor-angle', `${getAngle(c, x, y).toFixed(2)}deg`);
+  }, [getEdgeProx, getAngle]);
+  const onPointerLeave = useCallback(() => {
+    const c = cardRef.current; if (!c) return;
+    c.style.setProperty('--edge-proximity', '0');
+  }, []);
+  return (
+    <div ref={cardRef} onPointerMove={onPointerMove} onPointerLeave={onPointerLeave}
+      onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}
+      className={`border-glow-card ${className}`}
+      style={{ '--card-bg': backgroundColor, '--border-radius': `${borderRadius}px`,
+        '--glow-padding': `${glowRadius}px`, '--cone-spread': coneSpread,
+        '--fill-opacity': fillOpacity,
+        ..._buildGlowVars(glowColor, glowIntensity), ..._buildGradVars(colors), ...style }}>
+      <span className="edge-light" />
+      <div className="border-glow-inner">{children}</div>
+    </div>
+  );
+}
 
 const T = {
   red: "#C8102E", redDark: "#9B0023", redLight: "#FFE8EC", redSoft: "#FFF1F3",
@@ -1271,29 +1350,43 @@ function PeptideQCSection({ lang, onContact, onProducts }) {
               </button>
             ))}
           </div>
-          <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "center", gap: 0, flexWrap: "nowrap", overflowX: "auto", padding: "16px 0 40px" }}>
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 0, flexWrap: "nowrap", overflowX: "auto", padding: "24px 0 56px" }}>
             {nodes.map((node, i) => (
               <div key={i} style={{ display: "flex", alignItems: "center" }}>
+                {/* Wrapper controls tooltip hover; BorderGlow handles its own glow */}
                 <div style={{ position: "relative", display: "flex", flexDirection: "column", alignItems: "center" }}
                   onMouseEnter={() => setHoveredNode(i)} onMouseLeave={() => setHoveredNode(null)}>
+                  {/* Tooltip */}
                   {hoveredNode === i && (
-                    <div style={{ position: "absolute", bottom: "calc(100% + 12px)", left: "50%", transform: "translateX(-50%)", zIndex: 20, width: 240, background: "#fff", border: `1px solid ${T.border}`, borderRadius: 12, padding: 16, boxShadow: "0 8px 32px rgba(200,16,46,0.12)" }}>
-                      <div style={{ fontSize: 10, fontWeight: 700, color: T.red, letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 6 }}>▲ {zh ? "质控挑战" : "QC Challenge"}</div>
-                      <div style={{ fontSize: 13, color: "#333", fontWeight: 500, marginBottom: 12 }}>{node.challenge}</div>
-                      <div style={{ fontSize: 10, fontWeight: 700, color: "#555", letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 8 }}>◆ Booster {zh ? "武器" : "Solutions"}</div>
+                    <div style={{ position: "absolute", bottom: "calc(100% + 20px)", left: "50%", transform: "translateX(-50%)", zIndex: 30, width: 280, background: "rgba(255,255,255,0.97)", backdropFilter: "blur(20px)", border: `1px solid ${T.border}`, borderRadius: 16, padding: 20, boxShadow: "0 12px 48px rgba(200,16,46,0.15)", pointerEvents: "none" }}>
+                      <div style={{ fontSize: 10, fontWeight: 700, color: T.red, letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 8 }}>▲ {zh ? "质控挑战" : "QC Challenge"}</div>
+                      <div style={{ fontSize: 14, color: "#222", fontWeight: 600, marginBottom: 14, lineHeight: 1.5 }}>{node.challenge}</div>
+                      <div style={{ fontSize: 10, fontWeight: 700, color: "#555", letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 10 }}>◆ Booster {zh ? "武器" : "Solutions"}</div>
                       {node.weapons.map((w, wi) => (
-                        <div key={wi} style={{ fontSize: 12, color: T.red, background: T.redLight, borderRadius: 6, padding: "4px 8px", marginBottom: 4 }}>{w}</div>
+                        <div key={wi} style={{ fontSize: 12, color: T.red, background: T.redLight, borderRadius: 7, padding: "5px 10px", marginBottom: 5, fontWeight: 500 }}>{w}</div>
                       ))}
                     </div>
                   )}
-                  <div style={{ width: 96, height: 96, borderRadius: "50%", background: hoveredNode === i ? T.redLight : "#FFF5F7", border: `2px solid ${hoveredNode === i ? T.red : T.border}`, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 4, cursor: "pointer", transition: "all 0.2s", boxShadow: hoveredNode === i ? `0 0 0 4px ${T.red}18` : "none" }}>
-                    <span style={{ fontSize: 24 }}>{node.icon}</span>
-                    <span style={{ fontSize: 10, fontWeight: 700, color: hoveredNode === i ? T.red : "#777", textAlign: "center", lineHeight: 1.3, padding: "0 6px" }}>{node.label}</span>
-                  </div>
+                  {/* 2× BorderGlow circle node */}
+                  <BorderGlow
+                    borderRadius={96}
+                    backgroundColor={hoveredNode === i ? "rgba(255,230,234,0.94)" : "rgba(255,255,255,0.90)"}
+                    glowColor="360 72 45"
+                    colors={['rgba(200,16,46,0.28)', 'rgba(255,130,130,0.18)', 'rgba(200,16,46,0.10)']}
+                    glowIntensity={1.3}
+                    coneSpread={28}
+                    fillOpacity={0.28}
+                    glowRadius={2}
+                    style={{ width: 192, height: 192, flexShrink: 0 }}
+                  >
+                    <span style={{ fontSize: 46, lineHeight: 1 }}>{node.icon}</span>
+                    <span style={{ fontSize: 14, fontWeight: 700, color: hoveredNode === i ? T.red : "#555", textAlign: "center", lineHeight: 1.35, padding: "0 18px", letterSpacing: 0.2 }}>{node.label}</span>
+                  </BorderGlow>
                 </div>
+                {/* Connector arrow */}
                 {i < nodes.length - 1 && (
-                  <div style={{ width: 60, height: 2, background: `linear-gradient(90deg, ${T.red}60, ${T.red})`, position: "relative", flexShrink: 0, margin: "0 2px" }}>
-                    <span style={{ position: "absolute", right: -6, top: "50%", transform: "translateY(-50%)", color: T.red, fontSize: 14, fontWeight: 900 }}>›</span>
+                  <div style={{ width: 88, height: 3, background: `linear-gradient(90deg, ${T.red}50, ${T.red})`, position: "relative", flexShrink: 0, margin: "0 6px" }}>
+                    <span style={{ position: "absolute", right: -9, top: "50%", transform: "translateY(-50%)", color: T.red, fontSize: 22, fontWeight: 900, lineHeight: 1 }}>›</span>
                   </div>
                 )}
               </div>
