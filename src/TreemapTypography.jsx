@@ -152,6 +152,51 @@ function squarify(items, container) {
   return out;
 }
 
+/**
+ * Fixed-structure layout — blocks never swap positions, only sizes change.
+ * Structure: [col1: item0] [col2: item1] [col3: 2×2 grid of items 2-5]
+ * Items must be in the same fixed order as CATEGORIES (sorted by count desc).
+ */
+function fixedLayout(items, container) {
+  const { x, y, w, h } = container;
+  if (items.length < 6 || w <= 0 || h <= 0) return [];
+
+  const [a, b, c, d, e, f] = items;
+  const totalW = items.reduce((s, i) => s + i.weight, 0);
+  if (totalW <= 0) return [];
+
+  // Three-column widths proportional to weights
+  const colA = (a.weight / totalW) * w;
+  const colB = (b.weight / totalW) * w;
+  const colC = w - colA - colB;
+
+  const out = [];
+
+  // Column 1 — full height
+  out.push({ ...a, bx: x + GAP / 2, by: y + GAP / 2, bw: colA - GAP, bh: h - GAP });
+
+  // Column 2 — full height
+  out.push({ ...b, bx: x + colA + GAP / 2, by: y + GAP / 2, bw: colB - GAP, bh: h - GAP });
+
+  // Column 3 — 2×2 grid
+  if (colC > GAP * 2) {
+    const x3   = x + colA + colB;
+    const wTop = c.weight + d.weight;
+    const wBot = e.weight + f.weight;
+    const rowTop = (wTop / (wTop + wBot)) * h;
+    const rowBot = h - rowTop;
+    const fracC  = c.weight / wTop;
+    const fracE  = e.weight / (e.weight + f.weight);
+
+    out.push({ ...c, bx: x3 + GAP / 2,               by: y + GAP / 2,         bw: fracC * colC - GAP,       bh: rowTop - GAP });
+    out.push({ ...d, bx: x3 + fracC * colC + GAP / 2, by: y + GAP / 2,         bw: (1 - fracC) * colC - GAP, bh: rowTop - GAP });
+    out.push({ ...e, bx: x3 + GAP / 2,               by: y + rowTop + GAP / 2, bw: fracE * colC - GAP,       bh: rowBot - GAP });
+    out.push({ ...f, bx: x3 + fracE * colC + GAP / 2, by: y + rowTop + GAP / 2, bw: (1 - fracE) * colC - GAP, bh: rowBot - GAP });
+  }
+
+  return out;
+}
+
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
    3. TEXT TIER RESOLUTION (Pretext layout)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
@@ -379,8 +424,8 @@ function initEngine(host, categories, initialLang, onCategoryClick) {
       return { ...cat, weight: Math.sqrt(cat.count) * breathe * hover * select };
     });
 
-    // ── 2. Squarified layout → update targets ────────────────────────────
-    const cells = squarify(weighted, { x: 0, y: 0, w: cw, h: ch });
+    // ── 2. Fixed-structure layout → update targets ───────────────────────
+    const cells = fixedLayout(weighted, { x: 0, y: 0, w: cw, h: ch });
     for (const cell of cells) {
       const b = byId[cell.id];
       if (!b) continue;
