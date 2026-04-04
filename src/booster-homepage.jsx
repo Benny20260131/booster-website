@@ -1549,48 +1549,50 @@ function PeptideQCSection({ lang, onContact, onProducts }) {
 function ProductMapSection({ lang, onCategoryClick }) {
   const T2 = { dark: "#111", sub: "#555" };
   return (
-    <section style={{ minHeight: "100vh", background: "transparent", display: "flex", flexDirection: "column", padding: "100px 48px 60px", boxSizing: "border-box" }}>
-      {/* Header */}
-      <div style={{ marginBottom: 32, maxWidth: 680 }}>
-        <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(200,16,46,0.07)", border: "1px solid rgba(200,16,46,0.18)", borderRadius: 20, padding: "5px 14px", marginBottom: 14 }}>
-          <span style={{ fontSize: 12, fontWeight: 700, color: "#C8102E", fontFamily: "Fustat, sans-serif", letterSpacing: 0.5 }}>
-            {lang === "zh" ? "LIVE · 实时布局" : "LIVE · Real-time Layout"}
-          </span>
-        </div>
-        <h2 style={{ fontSize: 40, fontFamily: "Fustat, sans-serif", fontWeight: 800, color: T2.dark, margin: 0, lineHeight: 1.15, letterSpacing: -0.5 }}>
-          {lang === "zh" ? "产品分类矩阵" : "Product Category Map"}
-        </h2>
-        <p style={{ marginTop: 10, fontSize: 15, color: T2.sub, lineHeight: 1.6, fontFamily: "Inter, sans-serif", margin: "10px 0 0" }}>
-          {lang === "zh"
-            ? "区块大小反映产品数量，悬停扩展区块，点击进入分类"
-            : "Block size reflects product count · Hover to expand · Click to browse"}
-        </p>
-      </div>
-
-      {/* Treemap canvas */}
-      <div style={{ height: 520, borderRadius: 24, overflow: "hidden", position: "relative" }}>
-        <TreemapTypography
-          lang={lang}
-          onCategoryClick={onCategoryClick}
-          style={{ position: "absolute", inset: 0 }}
-        />
-      </div>
-
-      {/* Legend */}
-      <div style={{ marginTop: 18, display: "flex", gap: 10, flexWrap: "wrap" }}>
-        {[
-          { zh: "实验耗材", en: "Lab Consumables", accent: "#C8102E" },
-          { zh: "化学试剂与小分子", en: "Chemical Reagents", accent: "#E6A817" },
-          { zh: "超滤离心管", en: "Ultrafiltration Tubes", accent: "#E65100" },
-          { zh: "质控试剂盒", en: "QC Kits", accent: "#AD1457" },
-          { zh: "早期研发", en: "Early R&D", accent: "#00838F" },
-          { zh: "质控分析工具酶", en: "QC Enzymes", accent: "#2E7D32" },
-        ].map(cat => (
-          <div key={cat.zh} style={{ display: "flex", alignItems: "center", gap: 5, fontSize: 11, color: "#666", fontFamily: "Inter, sans-serif" }}>
-            <span style={{ width: 8, height: 8, borderRadius: "50%", background: cat.accent, display: "inline-block", flexShrink: 0 }} />
-            {lang === "zh" ? cat.zh : cat.en}
+    <section style={{ minHeight: "100vh", background: "transparent", display: "flex", flexDirection: "column", alignItems: "center", padding: "100px 24px 60px", boxSizing: "border-box" }}>
+      <div style={{ width: "100%", maxWidth: 1500, display: "flex", flexDirection: "column" }}>
+        {/* Header */}
+        <div style={{ marginBottom: 32, maxWidth: 680 }}>
+          <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(200,16,46,0.07)", border: "1px solid rgba(200,16,46,0.18)", borderRadius: 20, padding: "5px 14px", marginBottom: 14 }}>
+            <span style={{ fontSize: 12, fontWeight: 700, color: "#C8102E", fontFamily: "Fustat, sans-serif", letterSpacing: 0.5 }}>
+              {lang === "zh" ? "LIVE · 实时布局" : "LIVE · Real-time Layout"}
+            </span>
           </div>
-        ))}
+          <h2 style={{ fontSize: 40, fontFamily: "Fustat, sans-serif", fontWeight: 800, color: T2.dark, margin: 0, lineHeight: 1.15, letterSpacing: -0.5 }}>
+            {lang === "zh" ? "产品分类矩阵" : "Product Category Map"}
+          </h2>
+          <p style={{ marginTop: 10, fontSize: 15, color: T2.sub, lineHeight: 1.6, fontFamily: "Inter, sans-serif", margin: "10px 0 0" }}>
+            {lang === "zh"
+              ? "区块大小反映产品数量，悬停扩展区块，点击进入分类"
+              : "Block size reflects product count · Hover to expand · Click to browse"}
+          </p>
+        </div>
+
+        {/* Treemap canvas */}
+        <div style={{ height: 600, borderRadius: 24, overflow: "hidden", position: "relative" }}>
+          <TreemapTypography
+            lang={lang}
+            onCategoryClick={onCategoryClick}
+            style={{ position: "absolute", inset: 0 }}
+          />
+        </div>
+
+        {/* Legend */}
+        <div style={{ marginTop: 18, display: "flex", gap: 10, flexWrap: "wrap" }}>
+          {[
+            { zh: "实验耗材", en: "Lab Consumables", accent: "#C8102E" },
+            { zh: "化学试剂与小分子", en: "Chemical Reagents", accent: "#E6A817" },
+            { zh: "超滤离心管", en: "Ultrafiltration Tubes", accent: "#E65100" },
+            { zh: "质控试剂盒", en: "QC Kits", accent: "#AD1457" },
+            { zh: "早期研发", en: "Early R&D", accent: "#00838F" },
+            { zh: "质控分析工具酶", en: "QC Enzymes", accent: "#2E7D32" },
+          ].map(cat => (
+            <div key={cat.zh} style={{ display: "flex", alignItems: "center", gap: 5, fontSize: 11, color: "#666", fontFamily: "Inter, sans-serif" }}>
+              <span style={{ width: 8, height: 8, borderRadius: "50%", background: cat.accent, display: "inline-block", flexShrink: 0 }} />
+              {lang === "zh" ? cat.zh : cat.en}
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
