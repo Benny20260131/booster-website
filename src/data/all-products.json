@@ -17764,5 +17764,149 @@
     "spec": "96T/Kit",
     "price": 3500,
     "brand": "Booster"
+  },
+  {
+    "cat": "实验耗材",
+    "sub": "针式过滤器",
+    "sku": "BSDT1YF022L-S33PV",
+    "name": "针式过滤器，PVDF,0.22um，灭菌，33mm，亲水",
+    "spec": "100EA/盒",
+    "price": 0,
+    "brand": "Booster"
+  },
+  {
+    "cat": "实验耗材",
+    "sub": "针式过滤器",
+    "sku": "BSDT1YF022L-S25PV",
+    "name": "针式过滤器，PVDF,0.22um，灭菌，25mm，亲水",
+    "spec": "100EA/盒",
+    "price": 0,
+    "brand": "Booster"
+  },
+  {
+    "cat": "实验耗材",
+    "sub": "针式过滤器",
+    "sku": "BSDT1YF022L-S13PV",
+    "name": "针式过滤器，PVDF,0.22um，灭菌，13mm，亲水",
+    "spec": "100EA/盒",
+    "price": 0,
+    "brand": "Booster"
+  },
+  {
+    "cat": "实验耗材",
+    "sub": "针式过滤器",
+    "sku": "BSDT1YF022L-S04PV",
+    "name": "针式过滤器，PVDF,0.22um，灭菌，04mm，亲水",
+    "spec": "100EA/盒",
+    "price": 0,
+    "brand": "Booster"
+  },
+  {
+    "cat": "实验耗材",
+    "sub": "针式过滤器",
+    "sku": "BSDT1YF022B-S33PV",
+    "name": "针式过滤器，PVDF,0.22um，灭菌，33mm，疏水",
+    "spec": "100EA/盒",
+    "price": 0,
+    "brand": "Booster"
+  },
+  {
+    "cat": "实验耗材",
+    "sub": "针式过滤器",
+    "sku": "BSDT1YF022B-S25PV",
+    "name": "针式过滤器，PVDF,0.22um，灭菌，25mm，疏水",
+    "spec": "100EA/盒",
+    "price": 0,
+    "brand": "Booster"
+  },
+  {
+    "cat": "实验耗材",
+    "sub": "针式过滤器",
+    "sku": "BSDT1YF022B-S13PV",
+    "name": "针式过滤器，PVDF,0.22um，灭菌，13mm，疏水",
+    "spec": "100EA/盒",
+    "price": 0,
+    "brand": "Booster"
+  },
+  {
+    "cat": "实验耗材",
+    "sub": "针式过滤器",
+    "sku": "BSDT1YF022B-S04PV",
+    "name": "针式过滤器，PVDF,0.22um，灭菌，04mm，疏水",
+    "spec": "100EA/盒",
+    "price": 0,
+    "brand": "Booster"
+  },
+  {
+    "cat": "实验耗材",
+    "sub": "针式过滤器",
+    "sku": "BSDT1YF045L-S33PV",
+    "name": "针式过滤器，PVDF,0.45um，灭菌，33mm，亲水",
+    "spec": "100EA/盒",
+    "price": 0,
+    "brand": "Booster"
+  },
+  {
+    "cat": "实验耗材",
+    "sub": "针式过滤器",
+    "sku": "BSDT1YF045L-S25PV",
+    "name": "针式过滤器，PVDF,0.45um，灭菌，25mm，亲水",
+    "spec": "100EA/盒",
+    "price": 0,
+    "brand": "Booster"
+  },
+  {
+    "cat": "实验耗材",
+    "sub": "针式过滤器",
+    "sku": "BSDT1YF045L-S13PV",
+    "name": "针式过滤器，PVDF,0.45um，灭菌，13mm，亲水",
+    "spec": "100EA/盒",
+    "price": 0,
+    "brand": "Booster"
+  },
+  {
+    "cat": "实验耗材",
+    "sub": "针式过滤器",
+    "sku": "BSDT1YF045L-S04PV",
+    "name": "针式过滤器，PVDF,0.45um，灭菌，04mm，亲水",
+    "spec": "100EA/盒",
+    "price": 0,
+    "brand": "Booster"
+  },
+  {
+    "cat": "实验耗材",
+    "sub": "针式过滤器",
+    "sku": "BSDT1YF045B-S33PV",
+    "name": "针式过滤器，PVDF,0.45um，灭菌，33mm，疏水",
+    "spec": "100EA/盒",
+    "price": 0,
+    "brand": "Booster"
+  },
+  {
+    "cat": "实验耗材",
+    "sub": "针式过滤器",
+    "sku": "BSDT1YF045B-S25PV",
+    "name": "针式过滤器，PVDF,0.45um，灭菌，25mm，疏水",
+    "spec": "100EA/盒",
+    "price": 0,
+    "brand": "Booster"
+  },
+  {
+    "cat": "实验耗材",
+    "sub": "针式过滤器",
+    "sku": "BSDT1YF045B-S13PV",
+    "name": "针式过滤器，PVDF,0.45um，灭菌，13mm，疏水",
+    "spec": "100EA/盒",
+    "price": 0,
+    "brand": "Booster"
+  },
+  {
+    "cat": "实验耗材",
+    "sub": "针式过滤器",
+    "sku": "BSDT1YF045B-S04PV",
+    "name": "针式过滤器，PVDF,0.45um，灭菌，04mm，疏水",
+    "spec": "100EA/盒",
+    "price": 0,
+    "brand": "Booster"
   }
 ]
